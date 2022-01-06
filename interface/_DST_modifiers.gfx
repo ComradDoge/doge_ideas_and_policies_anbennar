@@ -1,0 +1,7 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_devastation_province_icon"
+		texturefile = "gfx//interface//ideas_EU4//devastation_province_icon.dds"
+	}	
+
+}

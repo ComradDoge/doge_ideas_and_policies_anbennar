@@ -1,0 +1,310 @@
+
+
+#thank you u/Justice_Fighter https://www.reddit.com/r/eu4/comments/dy7lyv/are_dynamic_modifiers_possible/
+
+
+
+ML_on_country_vassal_released = {
+	log = test.4
+	FROM = {
+		# save the number of ideas in variables
+		GetAllIdeas = yes
+		PREV = {
+		set_variable = {
+			which = numOfFreeIdeas
+			which = PREV
+		} }
+		country_event = {
+			id = ML_FreeIdeasForAll.1
+			days = 50
+		}
+	}
+}
+ML_give_free_idea_effect = {
+	log = displaynumofideas.t
+	if = { 	limit = { check_variable = {
+		which = numOfFreeIdeas
+		value = 1
+	}}
+		log = test.5
+		#add_idea_group = administrative_ideas
+		if = { #loop
+			limit = { check_variable = {
+				which = numOfFreeIdeas
+				value = 1
+				} }
+				ideaorderSmart1 = yes
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = numOfFreeIdeas
+					value = 1
+					}
+			}
+			log = ErrorText.4
+		}
+	}
+}
+
+
+#basic ideas only yet
+GetAllIdeas = {
+	set_variable = {
+		which = numOfFreeIdeas
+		value = 0
+	}
+	#adm
+	GetIdeas = {
+		variable_name = numOfFreeIdeas
+		id1=innovativeness_ideas
+		id2=economic_ideas
+		id3=expansion_ideas
+		id4=administrative_ideas
+		id5=humanist_ideas
+		id6=justiz0
+		id7=entwicklung0
+		id8=gesundheit0
+		id9=monarchie0
+		id0=republik0
+	}
+	GetIdeas = {
+		variable_name = numOfFreeIdeas
+		id1=aristo0
+		id2=diktatur0
+		id3=horde0
+		id4=staatsverwaltung0
+		id5=zentra0
+		id6=dezentra0
+		id7=state_affairs_idea_groups_expanded
+	}
+	#religious
+	GetIdeas = {
+		variable_name = numOfFreeIdeas
+		id1=katholisch0
+		id2=protestant0
+		id3=reformiert0
+		id4=orthodox0
+		id5=islam0
+		id6=tengri0
+		id7=hindu0
+		id8=confuci0
+		id9=budda0
+		id0=norse0
+	}
+	GetIdeas = {
+		variable_name = numOfFreeIdeas
+		id1=shinto0
+		id2=cathar0
+		id3=coptic0
+		id4=romuva0
+		id5=suomi0
+		id6=jew0
+		id7=slav0
+		id8=helle0
+		id9=mane0
+		id0=animist0
+	}
+	GetIdeas = {
+		variable_name = numOfFreeIdeas
+		id1=feti0
+		id2=zoro0
+		id3=ancli0
+		id4=nahu0
+		id5=mesoam0
+		id6=inti0
+		id7=tote0
+		id8=shia0
+		id9=ibadi0
+		id0=hussite0
+	}
+	GetIdeas = {
+		variable_name = numOfFreeIdeas
+		id1=religious_ideas
+	}
+	#dip
+	GetIdeas = {
+		variable_name = numOfFreeIdeas
+		id1=spy_ideas
+		id2=dynasty0
+		id3=influence_ideas
+		id4=trade_ideas
+		id5=exploration_ideas
+		id6=maritime_ideas
+		id7=gross0
+		id8=galle0
+		id9=handel0
+		id0=kolonialimperium0
+	}
+	GetIdeas = {
+		variable_name = numOfFreeIdeas
+		id1=assimilation0
+		id2=gesellschaft0
+		id3=propaganda0
+		id4=flottenbasis0
+		id5=nationalismus0
+		id6=konigreich0
+		id7=imperialismus0
+	}
+	#mil
+	GetIdeas = {
+		variable_name = numOfFreeIdeas
+		id1=quality_ideas
+		id2=quantity_ideas
+		id3=offensive_ideas
+		id4=defensive_ideas
+		id5=generalstab0
+		id6=stehendesheer0
+		id7=wehrpflicht0
+		id8=soldnerheer0
+		id9=waffenqualitat0
+		id0=festung0
+	}
+	GetIdeas = {
+		variable_name = numOfFreeIdeas
+		id1=kriegsproduktion0
+		id2=formation0
+		id3=militarismus0
+		id4=shock0
+		id5=fire0
+	}
+}
+GetIdeas= {
+	if = {
+		limit = { NOT = {
+			check_variable = {
+				which = $variable_name$
+				value = 1
+			} }
+		}
+		set_variable = {
+			which = $variable_name$
+			value = 0
+		}
+	}
+	[[id1]
+	export_num_ideas = {
+		variable_name = $variable_name$
+		which = $id1$
+	}
+	]
+	[[id2]
+	export_num_ideas = {
+		variable_name = $variable_name$
+		which = $id2$
+	}
+	]
+	[[id3]
+	export_num_ideas = {
+		variable_name = $variable_name$
+		which = $id3$
+	}
+	]
+	[[id4]
+	export_num_ideas = {
+		variable_name = $variable_name$
+		which = $id4$
+	}
+	]
+	[[id5]
+	export_num_ideas = {
+		variable_name = $variable_name$
+		which = $id5$
+	}
+	]
+	[[id6]
+	export_num_ideas = {
+		variable_name = $variable_name$
+		which = $id6$
+	}
+	]
+	[[id7]
+	export_num_ideas = {
+		variable_name = $variable_name$
+		which = $id7$
+	}
+	]
+	[[id8]
+	export_num_ideas = {
+		variable_name = $variable_name$
+		which = $id8$
+	}
+	]
+	[[id9]
+	export_num_ideas = {
+		variable_name = $variable_name$
+		which = $id9$
+	}
+	]
+	[[id0]
+	export_num_ideas = {
+		variable_name = $variable_name$
+		which = $id0$
+	}
+	]
+}
+
+export_num_ideas ={
+	if = {
+		limit = {
+			$which$ = 7
+		}
+		change_variable = {
+			which = $variable_name$
+			value = 7
+		}
+	} else_if = {
+		limit = {
+			$which$ = 6
+		}
+		change_variable = {
+			which = $variable_name$
+			value = 6
+		}
+	}	else_if = {
+		limit = {
+			$which$ = 5
+		}
+		change_variable = {
+			which = $variable_name$
+			value = 5
+		}
+	}	else_if = {
+		limit = {
+			$which$ = 4
+		}
+		change_variable = {
+			which = $variable_name$
+			value = 4
+		}
+
+	}	else_if = {
+		limit = {
+			$which$ = 3
+		}
+		change_variable = {
+			which = $variable_name$
+			value = 3
+		}
+
+	} else_if = {
+		limit = {
+			$which$ = 2
+		}
+		change_variable = {
+			which = $variable_name$
+			value = 2
+		}
+
+	} else_if = {
+		limit = {
+			$which$ = 1
+		}
+		change_variable = {
+			which = $variable_name$
+			value = 1
+		}
+
+	}
+
+}

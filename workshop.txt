@@ -1,0 +1,21 @@
+[code]                                  [img] https://i.imgur.com/p7Fv1Z6.gif [/img] [/code]
+[quote] 
+- This is a standalone version of Ideas and Policies from my Shattered mod. The base of ideas is "Idea Variation by flogi" but has had massive changes and barely resembles it.
+
+- The mod contains around 50 idea groups, with some being exclusives and religion specific. In addition, a completely reworked policy system from the ground up that can be checked in a spreadsheet.
+
+For the sake of compatability, slot values and policy minimum have been kept vanilla. Therefore, while you do have more choices, they are more important. If there is enough demand for a 16/4 version I'll probably make it or turn this one into it.
+
+- Anyone is free to use this mod as they see fit, just add the credits.
+[/quote]
+[quote]
+[h1] Main Mod [/h1]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2152606065] Doge Shattered Europa [/url]
+
+[h1] Policy Spreadsheet [/h1]
+The policy list is in a [url=https://docs.google.com/spreadsheets/u/3/d/1SX5ouQvM4O8wXEbLYmDUaB3BWOpTldDW7MBfbfiryPY/edit?usp=sharing] spreadsheet [/url].
+[/quote]
+
+[h1] X Version [/h1]
+The X slot version can be found [url=] here [/url].
+[/quote]

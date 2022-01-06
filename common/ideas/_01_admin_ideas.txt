@@ -1,0 +1,1190 @@
+
+#######################################
+#######################################
+######### VANILLA IDEAS START #########
+#######################################
+#######################################
+
+# INNOVATIVE IDEAS
+innovativeness_ideas = {
+	category = ADM
+
+	bonus = {
+		advisor_cost = -0.2
+	}
+
+	patron_of_art_2  = {
+		prestige_decay = -0.01
+	}
+	pragmatism = { # Scientific Method
+		embracement_cost = -0.1
+		global_institution_spread = 0.15
+	}
+	scientific_revolution = {
+		innovativeness_gain = 0.15
+	}
+	dynamic_court = {
+		advisor_pool = 1
+	}
+	resilient_state = {
+		inflation_action_cost = -0.25
+	}
+	optimism = {
+		war_exhaustion = -0.05
+	}
+	formalized_officer_corps = {
+		free_leader_pool = 1
+	}
+
+	ai_will_do = {
+		factor = 0.6
+		#PERSONALITY
+		modifier = {
+			factor = 1.5
+			ruler_has_good_adm_personality = yes
+		}
+		#POTENTIAL
+		modifier = {
+			factor = 1.5
+			innovativeness = 25
+		}
+		modifier = {
+			factor = 1.0
+			innovativeness = 50
+		}
+		modifier = {
+			factor = 1.0
+			innovativeness = 75
+		}
+		modifier = {
+			factor = 0.5
+			innovativeness = 100
+		}
+		modifier = {
+			factor = 1.5
+			in_golden_age = yes
+		}
+		modifier = {
+			factor = 1.5
+			technology_group = western
+		}
+		modifier = {
+			factor = 1.5
+			ROOT = {
+				capital_scope = {
+					OR = {
+						region = north_german_region
+						region = south_german_region
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 2.0
+			ROOT = {
+				capital_scope = {
+					region = italy_region
+				}
+			}
+		}
+		#IDEAS
+		modifier = {
+			factor = 4.5
+			has_idea_group = offensive_ideas
+		}
+		modifier = {
+			factor = 7.5
+			has_idea_group = quality_ideas
+		}
+	}
+}
+
+
+
+# ECONOMIC IDEAS
+economic_ideas = {
+	category = ADM
+
+	bonus = {
+		development_cost = -0.1
+	}
+
+	bureaucracy = {
+		global_tax_modifier = 0.15
+	}
+	organised_construction = {
+		build_time = -0.15
+	}
+	national_bank = {
+		inflation_reduction = 0.1
+	}
+	debt_and_loans = {
+		interest = -1
+	}
+	centralization = {
+		global_autonomy = -0.05
+	}
+	nationalistic_enthusiasm = {
+		land_maintenance_modifier = -0.05
+	}
+	smithian_economics = {
+		production_efficiency = 0.1
+ 	}
+
+	 ai_will_do = {
+		factor = 0.85
+		#LIMIT
+		modifier = {
+			factor = 0.5
+			NOT = { tax_income_percentage = 0.3 }
+		}
+		modifier = {
+			factor = 0.9
+			xorme_can_select_first_idea_group_trigger = yes
+		}
+		#PERSONALITY
+		modifier = {
+			factor = 1.5
+			ruler_has_good_adm_personality = yes
+		}
+		#POTENTIAL
+		modifier = {
+			factor = 1.5
+			is_great_power = yes
+		}
+		modifier = {
+			factor = 1.5
+			xorme_wealthy_region_trigger = yes
+		}
+		modifier = {
+			factor = 1.5
+			num_of_cities = 20
+		}
+		modifier = {
+			factor = 1.5
+			num_of_cities = 30
+		}
+		modifier = {
+			factor = 1.5
+			num_of_cities = 40
+		}
+		#TAG
+		modifier = {
+			factor = 2.5
+			OR = {
+				tag = MOS
+				tag = RUS
+			}
+		}
+		#IDEAS
+		modifier = {
+			factor = 3.5
+			has_idea_group = offensive_ideas
+		}
+		modifier = {
+			factor = 4.0
+			has_idea_group = quality_ideas
+		}
+		modifier = {
+			factor = 4.5
+			has_idea_group = quantity_ideas
+		}
+		#PRIORITY
+		modifier = {
+			factor = 4.5
+			xorme_can_select_second_idea_group_trigger = yes
+		}
+		modifier = {
+			factor = 5.0
+			xorme_can_select_third_idea_group_trigger = yes
+		}
+	}
+}
+
+
+
+# EXPANSION IDEAS
+expansion_ideas = {
+	category = ADM
+	important = yes
+
+	bonus = {
+		merchants = 1
+		global_trade_power = 0.2
+	}
+	
+	additional_colonists = {
+		colonists = 1
+	}
+	
+	expan2 = {
+		cb_on_overseas = yes
+	}
+	
+	faster_colonists = {
+		global_colonial_growth = 15
+	}
+	
+	organised_recruiting = {
+		global_manpower_modifier = 0.1
+	}
+	
+	expan5 = {
+		core_creation = -0.15
+	}
+	
+	expan6 = {
+		governing_capacity_modifier = 0.1
+		trade_company_governing_cost = -0.15
+	}
+	
+	expan7 = {
+		harsh_treatment_cost = -0.75
+	}
+	
+
+	ai_will_do = {
+		factor = 0.48
+		modifier = {
+			factor = 15
+			OR = {
+				has_idea_group = exploration_ideas
+				is_colonial_nation = yes
+			}
+		}
+		modifier = {
+			factor = 10
+			NOT = { has_dlc = "Third Rome" } # Has siberian frontier instead
+			tag = RUS
+			num_of_cities = 20
+			any_owned_province = {
+				has_empty_adjacent_province = yes
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = { has_idea_group = exploration_ideas }
+			NOT = { is_colonial_nation = yes }
+			NOT = {
+				any_owned_province = {
+					has_empty_adjacent_province = yes
+				}
+			}
+		}
+		modifier = {
+			factor = 0.1
+			NOT = {
+				OR = {
+					technology_group = western
+					technology_group = eastern
+					technology_group = muslim
+				}
+			}
+		}
+	}
+}
+# https://forum.paradoxplaza.com/forum/threads/idea-groups-change-part-1-administrative-ideas.1301846/
+# ADMINISTRATION IDEAS
+administrative_ideas = {
+	category = ADM
+
+	bonus = {
+		governing_capacity_modifier = 0.1
+	}
+
+	organised_mercenary_payment = {
+		autonomy_change_time = -0.15
+		min_autonomy_in_territories = -0.1
+	}
+	adaptability = {
+		core_creation = -0.25
+	}
+	benefits_for_mercenaries = {
+		# MECHANIC  local_monthly_devastation = -0.1
+	}
+	bookkeeping = {
+		interest = -1
+	}
+	organised_mercenary_recruitment = {
+		# MECHANIC build_cost_in_subject_nation = -0.25
+	}
+	administrative_efficiency_idea = {
+		advisor_pool = 1
+		yearly_corruption = -0.1
+	}
+	civil_servants = {
+		adm_tech_cost_modifier = -0.1
+	}
+
+	ai_will_do = {
+		factor = 0.85
+		#LIMIT
+		modifier = {
+			factor = 0.5
+			ROOT = { government_rank = 1 }
+		}
+		modifier = {
+			factor = 0.75
+			ROOT = { is_great_power = no }
+		}
+		#POTENTIAL
+		modifier = {
+			factor = 1.5
+			ROOT = { government_rank = 2 }
+		}
+		modifier = {
+			factor = 2.5
+			ROOT = { technology_group = ottoman }
+		}
+		modifier = {
+			factor = 2.5
+			ROOT = { is_great_power = yes }
+		}
+		modifier = {
+			factor = 2.5
+			ROOT = { government_rank = 3 }
+		}
+		modifier = {
+			factor = 2.5
+			governing_capacity_percentage = 0.9
+		}
+		#IDEAS
+		modifier = {
+			factor = 2.5
+			has_idea_group = quantity_ideas
+		}
+		modifier = {
+			factor = 2.5
+			has_idea_group = quality_ideas
+		}
+		#PRIORITY
+		modifier = {
+			factor = 4.5
+			xorme_can_select_second_idea_group_trigger = yes
+		}
+		modifier = {
+			factor = 5.0
+			xorme_can_select_third_idea_group_trigger = yes
+		}
+		modifier = {
+			factor = 10.0
+			xorme_can_select_fifth_idea_group_trigger = yes
+		}
+	}
+}
+# HUMANIST IDEAS
+humanist_ideas = {
+	category = ADM
+
+	bonus = {
+		idea_cost = -0.075
+		yearly_harmony = 0.25
+	}
+	benevolence = {
+		improve_relation_modifier = 0.15
+	}
+	local_traditions = {
+		global_unrest = -2
+		harmonization_speed = 0.25
+	}
+	ecumenism = {
+		tolerance_heretic = 3
+	}
+	humanist_tolerance = {
+		tolerance_heathen = 3
+	}
+	cultural_ties_2 = {
+		num_accepted_cultures = 2
+		# <<WIKI>> morale_bonus_5_cultures = yes
+	}
+	indirect_rule = {
+		years_of_nationalism = -10
+	}
+	tolerance_idea_2 = {
+		religious_unity = 0.25
+		# <<WIKI>> decision = dst_hire_advisor
+	}
+
+	ai_will_do = {
+		factor = 0.85
+		#LIMIT
+		modifier = {
+			factor = 0
+			OR = {
+				has_idea_group = religious_ideas   
+				has_idea_group = katholisch0
+				has_idea_group = protestant0
+				has_idea_group = reformiert0
+				has_idea_group = orthodox0
+				has_idea_group = islam0
+				has_idea_group = cathar0
+				has_idea_group = shinto0
+				has_idea_group = norse0
+				has_idea_group = budda0
+				has_idea_group = confuci0 
+				has_idea_group = hindu0
+				has_idea_group = tengri0
+				has_idea_group = coptic0
+				has_idea_group = helle0
+				has_idea_group = slav0
+				has_idea_group = jew0
+				has_idea_group = suomi0
+				has_idea_group = romuva0
+				has_idea_group = animist0
+				has_idea_group = feti0
+				has_idea_group = zoro0
+				has_idea_group = mane0
+				has_idea_group = ancli0
+				has_idea_group = mesoam0
+				has_idea_group = inti0
+				has_idea_group = tote0
+				has_idea_group = nahu0
+				has_idea_group = shia0
+				has_idea_group = ibadi0
+				has_idea_group = hussite0
+			}
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { has_border_with_religious_enemy = yes }
+		}
+		modifier = {
+			factor = 0.5
+			religious_unity = 0.7
+		}
+		#PERSONALITY
+		modifier = {
+			factor = 1.5
+			ruler_has_personality = tolerant_personality
+		}
+		#POTENTIAL
+		modifier = {
+			factor = 2.0
+			OR = {
+				technology_group = indian
+				technology_group = chinese
+			}
+		}
+		modifier = {
+			factor = 2.0
+			religion = buddhism
+		}
+		modifier = {
+			factor = 2.5
+			religion = confucianism
+		}
+		modifier = {
+			factor = 2.5
+			NOT = { religious_unity = 0.7 }
+		}
+		modifier = {
+			factor = 2.5
+			has_border_with_religious_enemy = yes
+		}
+		#IDEAS
+		modifier = {
+			factor = 3.0
+			has_idea_group = quantity_ideas
+		}
+		#PRIORITY
+		modifier = {
+			factor = 2.5
+			xorme_can_select_second_idea_group_trigger = yes
+		}
+		modifier = {
+			factor = 5.0
+			xorme_can_select_sixth_idea_group_trigger = yes
+		}
+	}
+}
+
+
+#####################################
+#####################################
+######### VANILLA IDEAS END #########
+#####################################
+#####################################
+
+########################################################
+####### Judiciary / Justiz
+########################################################
+
+
+justiz0 = {
+	category = ADM
+
+	bonus = {
+		ae_impact = -0.15
+
+	}
+		
+	
+	justiz1 = {
+		legitimacy = 1
+		republican_tradition = 0.3
+		horde_unity = 1
+		devotion = 1
+		meritocracy = 1
+	}
+	justiz2 = {
+		yearly_corruption = -0.1
+	}
+	justiz3 = {
+		idea_cost = -0.05
+		imperial_authority = 0.1
+	}
+
+	justiz4 = {
+		trade_efficiency = 0.1
+	}
+
+	justiz5 = {
+		interest = -1
+	}
+	justiz6 = {
+		core_creation = -0.1
+		diplomatic_annexation_cost = -0.1
+	}
+	justiz7 = {
+		tolerance_heathen = 1
+		tolerance_heretic = 1
+	}
+	
+	ai_will_do = {
+		factor = 1.0
+	}
+}
+
+########################################################
+####### Development / Entwicklung
+########################################################
+
+
+entwicklung0 = {
+	category = ADM
+
+	bonus = {
+		development_cost = -0.1
+	}
+
+	entwicklung3 = {
+		global_tax_modifier = 0.1
+	}
+	
+	entwicklung4 = {
+		state_maintenance_modifier = -0.1
+	}
+
+	entwicklung2 = {
+		production_efficiency = 0.1
+	}
+
+
+	entwicklung5 = {
+		global_autonomy = -0.1
+	}
+	entwicklung6 = {
+		build_cost = -0.05
+
+	}
+	entwicklung7 = {
+		inflation_reduction = 0.1
+	}
+	entwicklung1 = {
+		# Natural events that increase development
+		
+	}
+	
+	ai_will_do = {
+		factor = 3.0
+	}
+}
+
+########################################################
+####### Health / Gesundheit
+########################################################
+
+
+gesundheit0 = {
+	category = ADM
+
+	bonus = {
+		global_unrest = -2
+	}
+		
+	
+	gesundheit1 = {
+		production_efficiency = 0.1
+	}
+	gesundheit2 = {
+		defensiveness = 0.1
+	}
+	gesundheit3 = {
+		global_manpower_modifier = 0.1
+		
+	}
+
+	gesundheit4 = {
+		siege_ability = 0.075
+	}
+
+	gesundheit5 = {
+		manpower_recovery_speed = 0.1
+	}
+	gesundheit6 = {
+		idea_cost = -0.05
+	}
+	gesundheit7 = {
+		global_tax_modifier = 0.15
+		
+	}
+	
+	ai_will_do = {
+		factor = 1.0
+	}
+}
+
+########################################################
+####### Monarchy / Monarchie
+########################################################
+
+
+monarchie0 = {
+	category = ADM
+
+	bonus = {
+		cav_to_inf_ratio = 0.10
+	}
+		
+	trigger = {
+	
+		has_government_attribute = enables_monarchie_idea_group
+	
+	}
+	
+	monarchie1 = {
+		legitimacy = 1
+		# <<WIKI>> decision = monarchie_dec	
+		# <<WIKI>> elective_monarchy_add_buff = yes
+	}
+	
+	monarchie2 = {
+		heir_chance = 0.5
+	}
+	
+	monarchie3 = {
+		global_unrest = -1
+		
+	}
+	
+	monarchie4 = {
+		cavalry_power = 0.05
+	}
+	
+	monarchie5 = {
+		yearly_absolutism = 1.0
+	}
+	
+	monarchie6 = {
+		ae_impact = -0.1
+	}
+
+	monarchie7 = {
+		global_manpower_modifier = 0.1
+
+	}
+	
+	
+	ai_will_do = {
+		factor = 1.0
+	}
+}
+
+########################################################
+####### Republic / Republik (Plutokratie)
+########################################################
+
+
+republik0 = {
+	category = ADM
+
+	bonus = {
+		manpower_recovery_speed = 0.1
+	}
+		
+	trigger = {
+		has_government_attribute = enables_republik_idea_group
+	}			
+	
+	republik1 = {
+		diplomatic_upkeep = 2
+	}
+	
+	republik2 = {
+		land_morale = 0.075
+	}
+	
+	republik3 = {
+		global_unrest = -2
+	}
+	
+	republik4 = {
+		promote_culture_cost = -1.0
+	}
+	
+	republik5 = {
+		diplomats = 1
+
+	}
+		
+	republik6 = {
+		production_efficiency = 0.1
+	}
+	
+	republik7 = {
+		reform_progress_growth = 0.2
+		republican_tradition = 0.3		
+
+	}
+
+
+	ai_will_do = {
+		factor = 2.0
+	}
+
+}
+########################################################
+####### Theokratie/Theocracy
+########################################################
+
+
+aristo0 = {
+	category = ADM
+
+	bonus = {
+		war_exhaustion = -0.03
+	}
+
+	trigger = {
+
+		has_government_attribute = enables_theokratie_idea_group
+
+	}
+
+	aristo1 = {
+		devotion = 1
+	}
+	aristo2 = {
+		shock_damage = 0.075
+	}
+	aristo3 = {
+		missionaries = 1
+		enforce_religion_cost = -0.5
+	}
+
+	aristo4 = {
+		papal_influence = 1
+		monthly_fervor_increase = 1
+		church_power_modifier = 0.15
+		devotion = 1
+
+	}
+
+	aristo5 = {
+		artillery_cost = -0.1
+	}
+	aristo6 = {
+		warscore_cost_vs_other_religion = -0.15
+	}
+	aristo7 = {
+		unjustified_demands = -0.25
+	}
+
+	ai_will_do = {
+		factor = 0.5
+	}
+}
+
+
+########################################################
+####### Dictatorship / Diktatur
+########################################################
+
+
+diktatur0 = { # disabled
+	category = ADM
+
+	bonus = {
+		mercenary_discipline = 0.1	
+	}
+	
+	trigger = {
+
+		has_government_attribute = enables_diktatur_idea_group
+	}	
+	
+	diktatur1 = {
+		global_tax_modifier = 0.1
+	}
+	diktatur2 = {
+		production_efficiency = 0.1
+	}
+	diktatur3 = {
+		mercenary_manpower = 0.15
+		
+	}
+
+	diktatur4 = {
+		loot_amount = 0.5
+	}
+
+	diktatur5 = {
+		land_forcelimit_modifier = 0.1
+	}
+	diktatur6 = {
+		diplomatic_annexation_cost = -0.15
+	}
+	diktatur7 = {
+		mil_tech_cost_modifier = -0.05
+		# dse_idea_events.3 Dictator Reform Government Decision
+	}
+	
+	ai_will_do = {
+		factor = 0.5
+	}
+}
+
+########################################################
+####### Horde Ideas / Horde Ideen
+########################################################
+
+horde0 = {
+	category = ADM
+
+	bonus = {
+		diplomatic_reputation = 1
+	}
+		
+	trigger = {
+	
+	has_government_attribute = enables_horde_idea_group
+			
+	}
+	
+	horde1 = {
+		raze_power_gain = 0.15
+	}
+	horde2 = {
+		cavalry_cost = -0.1	
+	}
+	horde3 = {
+		claim_duration = 0.5
+	}
+	horde4 = {
+		cavalry_power = 0.075
+	}
+	horde5 = {
+		horde_unity = 0.5
+	}
+	horde6 = {
+		governing_capacity = 100
+
+	}
+	horde7 = {
+		reduced_liberty_desire = 10
+	}
+	
+	ai_will_do = {
+		factor = 1.0
+	}
+}
+
+########################################################
+####### Trade Administration / Staatsverwaltung 
+########################################################
+
+
+staatsverwaltung0 = {
+	category = ADM
+
+	bonus = {
+		advisor_cost = -0.1
+	}
+		
+	
+	staatsverwaltung1 = {
+		embargo_efficiency = 0.15
+		center_of_trade_upgrade_cost = -0.1
+		
+	}
+	staatsverwaltung2 = {
+		trade_efficiency = 0.1
+	}
+	staatsverwaltung3 = {
+		envoy_travel_time = -0.25
+		global_tax_modifier = 0.15
+	}
+
+	staatsverwaltung4 = {
+		trade_steering = 0.15
+	}
+
+	staatsverwaltung5 = {
+		transfer_trade_power_reasons = 5
+		merchants = 1
+	}
+	staatsverwaltung6 = {
+		embracement_cost = -0.25
+		global_institution_spread = 0.1
+		
+	}
+	staatsverwaltung7 = {
+		caravan_power = 0.25
+	}
+	
+	ai_will_do = {
+		factor = 1.0
+	}
+}
+
+########################################################
+####### Zentralismus Ideen / Centralism Ideas
+########################################################
+
+
+zentra0 = {
+	category = ADM
+
+	trigger = {
+		
+		NOT = {
+			has_idea_group = dezentra0
+			}	
+			
+		}
+	
+	bonus = {
+		defensiveness = 0.15
+	}
+		
+	
+	zentra1 = {
+		build_cost = -0.075
+		build_time = -0.25
+	}
+	zentra2 = {
+		production_efficiency = 0.1
+	}
+	zentra3 = {
+		global_tax_modifier = 0.25
+	}
+
+	zentra4 = {
+		autonomy_change_time = -0.5
+	}
+
+	zentra5 = {
+		global_manpower_modifier = 0.1
+		global_sailors_modifier = 0.1
+	}
+	zentra6 = {
+		state_maintenance_modifier = -0.5
+		governing_capacity_modifier = -0.25
+	}
+	zentra7 = {
+		# <<WIKI>> development_cost_over_25 = yes
+		# flogi_ideas.20 zentra_dev
+	}
+	
+	ai_will_do = {
+		factor = 2.0
+	}
+}
+
+########################################################
+####### Dezentralismus Ideen / Decentralism Ideas
+########################################################
+
+
+dezentra0 = {
+	category = ADM
+	
+		trigger = {
+		
+		NOT = {
+			has_idea_group = zentra0
+			}	
+			
+		}
+	bonus = {
+		development_cost = -0.1
+	}
+		
+	
+	dezentra1 = {
+		build_cost = -0.05
+		# <<WIKI>> reduced_dev_malus = yes
+	}
+	dezentra2 = {
+		yearly_corruption = -0.1
+	}
+	dezentra3 = {
+		trade_efficiency = 0.1
+	}
+
+	dezentra4 = {
+		embracement_cost = -0.1
+		global_institution_spread = 0.15
+	}
+
+	dezentra5 = {
+		governing_capacity_modifier = 0.25
+	}
+	dezentra6 = {
+		global_manpower_modifier = 0.1
+		global_sailors_modifier = 0.1
+	}
+	dezentra7 = {
+		global_prov_trade_power_modifier = 0.2
+	}
+	
+	ai_will_do = {
+		factor = 2.0
+	}
+}
+
+state_affairs_idea_groups_expanded = {
+	category = ADM
+
+	bonus = {
+		governing_capacity_modifier = 0.1
+	}
+
+	trigger = {
+		always = yes
+	}
+	
+	meritocratic_offices = {
+		yearly_corruption = -0.05
+		advisor_cost = -0.1
+	}
+	modernized_administration = {
+		autonomy_change_time = -0.33
+		global_autonomy = -0.1
+	}
+	red_tape_reduction = {
+		state_governing_cost = -0.15
+	}
+	efficient_regional_governors = {
+		nobles_loyalty_modifier = 0.05
+		burghers_loyalty_modifier = 0.05
+		church_loyalty_modifier = 0.05
+	}
+	stable_rule = {
+		stability_cost_modifier = -0.20
+	}
+	public_works = {
+		build_cost = -0.075
+		build_time = -0.15
+	}
+	production_quotas = {
+		production_efficiency = 0.1
+	}
+	
+
+	ai_will_do = {
+		factor = 3.0
+	}
+}
+
+
+
+# Fake idea to show in policy view
+
+any_government_idea = {
+	category = ADM
+
+	bonus = {
+
+	}
+		
+	trigger = {
+		always = no
+	}
+	
+	
+	fleet_exclusive_combo_1 = {
+
+
+	}
+
+	fleet_exclusive_combo_1 = {
+
+	}
+
+	fleet_exclusive_combo_1 = {
+
+
+	}
+	fleet_exclusive_combo_1 = {
+
+	}
+	fleet_exclusive_combo_1 = {
+
+	}
+	fleet_exclusive_combo_1 = {
+
+
+	}
+	fleet_exclusive_combo_1 = {
+
+	}
+	
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+any_state_focus_idea = {
+	category = ADM
+
+	bonus = {
+
+	}
+		
+	trigger = {
+		always = no
+	}
+	
+	
+	fleet_exclusive_combo_1 = {
+
+
+	}
+
+	fleet_exclusive_combo_1 = {
+
+	}
+
+	fleet_exclusive_combo_1 = {
+
+
+	}
+	fleet_exclusive_combo_1 = {
+
+	}
+	fleet_exclusive_combo_1 = {
+
+	}
+	fleet_exclusive_combo_1 = {
+
+
+	}
+	fleet_exclusive_combo_1 = {
+
+	}
+	
+	ai_will_do = {
+		factor = 0
+	}
+}

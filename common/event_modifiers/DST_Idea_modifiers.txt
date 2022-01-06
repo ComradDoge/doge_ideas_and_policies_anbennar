@@ -1,0 +1,7 @@
+Roman_Castrum = {
+	local_monthly_devastation = -0.10
+}
+
+policy_reset = {
+    free_policy = -4
+}
