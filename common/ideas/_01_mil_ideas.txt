@@ -37,91 +37,7 @@ quality_ideas = {
 	}
 
 	ai_will_do = {
-		factor = 2.1
-		#PERSONALITY
-		modifier = {
-			factor = 1.5
-			ruler_has_good_mil_personality = yes
-		}
-		#POTENTIAL
-		modifier = {
-			factor = 1.5
-			is_great_power = yes
-		}
-		modifier = {
-			factor = 1.7
-			ROOT = {
-				capital_scope = {
-					region = italy_region
-				}
-			}
-		}
-		modifier = {
-			factor = 1.5
-			NOT = { total_development = 400 }
-		}
-		modifier = {
-			factor = 2.0
-			is_subject_other_than_tributary_trigger = yes
-		}
-		modifier = {
-			factor = 2.0
-			xorme_has_strong_military_potential_trigger = yes
-		}
-		#IDEAS
-		modifier = {
-			factor = 3.0
-			OR = {
-				has_idea_group = religious_ideas   
-				has_idea_group = katholisch0
-				has_idea_group = protestant0
-				has_idea_group = reformiert0
-				has_idea_group = orthodox0
-				has_idea_group = islam0
-				has_idea_group = cathar0
-				has_idea_group = shinto0
-				has_idea_group = norse0
-				has_idea_group = budda0
-				has_idea_group = confuci0 
-				has_idea_group = hindu0
-				has_idea_group = tengri0
-				has_idea_group = coptic0
-				has_idea_group = helle0
-				has_idea_group = slav0
-				has_idea_group = jew0
-				has_idea_group = suomi0
-				has_idea_group = romuva0
-				has_idea_group = animist0
-				has_idea_group = feti0
-				has_idea_group = zoro0
-				has_idea_group = mane0
-				has_idea_group = ancli0
-				has_idea_group = mesoam0
-				has_idea_group = inti0
-				has_idea_group = tote0
-				has_idea_group = nahu0
-				has_idea_group = shia0
-				has_idea_group = ibadi0
-				has_idea_group = hussite0
-			}
-		}
-		modifier = {
-			factor = 3.5
-			has_idea_group = innovativeness_ideas
-		}
-		modifier = {
-			factor = 4.0
-			has_idea_group = economic_ideas
-		}
-		#PRIORITY
-		modifier = {
-			factor = 2.5
-			xorme_can_select_third_idea_group_trigger = yes
-		}		
-		modifier = {
-			factor = 30.0
-			xorme_can_select_first_idea_group_trigger = yes
-		}
+		factor = 10
 	}
 }
 
@@ -155,120 +71,7 @@ quantity_ideas = {
 	}
 
 	ai_will_do = {
-		factor = 2.1
-		#LIMIT
-		modifier = {
-			factor = 0.8
-			NOT = { total_development = 200 }
-		}
-		#PERSONALITY
-		modifier = {
-			factor = 1.5
-			ruler_has_good_mil_personality = yes
-		}
-		#DEVELOPMENT
-		modifier = {
-			factor = 1.5
-			total_development = 250
-		}
-		modifier = {
-			factor = 2.0
-			total_development = 500
-		}
-		modifier = {
-			factor = 2.5
-			total_development = 750
-		}
-		modifier = {
-			factor = 3.5
-			total_development = 1000
-		}
-		#POTENTIAL
-		modifier = {
-			factor = 1.5
-			is_great_power = yes
-		}
-		modifier = {
-			factor = 2.0
-			is_subject_other_than_tributary_trigger = yes
-		}
-		modifier = {
-			factor = 2.0
-			xorme_has_strong_military_potential_trigger = yes
-		}
-		modifier = {
-			factor = 3.0
-			technology_group = chinese
-		}
-		modifier = {
-			factor = 5.0
-			ROOT = {
-				AND = {
-					culture_group = east_asian
-					capital_scope = {
-						superregion = china_superregion
-					}
-				}
-			}
-		}
-		#IDEAS
-		modifier = {
-			factor = 2.5
-			has_idea_group = trade_ideas
-		}
-		modifier = {
-			factor = 3.0
-			has_idea_group = administrative_ideas
-		}
-		modifier = {
-			factor = 3.5
-			OR = {
-				has_idea_group = religious_ideas   
-				has_idea_group = katholisch0
-				has_idea_group = protestant0
-				has_idea_group = reformiert0
-				has_idea_group = orthodox0
-				has_idea_group = islam0
-				has_idea_group = cathar0
-				has_idea_group = shinto0
-				has_idea_group = norse0
-				has_idea_group = budda0
-				has_idea_group = confuci0 
-				has_idea_group = hindu0
-				has_idea_group = tengri0
-				has_idea_group = coptic0
-				has_idea_group = helle0
-				has_idea_group = slav0
-				has_idea_group = jew0
-				has_idea_group = suomi0
-				has_idea_group = romuva0
-				has_idea_group = animist0
-				has_idea_group = feti0
-				has_idea_group = zoro0
-				has_idea_group = mane0
-				has_idea_group = ancli0
-				has_idea_group = mesoam0
-				has_idea_group = inti0
-				has_idea_group = tote0
-				has_idea_group = nahu0
-				has_idea_group = shia0
-				has_idea_group = ibadi0
-				has_idea_group = hussite0
-			}
-		}
-		modifier = {
-			factor = 4.0
-			has_idea_group = economic_ideas
-		}
-		#PRIORITY
-		modifier = {
-			factor = 3.5
-			xorme_can_select_third_idea_group_trigger = yes
-		}		
-		modifier = {
-			factor = 30.0
-			xorme_can_select_first_idea_group_trigger = yes
-		}
+		factor = 10
 	}
 }
 
@@ -304,72 +107,7 @@ offensive_ideas = {
 	}
 
 	ai_will_do = {
-		factor = 2.15
-		#LIMIT
-		modifier = {
-			factor = 0.5
-			ROOT = { NOT = { mil_tech = 7 } }
-		}
-		#PERSONALITY
-		modifier = {
-			factor = 1.5
-			ruler_has_good_mil_personality = yes
-		}
-		#POTENTIAL
-		modifier = {
-			factor = 1.5
-			mil_tech = 7
-		}
-		modifier = {
-			factor = 1.5
-			ROOT = {
-				capital_scope = {
-					region = anatolia_region
-				}
-			}
-		}
-		modifier = {
-			factor = 1.5
-			ROOT = {
-				capital_scope = {
-					superregion = persia_superregion
-				}
-			}
-		}
-		modifier = {
-			factor = 1.6
-			ROOT = {
-				capital_scope = {
-					superregion = tartary_superregion
-				}
-			}
-		}
-		modifier = {
-			factor = 2.0
-			xorme_has_strong_military_potential_trigger = yes
-		}
-		modifier = {
-			factor = 2.0
-			is_subject_other_than_tributary_trigger = yes
-		}
-		#IDEAS
-		modifier = {
-			factor = 2.0
-			has_idea_group = innovativeness_ideas
-		}
-		#PRIORITY
-		modifier = {
-			factor = 10.0
-			xorme_can_select_first_idea_group_trigger = yes
-		}
-		modifier = {
-			factor = 15.0
-			xorme_can_select_third_idea_group_trigger = yes
-		}
-		modifier = {
-			factor = 20.0
-			xorme_can_select_fourth_idea_group_trigger = yes
-		}
+		factor = 10
 	}
 }
 
@@ -406,67 +144,7 @@ defensive_ideas = {
 	}
 
 	ai_will_do = {
-		factor = 2.1
-		#LIMIT
-		modifier = {
-			factor = 0.5
-			mil_tech = 7
-		}
-		modifier = {
-			factor = 0.6
-			is_great_power = yes
-		}
-		modifier = {
-			factor = 0.9
-			total_development = 250
-		}
-		#PERSONALITY
-		modifier = {
-			factor = 1.5
-			ruler_has_good_mil_personality = yes
-		}
-		#POTENTIAL
-		modifier = {
-			factor = 1.5
-			is_part_of_hre = yes
-		}
-		modifier = {
-			factor = 1.5
-			is_great_power = no
-		}
-		modifier = {
-			factor = 1.5
-			is_emperor = yes
-		}
-		modifier = {
-			factor = 1.5
-			current_age = age_of_discovery
-		}
-		modifier = {
-			factor = 2.0
-			is_subject_other_than_tributary_trigger = yes
-		}
-		modifier = {
-			factor = 2.0
-			xorme_has_strong_military_potential_trigger = yes
-		}
-		modifier = {
-			factor = 2.5
-			ROOT = {
-				capital_scope = {
-					region = japan_region
-				}
-			}
-		}
-		#PRIORITY
-		modifier = {
-			factor = 3.0
-			xorme_can_select_third_idea_group_trigger = yes
-		}
-		modifier = {
-			factor = 30.0
-			xorme_can_select_first_idea_group_trigger = yes
-		}
+		factor = 10
 	}
 }
 
@@ -505,7 +183,7 @@ indigenous_ideas = {
 	}
 
 	ai_will_do = {
-		factor = 2.0
+		factor = 0
 	}
 }
 
@@ -557,7 +235,7 @@ generalstab0 = {
 
 	
 	ai_will_do = {
-		factor = 3.0
+		factor = 10
 	}
 }
 
@@ -613,7 +291,7 @@ stehendesheer0 = {
 	}
 	
 	ai_will_do = {
-		factor = 2.5
+		factor = 10
 	}
 }
 
@@ -662,7 +340,7 @@ wehrpflicht0 = {
 	}
 	
 	ai_will_do = {
-		factor = 2.5
+		factor = 10
 	}
 }
 
@@ -749,7 +427,7 @@ waffenqualitat0 = {
 	}
 	
 	ai_will_do = {
-		factor = 1.5
+		factor = 10
 	}
 }
 
@@ -800,7 +478,7 @@ festung0 = {
 	
 	
 	ai_will_do = {
-		factor = 1.0
+		factor = 1
 		modifier = {
 			factor = 3.0
 			is_march = yes
@@ -848,7 +526,7 @@ kriegsproduktion0 = {
 	}
 	
 	ai_will_do = {
-		factor = 1.0
+		factor = 10
 	}
 }
 
@@ -941,7 +619,7 @@ militarismus0 = {
 	}
 	
 	ai_will_do = {
-		factor = 1.0
+		factor = 5
 	}
 }
 
@@ -1044,18 +722,7 @@ fire0 = {
 	}
 	
 	ai_will_do = {
-		factor = 3.0
-		modifier = {
-			factor = 0
-			OR = { 
-				current_age = age_of_discovery
-				current_age = age_of_reformation
-			}
-		}
-		modifier = {
-			factor = 0
-			has_reform = steppe_horde
-		}
+		factor = 10
 	}
 }
 

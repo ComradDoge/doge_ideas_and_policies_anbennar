@@ -37,65 +37,7 @@ innovativeness_ideas = {
 	}
 
 	ai_will_do = {
-		factor = 0.6
-		#PERSONALITY
-		modifier = {
-			factor = 1.5
-			ruler_has_good_adm_personality = yes
-		}
-		#POTENTIAL
-		modifier = {
-			factor = 1.5
-			innovativeness = 25
-		}
-		modifier = {
-			factor = 1.0
-			innovativeness = 50
-		}
-		modifier = {
-			factor = 1.0
-			innovativeness = 75
-		}
-		modifier = {
-			factor = 0.5
-			innovativeness = 100
-		}
-		modifier = {
-			factor = 1.5
-			in_golden_age = yes
-		}
-		modifier = {
-			factor = 1.5
-			technology_group = western
-		}
-		modifier = {
-			factor = 1.5
-			ROOT = {
-				capital_scope = {
-					OR = {
-						region = north_german_region
-						region = south_german_region
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = 2.0
-			ROOT = {
-				capital_scope = {
-					region = italy_region
-				}
-			}
-		}
-		#IDEAS
-		modifier = {
-			factor = 4.5
-			has_idea_group = offensive_ideas
-		}
-		modifier = {
-			factor = 7.5
-			has_idea_group = quality_ideas
-		}
+		factor = 5
 	}
 }
 
@@ -131,73 +73,8 @@ economic_ideas = {
 		production_efficiency = 0.1
  	}
 
-	 ai_will_do = {
-		factor = 0.85
-		#LIMIT
-		modifier = {
-			factor = 0.5
-			NOT = { tax_income_percentage = 0.3 }
-		}
-		modifier = {
-			factor = 0.9
-			xorme_can_select_first_idea_group_trigger = yes
-		}
-		#PERSONALITY
-		modifier = {
-			factor = 1.5
-			ruler_has_good_adm_personality = yes
-		}
-		#POTENTIAL
-		modifier = {
-			factor = 1.5
-			is_great_power = yes
-		}
-		modifier = {
-			factor = 1.5
-			xorme_wealthy_region_trigger = yes
-		}
-		modifier = {
-			factor = 1.5
-			num_of_cities = 20
-		}
-		modifier = {
-			factor = 1.5
-			num_of_cities = 30
-		}
-		modifier = {
-			factor = 1.5
-			num_of_cities = 40
-		}
-		#TAG
-		modifier = {
-			factor = 2.5
-			OR = {
-				tag = MOS
-				tag = RUS
-			}
-		}
-		#IDEAS
-		modifier = {
-			factor = 3.5
-			has_idea_group = offensive_ideas
-		}
-		modifier = {
-			factor = 4.0
-			has_idea_group = quality_ideas
-		}
-		modifier = {
-			factor = 4.5
-			has_idea_group = quantity_ideas
-		}
-		#PRIORITY
-		modifier = {
-			factor = 4.5
-			xorme_can_select_second_idea_group_trigger = yes
-		}
-		modifier = {
-			factor = 5.0
-			xorme_can_select_third_idea_group_trigger = yes
-		}
+	ai_will_do = {
+		factor = 10
 	}
 }
 
@@ -244,43 +121,7 @@ expansion_ideas = {
 	
 
 	ai_will_do = {
-		factor = 0.48
-		modifier = {
-			factor = 15
-			OR = {
-				has_idea_group = exploration_ideas
-				is_colonial_nation = yes
-			}
-		}
-		modifier = {
-			factor = 10
-			NOT = { has_dlc = "Third Rome" } # Has siberian frontier instead
-			tag = RUS
-			num_of_cities = 20
-			any_owned_province = {
-				has_empty_adjacent_province = yes
-			}
-		}
-		modifier = {
-			factor = 0
-			NOT = { has_idea_group = exploration_ideas }
-			NOT = { is_colonial_nation = yes }
-			NOT = {
-				any_owned_province = {
-					has_empty_adjacent_province = yes
-				}
-			}
-		}
-		modifier = {
-			factor = 0.1
-			NOT = {
-				OR = {
-					technology_group = western
-					technology_group = eastern
-					technology_group = muslim
-				}
-			}
-		}
+		factor = 0.1
 	}
 }
 # https://forum.paradoxplaza.com/forum/threads/idea-groups-change-part-1-administrative-ideas.1301846/
@@ -317,59 +158,7 @@ administrative_ideas = {
 	}
 
 	ai_will_do = {
-		factor = 0.85
-		#LIMIT
-		modifier = {
-			factor = 0.5
-			ROOT = { government_rank = 1 }
-		}
-		modifier = {
-			factor = 0.75
-			ROOT = { is_great_power = no }
-		}
-		#POTENTIAL
-		modifier = {
-			factor = 1.5
-			ROOT = { government_rank = 2 }
-		}
-		modifier = {
-			factor = 2.5
-			ROOT = { technology_group = ottoman }
-		}
-		modifier = {
-			factor = 2.5
-			ROOT = { is_great_power = yes }
-		}
-		modifier = {
-			factor = 2.5
-			ROOT = { government_rank = 3 }
-		}
-		modifier = {
-			factor = 2.5
-			governing_capacity_percentage = 0.9
-		}
-		#IDEAS
-		modifier = {
-			factor = 2.5
-			has_idea_group = quantity_ideas
-		}
-		modifier = {
-			factor = 2.5
-			has_idea_group = quality_ideas
-		}
-		#PRIORITY
-		modifier = {
-			factor = 4.5
-			xorme_can_select_second_idea_group_trigger = yes
-		}
-		modifier = {
-			factor = 5.0
-			xorme_can_select_third_idea_group_trigger = yes
-		}
-		modifier = {
-			factor = 10.0
-			xorme_can_select_fifth_idea_group_trigger = yes
-		}
+		factor = 5
 	}
 }
 # HUMANIST IDEAS
@@ -406,95 +195,7 @@ humanist_ideas = {
 	}
 
 	ai_will_do = {
-		factor = 0.85
-		#LIMIT
-		modifier = {
-			factor = 0
-			OR = {
-				has_idea_group = religious_ideas   
-				has_idea_group = katholisch0
-				has_idea_group = protestant0
-				has_idea_group = reformiert0
-				has_idea_group = orthodox0
-				has_idea_group = islam0
-				has_idea_group = cathar0
-				has_idea_group = shinto0
-				has_idea_group = norse0
-				has_idea_group = budda0
-				has_idea_group = confuci0 
-				has_idea_group = hindu0
-				has_idea_group = tengri0
-				has_idea_group = coptic0
-				has_idea_group = helle0
-				has_idea_group = slav0
-				has_idea_group = jew0
-				has_idea_group = suomi0
-				has_idea_group = romuva0
-				has_idea_group = animist0
-				has_idea_group = feti0
-				has_idea_group = zoro0
-				has_idea_group = mane0
-				has_idea_group = ancli0
-				has_idea_group = mesoam0
-				has_idea_group = inti0
-				has_idea_group = tote0
-				has_idea_group = nahu0
-				has_idea_group = shia0
-				has_idea_group = ibadi0
-				has_idea_group = hussite0
-			}
-		}
-		modifier = {
-			factor = 0.5
-			NOT = { has_border_with_religious_enemy = yes }
-		}
-		modifier = {
-			factor = 0.5
-			religious_unity = 0.7
-		}
-		#PERSONALITY
-		modifier = {
-			factor = 1.5
-			ruler_has_personality = tolerant_personality
-		}
-		#POTENTIAL
-		modifier = {
-			factor = 2.0
-			OR = {
-				technology_group = indian
-				technology_group = chinese
-			}
-		}
-		modifier = {
-			factor = 2.0
-			religion = buddhism
-		}
-		modifier = {
-			factor = 2.5
-			religion = confucianism
-		}
-		modifier = {
-			factor = 2.5
-			NOT = { religious_unity = 0.7 }
-		}
-		modifier = {
-			factor = 2.5
-			has_border_with_religious_enemy = yes
-		}
-		#IDEAS
-		modifier = {
-			factor = 3.0
-			has_idea_group = quantity_ideas
-		}
-		#PRIORITY
-		modifier = {
-			factor = 2.5
-			xorme_can_select_second_idea_group_trigger = yes
-		}
-		modifier = {
-			factor = 5.0
-			xorme_can_select_sixth_idea_group_trigger = yes
-		}
+		factor = 5
 	}
 }
 

@@ -376,12 +376,3 @@ xorme_has_strong_military_potential_trigger = {
 		}
 	}
 }
-
-
-xorme_exploration_idea_group_priority_trigger = {
-	OR = {
-		tag = POR
-		tag = GAL
-		tag = SOS
-	}
-}
