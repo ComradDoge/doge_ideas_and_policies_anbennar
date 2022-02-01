@@ -57,7 +57,7 @@ spy_ideas = {
 
 
 	ai_will_do = {
-		factor = 1
+		factor = 0.75
 	}
 }
 
@@ -139,7 +139,19 @@ influence_ideas = {
 	}
 
 	ai_will_do = {
-		factor = 10
+		factor = 0.5
+		modifier = {
+			factor = 1.5
+			is_emperor = yes
+		}
+		modifier = {
+			factor = 1.7
+			vassal = 1
+		}
+		modifier = {
+			factor = 1.7
+			vassal = 2
+		}
 	}
 }
 
@@ -176,7 +188,16 @@ trade_ideas = {
 	}
 
 	ai_will_do = {
-		factor = 10
+		factor = 2
+		modifier = {
+			factor = 0
+			NOT = { num_of_cities = 6 }
+			NOT = { has_government_attribute = is_merchant_republic }
+		}
+		modifier = {
+			factor = 3
+			has_government_attribute = is_merchant_republic
+		}
 	}
 }
 
@@ -214,7 +235,229 @@ exploration_ideas = {
 	}
 
 	ai_will_do = {
-		factor = 0
+		factor = 0.75
+		modifier = {
+			factor = 0
+			is_colonial_nation = yes
+		}
+		modifier = {
+			factor = 0
+			is_tribal = yes
+			NOT = { tag = Z18 }
+		}
+		modifier = {
+			factor = 0
+			is_subject = yes
+			NOT = {
+				tag = A09
+			}
+		}		
+		modifier = {
+			factor = 0
+			primitives = yes
+			NOT = { tag = Z18 }
+		}
+		modifier = {
+			factor = 0
+			current_age = age_of_revolutions #too late
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				any_owned_province = {
+					has_port = yes
+					# sea_zone = {
+					# 	NOT = { area = eastern_mediterrenean_area }
+					# }
+				}
+			}
+			NOT = { 
+				any_owned_province = { 
+					is_in_capital_area = yes
+					has_empty_adjacent_province = yes
+				} 
+			}
+		}
+		#Anbennar - Totally redid this factor
+		modifier = {
+			factor = 0.5
+			NOT = {
+				any_owned_province = {
+					has_port = yes
+				}
+			}
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { num_of_ports = 3 }
+			NOT = { 
+				any_owned_province = { 
+					is_in_capital_area = yes
+					has_empty_adjacent_province = yes
+				}
+			}
+		}
+		modifier = {
+			factor = 0.01
+			NOT = { has_institution = renaissance }
+			NOT = { tag = A01 }
+			NOT = { tag = A02 }
+			NOT = { tag = A09 }
+			NOT = { tag = A21 }
+		}
+		modifier = {
+			factor = 0.1
+			capital_scope = {
+				NOT = {
+					OR = {
+						region = lencenor_region
+						region = dragon_coast_region
+						region = dalr_region
+						region = west_dameshead_region
+						region = east_dameshead_region
+						region = businor_region
+						region = akan_region
+						area = vrorenmarch_area
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			culture_group = kobold
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { is_year = 1490 }
+			capital_scope = {
+				NOT = {
+					OR = {
+						region = lencenor_region
+						region = dragon_coast_region
+						region = akan_region
+						area = vrorenmarch_area
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 2.0
+			num_of_ports = 5
+		}
+		modifier = {
+			factor = 2.0
+			num_of_ports = 10
+		}
+		modifier = {
+			factor = 2.0
+			num_of_ports = 15
+		}
+		modifier = {
+			factor = 2.0
+			num_of_ports = 20
+		}
+#		modifier = {	#sun elves wanting to reclaim homeland
+#			factor = 1000
+#			primary_culture = sun_elf
+#			num_of_ports = 5
+#		}
+		modifier = {	#this makes spawned adventurers etc take exploration
+			factor = 100
+			AND = {
+				capital_scope = {
+					OR = {
+						continent = north_america
+						continent = south_america
+					}
+				}
+				NOT = {
+					OR = {
+						#Only cultures such as kheionai are not here
+						culture_group = eltibhari_ruinborn_elf
+						culture_group = devandi_ruinborn_elf
+						culture_group = north_ruinborn_elf
+						culture_group = eordan_ruinborn_elf
+						culture_group = south_ruinborn_elf
+						culture_group = harafe_ruinborn_elf
+						culture_group = effelai_ruinborn_elf
+						culture_group = degenerated_elf
+						culture_group = amadian_ruinborn_elf
+						culture_group = taychendi_ruinborn_elf
+						culture_group = ynnic_ruinborn_elf
+						culture_group = veykodan_ruinborn_elf
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			culture_group = kheionai_ruinborn_elf
+		}
+		modifier = {
+			factor = 1000
+			OR = {
+				tag = A01 #Lorent
+				tag = A02 #Deranne
+				tag = A21 #Venail
+				tag = A33 #Verne
+				tag = A11 #Pearlsedge
+				tag = A47 #Eborthil
+				tag = A29 #Busilar
+				tag = Z18 #Frozenmaw
+				tag = Z50 #Grombar
+			}
+		}
+		modifier = {
+			factor = 50
+			OR = {
+				tag = A05 #Reveria
+				tag = U08 #Ekha
+				#tag = A33 #Verne
+				tag = A79 #Gnomish Hierarchy
+				tag = A09 #Sorncost
+			}
+		}
+		modifier = {
+			factor = 20
+			OR = {
+				tag = Z08 #Bjarnrik
+				#tag = A11 #Pearlsedge
+				#tag = A47 #Eborthil
+				#tag = A29 #Busilar
+				#tag = A05 #Reveria
+				#tag = U08 #Ekha
+				tag = A19 #Portnamm
+				tag = A80 #Iochand
+				#tag = Z08 #Bjarnrik
+				#tag = A33 #Verne
+				tag = Z10 #Revrhavn
+				#tag = A79 #Gnomish Hierarchy
+			}
+		}
+		modifier = {
+			factor = 3
+			OR = {
+				tag = A06 #Nimscodd
+				tag = U07 #Viakkoc
+				tag = A31 #Moonhaven
+				tag = A85 #Magisterium
+				tag = A38 #Anbenncost
+				tag = A16 #Wineport
+				tag = A05 #Reveria
+				tag = A04 #Wesdam
+				tag = A13 #Gawed
+				tag = H66 #Jaherian
+				tag = H67 #Rezankand
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				tag = A55 #Dameria
+				tag = A25 #Damescrown
+				tag = A23 #Vertesk
+			}
+		}
 	}
 }
 
@@ -254,7 +497,38 @@ maritime_ideas = {
 	}
 
 	ai_will_do = {
-		factor = 0
+		factor = 0.41
+		modifier = {
+			factor = 0
+			is_tribal = yes
+		}
+		modifier = {
+			factor = 0
+			primitives = yes
+		}
+		modifier = {
+			factor = 0
+			NOT = { num_of_ports = 1 }
+			NOT = { is_colonial_nation = yes }
+		}
+		modifier = {
+			factor = 0.41
+			NOT = { num_of_ports = 10 }
+		}
+		modifier = {
+			factor = 0.41
+			num_of_cities = 50
+		}
+
+		modifier = {
+			factor = 10
+			OR = {
+				has_reform = pirate_republic_reform
+				has_reform = pirate_kingdom
+				has_reform = war_against_the_world_government
+				has_reform = black_market_consortium_government
+			}
+		}
 	}
 }
 
@@ -312,7 +586,38 @@ gross0 = {
 	}
 	
 	ai_will_do = {
-		factor = 0.1
+		factor = 0.31
+		modifier = {
+			factor = 0
+			is_tribal = yes
+		}
+		modifier = {
+			factor = 0
+			primitives = yes
+		}
+		modifier = {
+			factor = 0
+			NOT = { num_of_ports = 1 }
+			NOT = { is_colonial_nation = yes }
+		}
+		modifier = {
+			factor = 0.31
+			NOT = { num_of_ports = 10 }
+		}
+		modifier = {
+			factor = 0.31
+			num_of_cities = 50
+		}
+
+		modifier = {
+			factor = 10
+			OR = {
+				has_reform = pirate_republic_reform
+				has_reform = pirate_kingdom
+				has_reform = war_against_the_world_government
+				has_reform = black_market_consortium_government
+			}
+		}
 	}
 }
 
@@ -368,7 +673,28 @@ galle0 = {
 	}
 	
 	ai_will_do = {
-		factor = 0.1
+		factor = 0.31
+		modifier = {
+			factor = 0
+			is_tribal = yes
+		}
+		modifier = {
+			factor = 0
+			primitives = yes
+		}
+		modifier = {
+			factor = 0
+			NOT = { num_of_ports = 1 }
+			NOT = { is_colonial_nation = yes }
+		}
+		modifier = {
+			factor = 0.31
+			NOT = { num_of_ports = 10 }
+		}
+		modifier = {
+			factor = 0.31
+			num_of_cities = 50
+		}
 	}
 }
 
@@ -426,7 +752,28 @@ handel0 = {
 	}
 	
 	ai_will_do = {
-		factor = 0.1
+		factor = 0.31
+		modifier = {
+			factor = 0
+			is_tribal = yes
+		}
+		modifier = {
+			factor = 0
+			primitives = yes
+		}
+		modifier = {
+			factor = 0
+			NOT = { num_of_ports = 1 }
+			NOT = { is_colonial_nation = yes }
+		}
+		modifier = {
+			factor = 0.31
+			NOT = { num_of_ports = 10 }
+		}
+		modifier = {
+			factor = 0.31
+			num_of_cities = 50
+		}
 	}
 }
 

@@ -37,7 +37,19 @@ innovativeness_ideas = {
 	}
 
 	ai_will_do = {
-		factor = 5
+		factor = 0.3
+		modifier = {
+			factor = 2
+			has_reform = steppe_horde
+		}
+		modifier = {
+			factor = 2
+			num_of_cities = 20
+		}
+		modifier = {
+			factor = 2
+			num_of_cities = 50
+		}
 	}
 }
 
@@ -74,7 +86,27 @@ economic_ideas = {
  	}
 
 	ai_will_do = {
-		factor = 10
+		factor = 5
+		modifier = {
+			factor = 1.5
+			inflation = 5
+		}
+		modifier = {
+			factor = 1.5
+			inflation = 10
+		}
+		modifier = {
+			factor = 2
+			has_reform = steppe_horde
+		}
+		modifier = {
+			factor = 1.3
+			num_of_cities = 20
+		}
+		modifier = {
+			factor = 1.3
+			num_of_cities = 50
+		}
 	}
 }
 
@@ -121,7 +153,121 @@ expansion_ideas = {
 	
 
 	ai_will_do = {
-		factor = 0.1
+		factor = 0.48
+		modifier = {
+			factor = 10
+			OR = {
+				has_idea_group = exploration_ideas
+				is_colonial_nation = yes
+			}
+		}
+		modifier = {
+			factor = 10	#Boys who wanna settle the Dreadmire and in the future, the Serpentspine
+			OR = {
+				any_owned_province = {
+					OR = {
+						region = ourdia_region
+						region = dostanor_region
+						region = the_borders_region
+					}
+					has_empty_adjacent_province = yes
+				}
+			}
+		}
+		modifier = {
+			factor = 0	#Serpentspine starts alread get colonists
+			capital_scope = {
+				continent = serpentspine
+			}
+			OR = {
+				has_reform = adventurer_reform
+				has_reform = dwarovar_warband
+				has_reform = dwarovar_squatter
+			}
+		}
+		modifier = {
+			factor = 10	#Serpentspine starts alread get colonists
+			capital_scope = {
+				continent = serpentspine
+			}
+			NOT = { is_year = 1500 }
+			OR = {
+				has_reform = dwarven_clan_reform
+			}
+		}
+		modifier = {
+			factor = 0	#Escanni bois dont take this
+			OR = {
+				has_reform = adventurer_reform
+				has_reform = greentide_horde
+			}
+		}
+		modifier = {
+			factor = 5
+			OR = {
+				tag = A11 #Pearlsedge
+				tag = A02 #Deranne
+				tag = A21 #Venail
+				tag = A47 #Eborthil
+				tag = A05 #Reveria
+				tag = U08 #Ekha
+				tag = A19 #Portnamm
+				tag = A06 #Nimscodd
+				tag = H66 #Jaherian
+				tag = H67 #Rezankand
+				tag = A79 #Gnomish Hierarchy
+			}
+		}
+		
+		modifier = {
+			factor = 5
+			
+			has_country_modifier = lake_federation_member
+		}
+		modifier = {
+			factor = 100
+			OR = {
+				tag = Z18
+				tag = Z50
+			}
+			adm_tech = 7
+			any_owned_province = {
+				has_empty_adjacent_province = yes
+			}
+		}
+		modifier = {
+			factor = 100
+			NOT = { has_dlc = "Third Rome" } # Has siberian frontier instead
+			OR = {
+				technology_group = tech_orcish
+				technology_group = tech_goblin
+			}
+			any_owned_province = {
+				has_empty_adjacent_province = yes
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = { has_idea_group = exploration_ideas }
+			NOT = { is_colonial_nation = yes }
+			NOT = {
+				any_owned_province = {
+					has_empty_adjacent_province = yes
+				}
+			}
+		}
+		modifier = {
+			factor = 0.1
+			NOT = {
+				technology_group = tech_cannorian
+				technology_group = tech_gerudian
+				technology_group = tech_gnomish
+				technology_group = tech_salahadesi
+				technology_group = tech_elven
+				technology_group = tech_bulwari
+				technology_group = tech_islanders
+			}
+		}
 	}
 }
 # https://forum.paradoxplaza.com/forum/threads/idea-groups-change-part-1-administrative-ideas.1301846/
@@ -195,7 +341,15 @@ humanist_ideas = {
 	}
 
 	ai_will_do = {
-		factor = 5
+		factor = 0.9
+		modifier = {
+			factor = 0
+			has_idea_group = religious_ideas
+		}
+		modifier = {
+			factor = 3
+			religion_group = faithless
+		}
 	}
 }
 
@@ -467,9 +621,18 @@ aristo0 = {
 	}
 
 	trigger = {
+		government = theocracy
 
-		has_government_attribute = enables_theokratie_idea_group
-
+		NOT = {
+			OR = {
+				has_adventurer_reform = yes
+				has_reform = secular_order_reform
+				has_reform = magocracy_reform
+				has_reform = magisterium_reform
+				has_reform = black_demesne_reform
+				has_reform = black_acolyte_reform
+			}
+		}
 	}
 
 	aristo1 = {
