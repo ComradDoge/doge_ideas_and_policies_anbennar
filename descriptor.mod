@@ -1,4 +1,4 @@
-name="Doge Anbennar - Ideas and Policies"
+name="Doge - Anbennar Ideas and Policies"
 tags={
 	"Balance"
 	"Idea Groups"
