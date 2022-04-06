@@ -1,0 +1,6 @@
+
+dst_province_devastation_initial = {
+    every_province = {
+        add_province_triggered_modifier = province_devastation_idea_bonus
+    }
+}

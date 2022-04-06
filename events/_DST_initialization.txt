@@ -1,0 +1,22 @@
+namespace = dse_initialization
+country_event = { # The info event at the start of the game
+    id = dse_initialization.1
+    title = dse_initialization.1.t
+    desc = dse_initialization.1.d
+    picture = DOGE_VENICE_eventPicture
+    fire_only_once = yes
+    hidden = yes
+
+    trigger = {
+        ai = no
+        always = yes
+    }
+
+    immediate = {
+        dst_province_devastation_initial = yes
+    }
+
+    option = {
+        name = "dse_initialization.1.o1"
+    }
+}
