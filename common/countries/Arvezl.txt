@@ -7,7 +7,7 @@ color = { 220 118 48 }
 
 
 historical_idea_groups = {
-	diplomatic_ideas
+	
 	influence_ideas
 	
 	defensive_ideas
