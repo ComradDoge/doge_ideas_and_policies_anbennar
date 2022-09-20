@@ -513,7 +513,7 @@ monarchie0 = {
 		
 	trigger = {
 	
-		has_government_attribute = enables_monarchie_idea_group
+		has_government_attribute = enables_aristocratic_idea_group
 	
 	}
 	
@@ -568,7 +568,7 @@ republik0 = {
 	}
 		
 	trigger = {
-		has_government_attribute = enables_republik_idea_group
+		has_government_attribute = enables_plutocratic_idea_group
 	}			
 	
 	republik1 = {
