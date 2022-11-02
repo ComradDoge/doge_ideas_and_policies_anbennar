@@ -533,7 +533,7 @@ monarchie0 = {
 	}
 	
 	monarchie4 = {
-		cavalry_power = 0.075
+		cavalry_power = 0.05
 		cavalry_cost = -0.075
 	}
 	
@@ -584,7 +584,7 @@ republik0 = {
 	}
 	
 	republik4 = {
-		promote_culture_cost = -1.0
+		promote_culture_cost = -0.75
 	}
 	
 	republik5 = {
@@ -598,7 +598,7 @@ republik0 = {
 	
 	republik7 = {
 		reform_progress_growth = 0.2
-		republican_tradition = 0.3		
+		republican_tradition = 0.5	
 
 	}
 
@@ -650,11 +650,11 @@ aristo0 = {
 	}
 
 	aristo4 = {
- 		manpower_in_true_faith_provinces = 0.10
+ 		manpower_in_true_faith_provinces = 0.15
 	}
 
 	aristo5 = {
-		artillery_cost = -0.1
+		artillery_power = 0.075
 	}
 	aristo6 = {
 		warscore_cost_vs_other_religion = -0.15
