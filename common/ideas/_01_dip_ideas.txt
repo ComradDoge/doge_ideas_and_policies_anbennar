@@ -34,7 +34,7 @@ spy_ideas = {
 	
 	additional_loyalist_recruitment = {
 		reduced_liberty_desire = 20
-		global_manpower_modifier = 0.1
+		global_manpower_modifier = 0.075
 	}
 
 	
@@ -822,7 +822,7 @@ kolonialimperium0 = {
 	}
 	
 	kolonialimperium3 = {
-		global_manpower_modifier = 0.1
+		global_manpower_modifier = 0.075
 		global_sailors_modifier = 0.1
 		# <<WIKI>> global_manpower_modifier = 0.05/Colonial Nation
 		# <<WIKI>> global_sailors_modifier = 0.05/Colonial Nation
@@ -878,7 +878,7 @@ assimilation0 = {
 	}
 
 	assimilation7 = {
-		global_manpower_modifier = 0.1
+		global_manpower_modifier = 0.075
 	}
 	
 	assimilation3 = {
@@ -948,7 +948,7 @@ propaganda0 = {
 	category = DIP
 
 	bonus = {
-		global_manpower_modifier = 0.1
+		global_manpower_modifier = 0.075
 	}
 		
 	
