@@ -818,12 +818,10 @@ zentra0 = {
 	category = ADM
 
 	trigger = {
-		
 		NOT = {
 			has_idea_group = dezentra0
-			}	
-			
 		}
+	}
 	
 	bonus = {
 		min_autonomy_in_territories = -0.15
@@ -875,8 +873,6 @@ dezentra0 = {
 	trigger = {
 		NOT = {
 			has_idea_group = zentra0
-		}	
-			}	
 		}	
 	}
 	
