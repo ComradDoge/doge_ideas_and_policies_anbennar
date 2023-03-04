@@ -2848,6 +2848,7 @@ country_event = {
 		has_idea = zentra7
 		all_owned_province = {
 			development = 25
+			is_city = yes
 			NOT = { has_province_modifier = zentra_dev }
 		}
 	}
@@ -2861,6 +2862,7 @@ country_event = {
 
 		every_owned_province = {
 			limit = {
+				is_city = yes
 				development = 25
 			}
 			add_province_modifier = {
@@ -2883,6 +2885,7 @@ country_event = {
 		has_idea = zentra7
 		all_owned_province = {
 			NOT = { development = 25 }
+			is_city = yes
 			has_province_modifier = zentra_dev
 		}
 	}
@@ -2896,6 +2899,7 @@ country_event = {
 		
 		every_owned_province = {
 			limit = {
+				is_city = yes
 				NOT = { development = 25 }
 				
 			}
@@ -2916,6 +2920,7 @@ country_event = {
 		has_idea = zentra7
 		any_owned_province = {
 			NOT = { development = 25 }
+			is_city = yes
 			#has_province_modifier = zentra_dev
 		}
 	}
