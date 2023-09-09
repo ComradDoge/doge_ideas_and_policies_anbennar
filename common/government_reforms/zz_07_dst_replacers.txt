@@ -1,0 +1,74 @@
+mercenary_leadership_reform = {
+	icon = "war_economy"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			NOT = { has_dlc = "Domination" }
+			NOT = { full_idea_group = soldnerheer0 }
+			NOT = { primary_culture = swiss }
+		}
+	}
+	trigger = {
+		if = {
+			limit = { has_modifier_locking_military_tier = yes }
+			OR = {
+				has_reform = mercenary_leadership_reform
+				has_not_modifier_locking_military_tier = yes
+			}
+		}
+	}
+	modifiers = {
+		mercenary_cost = -0.25
+		possible_condottieri = 0.5
+	}
+	
+	ai = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				has_global_modifier_value = {
+					which = mercenary_discipline
+					value = 0.05
+				}
+			}
+		}
+	}
+}
+
+doppelsoldner_reform = {
+	icon = "mercenaries"
+	allow_normal_conversion = yes
+	potential = {
+		has_dlc = "Domination"
+		NOT = { primary_culture = swiss }
+	}
+	trigger = {
+		full_idea_group = soldnerheer0
+		if = {
+			limit = { has_modifier_locking_military_tier = yes }
+			OR = {
+				has_reform = doppelsoldner_reform
+				has_not_modifier_locking_military_tier = yes
+			}
+		}
+	}
+	modifiers = {
+		mercenary_cost = -0.25
+		possible_condottieri = 0.5
+		merc_leader_army_tradition = 0.25
+	}
+	conditional = {
+		allow = { has_dlc = "Domination" }
+		government_abilities = {
+			hessian_militarization_mechanic
+		}
+	}
+	custom_attributes = {
+		mercs_do_not_cost_army_professionalism = yes
+	}
+	
+	ai = {
+		factor = 1
+	}
+}
