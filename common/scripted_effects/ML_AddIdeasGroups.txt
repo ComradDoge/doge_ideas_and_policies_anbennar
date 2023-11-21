@@ -70,13 +70,13 @@ GetAllIdeas = {
 	}
 	GetIdeas = {
 		variable_name = numOfFreeIdeas
-		id1=aristo0
+		id1=theocracy0
 		id2=diktatur0
 		id3=horde0
 		id4=staatsverwaltung0
 		id5=zentra0
 		id6=dezentra0
-		id7=state_affairs_idea_groups_expanded
+		id7=stateaffairs0
 	}
 	#religious
 	GetIdeas = {
@@ -156,7 +156,7 @@ GetAllIdeas = {
 		id5=generalstab0
 		id6=stehendesheer0
 		id7=wehrpflicht0
-		id8=soldnerheer0
+		id8=mercenary0
 		id9=waffenqualitat0
 		id0=festung0
 	}

@@ -1,0 +1,37 @@
+dse_fortress_local_mechanic_province_mod = {
+	local_monthly_devastation = -0.1
+	local_state_maintenance_modifier = -0.15
+}
+
+ai_policy_reset_modifier = {
+    free_policy = -4
+}
+
+ai_policy_reset_cooldown = {}
+
+dse_centralization_mechanic_country_mod = {
+    development_cost_modifier = -0.1
+}
+
+dse_centralization_mechanic_province_mod = {
+	local_development_cost = -0.2
+}
+
+dynastic_involvement = {	
+	ae_impact = 0.1
+}
+
+dynastic_change = {	
+	diplomatic_upkeep = 1
+	diplomatic_reputation = 1
+}
+
+recently_hired_advisor_mechanic = {
+	global_tax_modifier = 0.01
+}
+
+konigreich_done = {	
+	legitimacy = 1
+	republican_tradition = 0.3	
+}
+

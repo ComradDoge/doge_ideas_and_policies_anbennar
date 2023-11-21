@@ -44,11 +44,12 @@ monarchy_system_dip_4 = {
 }
 monarchy_system_dip_5 = {
     improve_relation_modifier = 0.25
+    province_warscore_cost = -0.075
     ae_impact = -0.15
-
 }
 monarchy_system_dip_6 = {
     improve_relation_modifier = 0.5
+    province_warscore_cost = -0.15
     ae_impact = -0.25
 }
 
@@ -68,14 +69,14 @@ monarchy_system_mil_3 = {
     # Nothing
 }
 monarchy_system_mil_4 = {
- 	army_tradition = 0.15
+ 	army_tradition = 0.25
 }
 monarchy_system_mil_5 = {
     land_morale = 0.075
- 	army_tradition = 0.25
+ 	army_tradition = 0.5
 }
 monarchy_system_mil_6 = {
     land_morale = 0.15
- 	army_tradition = 0.5
+ 	army_tradition = 1
     yearly_army_professionalism = 0.005
 }

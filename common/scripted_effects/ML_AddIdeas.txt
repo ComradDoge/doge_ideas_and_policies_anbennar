@@ -328,35 +328,35 @@ Addrepublik0 = {
 		}
 	}
 }
-Addaristo0 = {
+Addtheocracy0 = {
 	if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
-		add_idea_group = aristo0
+		add_idea_group = theocracy0
 		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
-			add_idea = aristo1
+			add_idea = theocracy1
 			subtract_variable = { which = numOfFreeIdeas value = 1 }
 		}
 		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
-			add_idea = aristo2
+			add_idea = theocracy2
 			subtract_variable = { which = numOfFreeIdeas value = 1 }
 		}
 		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
-			add_idea = aristo3
+			add_idea = theocracy3
 			subtract_variable = { which = numOfFreeIdeas value = 1 }
 		}
 		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
-			add_idea = aristo4
+			add_idea = theocracy4
 			subtract_variable = { which = numOfFreeIdeas value = 1 }
 		}
 		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
-			add_idea = aristo5
+			add_idea = theocracy5
 			subtract_variable = { which = numOfFreeIdeas value = 1 }
 		}
 		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
-			add_idea = aristo6
+			add_idea = theocracy6
 			subtract_variable = { which = numOfFreeIdeas value = 1 }
 		}
 		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
-			add_idea = aristo7
+			add_idea = theocracy7
 			subtract_variable = { which = numOfFreeIdeas value = 1 }
 		}
 	}
@@ -526,9 +526,9 @@ Adddezentra0 = {
 		}
 	}
 }
-Addstate_affairs_idea_groups_expanded = {
+Addstateaffairs0 = {
 	if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
-		add_idea_group = state_affairs_idea_groups_expanded
+		add_idea_group = stateaffairs0
 		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
 			add_idea = meritocratic_offices
 			subtract_variable = { which = numOfFreeIdeas value = 1 }
@@ -2374,35 +2374,35 @@ Addwehrpflicht0 = {
 		}
 	}
 }
-Addsoldnerheer0 = {
+Addmercenary0 = {
 	if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
-		add_idea_group = soldnerheer0
+		add_idea_group = mercenary0
 		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
-			add_idea = soldnerheer1
+			add_idea = mercenary1
 			subtract_variable = { which = numOfFreeIdeas value = 1 }
 		}
 		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
-			add_idea = soldnerheer2
+			add_idea = mercenary2
 			subtract_variable = { which = numOfFreeIdeas value = 1 }
 		}
 		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
-			add_idea = soldnerheer3
+			add_idea = mercenary3
 			subtract_variable = { which = numOfFreeIdeas value = 1 }
 		}
 		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
-			add_idea = soldnerheer4
+			add_idea = mercenary4
 			subtract_variable = { which = numOfFreeIdeas value = 1 }
 		}
 		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
-			add_idea = soldnerheer5
+			add_idea = mercenary5
 			subtract_variable = { which = numOfFreeIdeas value = 1 }
 		}
 		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
-			add_idea = soldnerheer6
+			add_idea = mercenary6
 			subtract_variable = { which = numOfFreeIdeas value = 1 }
 		}
 		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
-			add_idea = soldnerheer7
+			add_idea = mercenary7
 			subtract_variable = { which = numOfFreeIdeas value = 1 }
 		}
 	}

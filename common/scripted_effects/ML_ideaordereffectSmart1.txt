@@ -53,14 +53,14 @@ ideaorderSmart1 = {
 	if = { limit = { has_idea_group = wehrpflicht0 }							Addwehrpflicht0 = yes }
 	if = { limit = { has_idea_group = gesundheit0 }								Addgesundheit0 = yes }
 	if = { limit = { has_idea_group = galle0 }									Addgalle0 = yes }
-	if = { limit = { has_idea_group = soldnerheer0 }							Addsoldnerheer0 = yes }
+	if = { limit = { has_idea_group = mercenary0 }								Addmercenary0 = yes }
 	if = { limit = { has_idea_group = monarchie0 }								Addmonarchie0 = yes }
 	if = { limit = { has_idea_group = handel0 }									Addhandel0 = yes }
 	if = { limit = { has_idea_group = waffenqualitat0 }							Addwaffenqualitat0 = yes }
 	if = { limit = { has_idea_group = republik0 }								Addrepublik0 = yes }
 	if = { limit = { has_idea_group = kolonialimperium0 }						Addkolonialimperium0 = yes }
 	if = { limit = { has_idea_group = festung0 }								Addfestung0 = yes }
-	if = { limit = { has_idea_group = aristo0 }									Addaristo0 = yes }
+	if = { limit = { has_idea_group = theocracy0 }								Addtheocracy0 = yes }
 	if = { limit = { has_idea_group = assimilation0 }							Addassimilation0 = yes }
 	if = { limit = { has_idea_group = kriegsproduktion0 }						Addkriegsproduktion0 = yes }
 	if = { limit = { has_idea_group = diktatur0 }								Adddiktatur0 = yes }
@@ -77,6 +77,6 @@ ideaorderSmart1 = {
 	if = { limit = { has_idea_group = fire0 }									Addfire0 = yes }
 	if = { limit = { has_idea_group = dezentra0 }								Adddezentra0 = yes }
 	if = { limit = { has_idea_group = konigreich0 }								Addkonigreich0 = yes }
-	if = { limit = { has_idea_group = state_affairs_idea_groups_expanded }		Addstate_affairs_idea_groups_expanded = yes }
+	if = { limit = { has_idea_group = stateaffairs0 }							Addstateaffairs0 = yes }
 	if = { limit = { has_idea_group = imperialismus0 }							Addimperialismus0 = yes }
 }

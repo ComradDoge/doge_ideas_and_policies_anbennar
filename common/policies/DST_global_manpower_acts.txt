@@ -166,13 +166,13 @@ dse_policy_manpower_5 = {
 
 	potential = {
 		has_idea_group = stehendesheer0
-		has_idea_group = state_affairs_idea_groups_expanded
+		has_idea_group = stateaffairs0
 		
 	}
 	
 	allow = {
 		full_idea_group = stehendesheer0
-		full_idea_group = state_affairs_idea_groups_expanded
+		full_idea_group = stateaffairs0
 		
 		NOT = {
 			calc_true_if = {
@@ -446,6 +446,10 @@ dse_policy_manpower_11 = {
 			has_idea_group = ibadi0
 			has_idea_group = hussite0
 			has_idea_group = alche0
+			has_idea_group = waldensian_ideas_0
+			has_idea_group = lollard_ideas_0
+        has_idea_group = nestorian_ideas_0
+        has_idea_group = druze_ideas_0
 		}
 		
 	}
@@ -485,7 +489,11 @@ dse_policy_manpower_11 = {
 			full_idea_group = ibadi0
 			full_idea_group = hussite0
 			full_idea_group = alche0
-		}
+			full_idea_group = waldensian_ideas_0
+			full_idea_group = lollard_ideas_0
+            full_idea_group = nestorian_ideas_0
+            full_idea_group = druze_ideas_0
+        }
 		NOT = {
 			calc_true_if = {
 				amount = 2
@@ -520,13 +528,13 @@ dse_policy_manpower_12 = {
 
 	potential = {
 		has_idea_group = shock0
-		has_idea_group = state_affairs_idea_groups_expanded
+		has_idea_group = stateaffairs0
 		
 	}
 	
 	allow = {
 		full_idea_group = shock0
-		full_idea_group = state_affairs_idea_groups_expanded
+		full_idea_group = stateaffairs0
 		NOT = {
 			calc_true_if = {
 				amount = 2

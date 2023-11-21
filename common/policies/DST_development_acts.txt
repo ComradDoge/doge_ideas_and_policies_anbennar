@@ -528,12 +528,12 @@ dse_policy_dev_cost_13 = {
 	monarch_power = ADM
 
 	potential = {
-		has_idea_group = state_affairs_idea_groups_expanded
+		has_idea_group = stateaffairs0
 		has_idea_group = dynasty0
 		
 	}
 	allow = {
-		full_idea_group = state_affairs_idea_groups_expanded
+		full_idea_group = stateaffairs0
 		full_idea_group = dynasty0
 
 		NOT = {
@@ -571,12 +571,12 @@ dse_policy_dev_cost_14 = {
 	monarch_power = DIP
 
 	potential = {
-		has_idea_group = state_affairs_idea_groups_expanded
+		has_idea_group = stateaffairs0
 		has_idea_group = kolonialimperium0
 		
 	}
 	allow = {
-		full_idea_group = state_affairs_idea_groups_expanded
+		full_idea_group = stateaffairs0
 		full_idea_group = kolonialimperium0
 
 		NOT = {

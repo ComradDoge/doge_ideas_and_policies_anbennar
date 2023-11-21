@@ -8,12 +8,12 @@ color = { 80  100  150 }
 
 
 historical_idea_groups = {
-	
+	gross0
 	exploration_ideas
 	offensive_ideas
 	expansion_ideas
 	quality_ideas
-	
+	maritime_ideas
 	economic_ideas
 	trade_ideas
 }
@@ -163,7 +163,7 @@ ship_names = {
 	Einhyrning Verkalydsfelag Eining Vaskr Framhlid Adri Gudrakinn Oldungur Sigursal Vindvisandi Dyggd Fjola
 	Drengr Vandltur
 
-	Konnun Eftirlit Kýr Uxa Fugl Herra Hertogi Jarl
+	Konnun Eftirlit Kýr Uxa Fugl Herra Jarl
 
 	Riddari Krossfari Drekaslagari Presta Fantur Kappi Rresmadur Galdramadur Toframadur Norn Munkur Druid
 	Styrkur Handlagni Stjornarskra Vitsmuni Viskan Personuleiki

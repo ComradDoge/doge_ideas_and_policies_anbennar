@@ -11,29 +11,6 @@ humanist_bonus = {
 	land_morale = 0.075
 }
 
-dynastic_bonus = { #elective_monarchy_dip_buff
-	potential = {
-		has_idea_group = dynasty0
-	}
-	trigger = {
-		has_idea = foreign_embassies_2
-		has_reform = elective_monarchy
-	}
-	monarch_diplomatic_power = 1
-}
-
-#dynastic_bonus_2 = { #elective_monarchy_adm_buff
-#	potential = {
-#		has_idea_group = monarchie0
-#	}
-#	trigger = {
-#		has_idea = monarchie1 
-#		has_reform = elective_monarchy
-#	}
-#	monarch_admin_power = 1
-#	prestige = 1
-#}
-
 kolo3_1_bonus = {
 	potential = {
 		has_idea_group = kolonialimperium0

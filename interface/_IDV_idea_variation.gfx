@@ -329,8 +329,8 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_idea_soldnerheer0"
-		texturefile = "gfx//interface//ideas//idea_soldnerheer.tga"
+		name = "GFX_idea_mercenary0"
+		texturefile = "gfx//interface//ideas//idea_mercenary0.tga"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate_linear.lua"
@@ -630,8 +630,8 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate_linear.lua"
 	}
 	spriteType = {
-		name = "GFX_idea_aristo0"
-		texturefile = "gfx//interface//ideas//idea_aristo.tga"
+		name = "GFX_idea_theocracy0"
+		texturefile = "gfx//interface//ideas//idea_theocracy0.tga"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate_linear.lua"
@@ -797,8 +797,8 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_idea_state_affairs_idea_groups_expanded"
-		texturefile = "gfx//interface//ideas//idea_state_affairs_idea_groups_expanded.dds"
+		name = "GFX_idea_stateaffairs0"
+		texturefile = "gfx//interface//ideas//idea_stateaffairs0.dds"
 		effectFile = "gfx/FX/buttonstate_linear.lua"
 	}
 

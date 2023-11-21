@@ -1,0 +1,77 @@
+country_decisions = { # Forcing AI to re-evaluate slected policies
+    dse_ai_policy_reset = {
+        potential = {
+            NOT = { has_country_modifier = ai_policy_reset_cooldown }
+            OR = {
+                AND = {
+                    adm_tech = 18
+                    NOT = { adm_tech = 19 }
+                }
+                AND = {
+                    adm_tech = 24
+                    NOT = { adm_tech = 25 }
+                }
+                AND = {
+                    adm_tech = 26
+                    NOT = { adm_tech = 27 }
+                }
+                AND = {
+                    adm_tech = 29
+                    NOT = { adm_tech = 30 }
+                }
+            }
+        }
+
+        allow = {
+			is_at_war = no
+        }
+
+        effect = {
+			add_country_modifier = {
+				name = ai_policy_reset_modifier
+				duration = 31
+			}
+            add_country_modifier = {
+                name = ai_policy_reset_cooldown
+                duration = 5475
+            }
+        }
+        ai_will_do = {
+            factor = 100
+        }
+    }
+	dse_ai_capital_fort = {
+		potential = {
+			ai = yes
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		allow = {
+			is_at_war = no
+			has_institution = feudalism
+			NOT = { num_of_loans = 1 }
+			treasury = 300
+			capital_scope = {
+					NOT = {
+						OR = {
+						    has_building = fort_15th
+						    has_building = fort_16th
+						    has_building = fort_17th
+						    has_building = fort_18th
+						    construction_progress = 0
+						}
+					}
+				}
+			}
+		effect = {
+			capital_scope = {
+				add_building_construction = {
+					building = fort_15th
+					speed = 0.75
+					cost = 0.5
+				}
+			}
+		}
+	}
+}

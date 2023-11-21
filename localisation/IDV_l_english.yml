@@ -194,7 +194,7 @@
  idea_var_advisor_28_desc:0 "The Mercenary Lieutnant knows his ways around mercenaries and is capable to motivate them to their full potential."
  idea_var_advisor_29:0 "Drill Seargant"
  idea_var_advisor_29_desc:0 "The Drill Seargant surely knows how men are drilled. He spent almost his whole life on the parade ground and knows everything there is to know about drilling."
- soldnerheer0_bonus:0"Full Mercenary Army"
+ mercenary0_bonus:0"Full Mercenary Army"
  katholisch0_bonus:0"Full Catholism"
  protestant0_bonus:0"Full Protestantism"
  reformiert0_bonus:0"Full Reformed"

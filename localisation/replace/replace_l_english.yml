@@ -106,7 +106,6 @@
  organised_mercenary_recruitment: "Territory Administration"
  organised_mercenary_recruitment_desc: "While we focus on the central territories we must not forget the lands that move this state forward. By having influence over construction we shall  be able to influence both the populace the aristocrats. What better way to entice than provide cheaper construction?  \nConstruction Cost in Subject Nations §G-25%§W"
   
- # DOGE
  organised_mercenary_payment: "Communication Lines"
  organised_construction_desc: "The need to upgrade the infrastructure of our government is a time consuming business, if we structure the process correctly we can do this faster."
  organised_mercenary_payment_desc: "Having an effective communication support unit gives us a profound advantage. If only we could communicate instantly through some wire, but this shall  do."
@@ -114,31 +113,6 @@
  benefits_for_mercenaries_desc: "War is part of life, therefore to ensure the support of our people the best we can do is ensure effective help for them after disasters, raiders and  wars."
  organised_mercenary_recruitment: "Territory Administration"
  organised_mercenary_recruitment_desc: "While we focus on the central territories we must not forget the lands that move this state forward. By having influence over construction we shall  be able to influence both the populace the aristocrats. What better way to entice than provide cheaper construction?  \nConstruction Cost in Subject Nations §G-25%§W"
- # DOGE  
- # Most of these are actually vanilla but are here for easy access and because it is very unlikely that paradox will be touching this area any time soon (tm)
- age_of_discovery_short:0 "Discovery"
- age_of_reformation_short:0 "Reformation"
- age_of_absolutism_short:0 "Absolutism"
- age_of_revolutions_short:0 "Revolutions"
- age_of_discovery:0 "Age of Discovery"
- age_of_discovery_desc:1 "At the dawn of the Early Modern era new continents are being mapped while feudal society is slowly giving way to centralized states.\nFor an enterprising state this age can see the foundation of a worldwide empire."
- age_of_reformation:0 "Age of Reformation"
- age_of_reformation_desc:1 "From East to West this is the age of religious conviction, debates and mass movements. The time of religious change has come.\n§Y[Disable War Taxes!]§!"
- age_of_absolutism:0 "Age of Absolutism"
- age_of_absolutism_desc:1 "As governments wrest the absolute power in their countries from other parties, they are now able to devote themselves to the building of Empires. This is the age of the state, of rulers, and their armies."
- age_of_revolutions:0 "Age of Revolutions"
- age_of_revolutions_desc:1 "The questioning of rights, authority and the world itself during the Enlightenment has led to the rejection of the Ancient Regime. As Absolutism gives way to Revolution kingdoms may have to make place for Republics."
- 
- LEDGER_SCORE_AG:0 "Score through Ages"
- RELIGIOUS_CONFLICT_RULES_ON:0 "§YReligious Conflicts§!\n- Crusades can be called by the Papal Controller.\n- Catholic rulers can be excommunicated.\n- Reformation Centers can appear.\n- Religion impact diplomacy."
- RELIGIOUS_CONFLICT_RULES_OFF:0 "This age has no special religious conflict. Reformation Centers are gone, there is no crusades being called, the Pope cannot excommunicate."
- ABSOLUTISM_RULES_ON:0 "§YAbsolutism§!\nGovernments can become more absolute in this era, giving greater control of the state."
- ABSOLUTISM_RULES_OFF:0 "In later ages, absolutism will be a factor which impacts on much control the ruler has over the state."
- splendor:0 "Splendor"
- 
- last_age_power_projection:0 "Last Age Objectives"
- current_age_power_projection:0 "Age Objectives Fulfilled"
-
 
  # rights_of_man_l_english
  CULT_HELP_DESC:0 ""

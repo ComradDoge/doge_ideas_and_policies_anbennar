@@ -5,6 +5,7 @@ ahead_of_time = {
 	production_efficiency = 0.2
 	yearly_corruption = -0.05
 	yearly_harmony = 0.1
+	# monthly_russian_modernization = 0.05
 }
 
 # Pre-era techs
@@ -26,9 +27,10 @@ technology = { #Tribal Government
 	native_great_trail = yes
 	native_ceremonial_fire_pit = yes
 
+	#effect = { } # When a country researches the technology
+
 	warcamp = yes
 	guild_hall = yes
-	native_fortified_house = yes
 	quest_board = yes
 	foragers_camp = yes
 	pioneer_office = yes
@@ -172,7 +174,6 @@ technology = { #Modern Theocracy
 		new_world_i = 0.3
 	}
 	
-
 	theocratic_government = yes
 }
 
@@ -294,7 +295,6 @@ technology = { #National Sovereignty
 		printing_press = 0.5
 		global_trade = 0.3
 	}
-
 }
 
 technology = { #Cathedral
@@ -428,7 +428,6 @@ technology = { #Separation of Powers
 		manufactories = 0.5
 		enlightenment = 0.5
 	}
-	
 }
 
 technology = { #Modern Bureaucracy
@@ -445,7 +444,7 @@ technology = { #Modern Bureaucracy
 	}
 
 	administrative_efficiency = 0.1
-	development_cost_modifier = -0.1
+	development_cost_modifier = -0.1	
 	governing_capacity = 250
     allowed_idea_groups = 13
 }

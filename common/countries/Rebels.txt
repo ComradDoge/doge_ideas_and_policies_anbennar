@@ -14,7 +14,7 @@ historical_idea_groups = {
 	trade_ideas
 	quality_ideas
 	economic_ideas	
-	
+	maritime_ideas
 }
 	
 monarch_names = {
