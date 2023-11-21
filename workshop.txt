@@ -14,7 +14,7 @@
 [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2738561219] Doge Anbennar - Ideas and Policies [/url]
 
 [h1] Policy Spreadsheet [/h1]
-The policy list is in a [url=https://dogeshattered.fandom.com/wiki/Policies] spreadsheet [/url] on the wiki.
+The policy list is in a [url=https://eu4.paradoxwikis.com/Doge_Shattered_Europa/Policies] spreadsheet [/url] on the wiki.
 [/quote]
 
 
@@ -22,21 +22,16 @@ The policy list is in a [url=https://dogeshattered.fandom.com/wiki/Policies] spr
 
 
 
-[code]                                  [img] https://i.imgur.com/p7Fv1Z6.gif [/img] [/code]
-[quote] 
-- This is a standalone version of Ideas and Policies from my Shattered mod. The base of ideas is "Idea Variation by flogi" but has had massive changes and barely resembles it.
-
+[quote] [h1] Info [/h1] 
+- This is a standalone version of Ideas and Policies from my Shattered mod.
 - The mod contains around 40 idea groups. In addition, a completely reworked policy system from the ground up that can be checked in a spreadsheet.
-
-- Anyone is free to use this mod as they see fit, just add the credits.
 [/quote]
-[quote]
-[h1] Main Mod [/h1]
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2152606065] Doge Shattered Europa [/url]
+[quote] [h1] Main Mod [/h1] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2152606065] Doge Shattered Europa [/url]
 
-[h1] For Vanilla EU4 [/h1]
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2709741601] Doge - Ideas and Policies [/url]
-
-[h1] Policy Spreadsheet [/h1]
-The policy list is in a [url=https://dogeshattered.fandom.com/wiki/Policies] spreadsheet [/url] on the wiki.
+[h1] Other Sub-Mods for Anbennar [/h1] 
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2753053159] 1.36 Doge's Anbennar - Estate System [/url] 
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2803852011] 1.36 Doge's Anbennar - Goods & Buildings [/url] 
+[/quote]
+[quote] [h1] Policy Spreadsheet [/h1] 
+The policy list is in a [url=https://eu4.paradoxwikis.com/Doge_Shattered_Europa/Policies] spreadsheet [/url] on the wiki.
 [/quote]
