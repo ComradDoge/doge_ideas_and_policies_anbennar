@@ -51,57 +51,6 @@ spy_ideas = {
 	}
 }
 
-# Disabled
-# DYNASTIC IDEAS
-dynasty0 = {
-	category = DIP
-
-	trigger = {
-		#government = monarchy
-		OR = { 
-			always = no
-			has_idea_group = dynasty0
-		}
-	}
-
-	bonus = {
-		reduced_stab_impacts = yes
-		heir_chance = 0.5
-	}
-
-	
-	foreign_embassies_2 = {
-		diplomats = 1
-		# <<WIKI>> decision = dynastie_promoten
-		# <<WIKI>> elective_monarchy_dip_buff = yes
-	}
-	establish_cadet_branches = {
-		legitimacy = 1
-		prestige = 1
-	}
-	cabinet = {
-		diplomatic_upkeep = 2
-	}
-	
-	diplomatic_corps_2 = {
-		dip_tech_cost_modifier = -0.1
-		# <<WIKI>> add_cb = cb_dynastie
-	}
-	
-	benign_diplomats = {
-		improve_relation_modifier = 0.2
-	}
-	experienced_diplomats  = {
-		diplomatic_reputation = 2
-	}
-	dynastie4 = {
-		shock_damage = 0.05
-	}
-
-	ai_will_do = {
-		factor = 0
-	}
-}
 # INFLUENCE IDEAS
 influence_ideas = {
 	category = DIP

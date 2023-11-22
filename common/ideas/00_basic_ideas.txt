@@ -10,7 +10,7 @@
 
 # Moved to corresponding areas for easier search
 
-# Fake ideas so game does not crash
+# Fake ideas so game does not crash when Anbennar calls for X idea or if you hover over a requirement that needs it.
 
 naval_ideas = {
 	category = MIL
@@ -162,7 +162,7 @@ mercenary_ideas = {
 		possible_condottieri = 1 
 	}
 
-	organised_mercenary_payment = {
+	fake_organised_mercenary_payment = {
 		mercenary_cost = -0.25
 	}
 	war_council = {
@@ -175,14 +175,14 @@ mercenary_ideas = {
 	nation_of_war = {
 		mil_tech_cost_modifier = -0.1
 	}
-	benefits_for_mercenaries = {
+	fake_benefits_for_mercenaries = {
 		war_taxes_cost_modifier = -0.5
 		merc_leader_army_tradition = 0.5
 	}
 	seasoned_veterans = {
 		infantry_power = 0.1
 	}
-	organised_mercenary_recruitment = { 
+	fake_organised_mercenary_recruitment = { 
 		mercenary_manpower = 0.3
 		allow_mercenary_drill = yes
 	}
@@ -207,7 +207,7 @@ infrastructure_ideas = {
 		global_prosperity_growth = 0.25
 		state_maintenance_modifier = -0.33
 	}
-	organised_construction = {
+	fake_organised_construction = {
 		build_cost = -0.1 
 	}
 	efficient_construction_plans = {
@@ -217,7 +217,7 @@ infrastructure_ideas = {
 		movement_speed = 0.1
 		center_of_trade_upgrade_cost = -0.2
 	}
-	administrative_efficiency_idea = {
+	fake_administrative_efficiency_idea = {
 		state_governing_cost = -0.1
 	}
 	fort_logistics = {
@@ -532,7 +532,7 @@ diplomatic_ideas = {
 	experienced_diplomats  = {
 		diplomatic_reputation = 2
 	}
-	flexible_negotiation = {
+	fake_flexible_negotiation = {
 		province_warscore_cost = -0.2
 	}
 	diplomatic_corps = {
