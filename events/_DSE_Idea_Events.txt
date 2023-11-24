@@ -1,4 +1,5 @@
 namespace = dse_idea_events
+namespace = dse_anbennar_meta
 
 country_event = {
 	id = dse_idea_events.1
@@ -166,4 +167,128 @@ country_event = {
 	option = {
 		name = "dse_idea_events.3.o6" # Let's not do it right now.
 	}	
+}
+
+country_event = {
+	id = dse_anbennar_meta.1
+	title = "dse_anbennar_meta.1.t"
+	desc = "dse_anbennar_meta.1.d"
+	picture = WESTERNISATION_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "dse_anbennar_meta.1.nothing"
+	}
+
+	option = {
+		name = "dse_anbennar_meta.1.o1"
+		every_province = {
+			limit = {
+				base_tax = 300
+			}
+			set_base_tax = 20
+		}
+	}
+	option = {
+		name = "dse_anbennar_meta.1.o2"
+		every_province = {
+			limit = {
+				base_tax = 200
+			}
+			set_base_tax = 20
+		}
+	}
+	option = {
+		name = "dse_anbennar_meta.1.o3"
+		every_province = {
+			limit = {
+				base_tax = 100
+			}
+			set_base_tax = 20
+		}
+	}
+	option = {
+		name = "dse_anbennar_meta.1.o4"
+		every_province = {
+			limit = {
+				base_tax = 50
+			}
+			set_base_tax = 10
+		}
+	}
+
+	option = {
+		name = "dse_anbennar_meta.1.o5"
+		every_province = {
+			limit = {
+				base_production = 300
+			}
+			set_base_production = 20
+		}
+	}
+	option = {
+		name = "dse_anbennar_meta.1.o6"
+		every_province = {
+			limit = {
+				base_production = 200
+			}
+			set_base_production = 20
+		}
+	}
+	option = {
+		name = "dse_anbennar_meta.1.o7"
+		every_province = {
+			limit = {
+				base_production = 100
+			}
+			set_base_production = 20
+		}
+	}
+	option = {
+		name = "dse_anbennar_meta.1.o8"
+		every_province = {
+			limit = {
+				base_production = 50
+			}
+			set_base_production = 10
+		}
+	}
+
+	option = {
+		name = "dse_anbennar_meta.1.o9"
+		every_province = {
+			limit = {
+				base_manpower = 300
+			}
+			set_base_manpower = 20
+		}
+	}
+	option = {
+		name = "dse_anbennar_meta.1.o10"
+		every_province = {
+			limit = {
+				base_manpower = 200
+			}
+			set_base_manpower = 20
+		}
+	}
+	option = {
+		name = "dse_anbennar_meta.1.o11"
+		every_province = {
+			limit = {
+				base_manpower = 100
+			}
+			set_base_manpower = 20
+		}
+	}
+	option = {
+		name = "dse_anbennar_meta.1.o12"
+		every_province = {
+			limit = {
+				base_manpower = 50
+			}
+			set_base_manpower = 10
+		}
+	}
 }

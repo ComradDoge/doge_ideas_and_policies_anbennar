@@ -80,3 +80,21 @@
  has_any_full_naval_idea_groups_tt: "Has §Ocompleted§! any naval idea group."
  has_any_full_naval_normal_idea_groups_tt: "Has §Ocompleted§! §YMaritime§! or §YFleet Base§! Idea group."
  has_any_full_naval_ship_idea_groups_tt: "Has §Ocompleted§! any ship doctrine idea group."
+
+
+ # Anbennar Meta
+ dse_anbennar_meta.1.t: "Dev Remover"
+ dse_anbennar_meta.1.d: "This will globally target provinces with certain amount of development and set it to 20."
+ dse_anbennar_meta.1.nothing: "Nothing"
+ dse_anbennar_meta.1.o1: "Tax 300"
+ dse_anbennar_meta.1.o2: "Tax 200"
+ dse_anbennar_meta.1.o3: "Tax 100"
+ dse_anbennar_meta.1.o4: "Tax 50"
+ dse_anbennar_meta.1.o5: "Production 300"
+ dse_anbennar_meta.1.o6: "Production 200"
+ dse_anbennar_meta.1.o7: "Production 100"
+ dse_anbennar_meta.1.o8: "Production 50"
+ dse_anbennar_meta.1.o9: "Manpower 300"
+ dse_anbennar_meta.1.o10: "Manpower 200"
+ dse_anbennar_meta.1.o11: "Manpower 100"
+ dse_anbennar_meta.1.o12: "Manpower 50"
