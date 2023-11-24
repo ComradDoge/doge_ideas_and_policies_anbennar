@@ -5,5 +5,5 @@ province_eligible_for_prosperity_trigger = {
 	}
 	is_state = yes
 	is_state_core = owner
-	#NOT = { development = 20 }
+	NOT = { development = 20 }
 }
