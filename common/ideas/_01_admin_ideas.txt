@@ -413,7 +413,7 @@ justiz0 = {
 	category = ADM
 
 	bonus = {
-		ae_impact = -0.15
+		ae_impact = -0.1
 	}
 		
 	
@@ -641,18 +641,7 @@ theocracy0 = {
 	}
 
 	trigger = {
-		government = theocracy
-
-		NOT = {
-			OR = {
-				has_adventurer_reform = yes
-				has_reform = secular_order_reform
-				has_reform = magocracy_reform
-				has_reform = magisterium_reform
-				has_reform = black_demesne_reform
-				has_reform = black_acolyte_reform
-			}
-		}
+		has_government_attribute = enables_divine_idea_group
 	}
 
 	theocracy1 = {
@@ -773,7 +762,7 @@ horde0 = {
 }
 
 ########################################################
-####### Trade Administration / Staatsverwaltung 
+####### Trade Management / Staatsverwaltung 
 ########################################################
 
 
@@ -783,10 +772,10 @@ staatsverwaltung0 = {
 	bonus = {
 		advisor_cost = -0.1
 	}
-
+		
 	staatsverwaltung1 = {
 		embargo_efficiency = 0.15
-		center_of_trade_upgrade_cost = -0.1
+		center_of_trade_upgrade_cost = -0.5
 	}
 	staatsverwaltung2 = {
 		trade_efficiency = 0.1
@@ -797,10 +786,10 @@ staatsverwaltung0 = {
 	}
 	staatsverwaltung4 = {
 		trade_steering = 0.15
-		mercantilism_cost = -0.1
+		mercantilism_cost = -0.25
 	}
 	staatsverwaltung5 = {
-		transfer_trade_power_reasons = 5
+		transfer_trade_power_reasons = 10
 		merchants = 1
 	}
 	staatsverwaltung6 = {

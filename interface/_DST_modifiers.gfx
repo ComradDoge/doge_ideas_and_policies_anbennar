@@ -3,5 +3,8 @@ spriteTypes = {
 		name = "GFX_devastation_province_icon"
 		texturefile = "gfx//interface//ideas_EU4//devastation_province_icon.dds"
 	}	
-
+	spriteType = {
+		name = "GFX_monarchy_system_icon"
+		texturefile = "gfx//interface//ideas_EU4//monarchy_system_icon.dds"
+	}
 }

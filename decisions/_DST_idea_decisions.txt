@@ -9,7 +9,6 @@ country_decisions = {
         major = yes
         potential = {
             government = dictatorship
-            #has_idea = diktatur7
             NOT = { 
                 has_country_flag = has_reformed_government_through_diktatur
             }
@@ -17,7 +16,6 @@ country_decisions = {
 
         allow = {
             government = dictatorship
-            #has_idea = diktatur7
         }
 
         effect = {
@@ -37,11 +35,17 @@ country_decisions = {
 	
 	dst_hire_advisor = {
 		potential = {
-			has_idea_group = humanist_ideas
+            OR = { 
+			    has_idea_group = humanist_ideas
+                has_idea_group = imperialismus0
+            }
 		}
 
 		allow = {
-			has_idea = tolerance_idea_2
+            OR = { 
+			    has_idea = tolerance_idea_2
+                has_idea = imperialismus5
+            }
 			NOT = { 
                 has_country_modifier = recently_hired_advisor_mechanic
 			}
@@ -55,11 +59,5 @@ country_decisions = {
 			factor = 0
 		}
 	}
-
-
-
-
-
-
 
 }

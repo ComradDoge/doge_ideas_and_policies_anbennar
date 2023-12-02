@@ -44,83 +44,34 @@ cb_coast = {
 }
 
 
-
-#cb_seekrieg = {
-#	valid_for_subject = no
-#	
-#	prerequisites = {
-#		
-#		ai = no
-#		is_revolution_target = no
-#		is_subject = no
-#		primitives = no
-#		
-#		num_of_ports = 6
-#
-#	FROM = {
-#
-#		is_subject = no
-#		is_revolution_target = no
-#		primitives = no
-#		num_of_ports = 6
-#		
-#		}
-#			
-#	
-#	}
-#	
-#	war_goal = seekrieg
-#}
-
-
-# Dynastastic Unification
-cb_dynastie = {
+# Vassal Dominance
+dst_cb_minorpower = {
 
 	valid_for_subject = no
 
 	prerequisites = {
-		has_idea = diplomatic_corps_2
-		#full_idea_group = dynasty0
+		has_idea = konigreich7
 		is_revolution_target = no
-		
 		FROM = {
-		
-		#marriage_with = ROOT
-		dynasty = ROOT
-		
-		#OR = {
-		#ruler_age = 50
-		#NOT = {	heir_claim = 75 }
-		#has_consort_regency = yes
-		#has_regency = yes		
-		#}
-		
+			is_neighbor_of = ROOT
+			NOT = { total_development = 101 }
 		}
-		
 	}
 
-	war_goal = dynastie
+	war_goal = take_capital_vassalize
 }
 
-
-# Vassal Dominance, now for the empire idea
-cb_konigreich = {
+dst_cb_greatpower = {
 
 	valid_for_subject = no
 
 	prerequisites = {
-	
-		has_idea = imperialismus2
+		has_idea = imperialismus7
 		is_revolution_target = no
-		
 		FROM = {
-		
-		is_neighbor_of = ROOT
-		NOT = { total_development = 101 }
-		
-		
+			is_neighbor_of = ROOT
+			NOT = { total_development = 251 }
 		}
-		
 	}
 
 	war_goal = take_capital_vassalize
