@@ -616,13 +616,7 @@ surakes_slot_3 = {
 					num_accepted_cultures = 3
 					religious_unity = 1
 				}
-				AND = {
-					OR = {
-						has_active_policy = cultural_unity
-						has_active_policy = cultural_recognition_act
-					}
-					religious_unity = 1
-				}
+				religious_unity = 1
 			}
 		}
 		
