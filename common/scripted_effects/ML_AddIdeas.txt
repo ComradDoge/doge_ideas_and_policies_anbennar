@@ -72,7 +72,7 @@ Addexpansion_ideas = {
 			subtract_variable = { which = numOfFreeIdeas value = 1 }
 		}
 		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
-			add_idea = expan2
+			add_idea = additional_merchants
 			subtract_variable = { which = numOfFreeIdeas value = 1 }
 		}
 		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
@@ -80,19 +80,19 @@ Addexpansion_ideas = {
 			subtract_variable = { which = numOfFreeIdeas value = 1 }
 		}
 		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
-			add_idea = organised_recruiting
+			add_idea = vice_roys
 			subtract_variable = { which = numOfFreeIdeas value = 1 }
 		}
 		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
-			add_idea = expan5
+			add_idea = additional_diplomats
 			subtract_variable = { which = numOfFreeIdeas value = 1 }
 		}
 		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
-			add_idea = expan6
+			add_idea = general_colonization_law
 			subtract_variable = { which = numOfFreeIdeas value = 1 }
 		}
 		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
-			add_idea = expan7
+			add_idea = competetive_merchants
 			subtract_variable = { which = numOfFreeIdeas value = 1 }
 		}
 	}
