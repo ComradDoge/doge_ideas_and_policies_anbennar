@@ -1685,11 +1685,11 @@ Addexploration_ideas = {
 	if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
 		add_idea_group = exploration_ideas
 		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
-			add_idea = colonial_ventures
+			add_idea = quest_for_the_new_world
 			subtract_variable = { which = numOfFreeIdeas value = 1 }
 		}
 		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
-			add_idea = quest_for_the_new_world
+			add_idea = colonial_ventures
 			subtract_variable = { which = numOfFreeIdeas value = 1 }
 		}
 		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
@@ -1701,7 +1701,7 @@ Addexploration_ideas = {
 			subtract_variable = { which = numOfFreeIdeas value = 1 }
 		}
 		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
-			add_idea = vice_roys
+			add_idea = factories
 			subtract_variable = { which = numOfFreeIdeas value = 1 }
 		}
 		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }

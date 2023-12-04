@@ -29,9 +29,3 @@ dynastic_change = {
 recently_hired_advisor_mechanic = {
 	global_tax_modifier = 0.01
 }
-
-konigreich_done = {	
-	legitimacy = 1
-	republican_tradition = 0.3	
-}
-

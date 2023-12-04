@@ -61,13 +61,6 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
-		name = "GFX_idea_aristo0_2"
-		texturefile = "gfx//interface//ideas//idea_aristo0_2.tga"
-		noOfFrames = 1
-		
-		effectFile = "gfx/FX/buttonstate_linear.lua"
-	}
-	spriteType = {
 		name = "GFX_idea_plutocracy_ideas_2"
 		texturefile = "gfx//interface//ideas//idea_plutocracy_ideas_2.tga"
 		noOfFrames = 1
