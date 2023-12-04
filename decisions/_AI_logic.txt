@@ -1,6 +1,12 @@
 country_decisions = { # Forcing AI to re-evaluate slected policies
     dse_ai_policy_reset = {
         potential = {
+			AND = { 
+				ai = yes
+				NOT = { primitives = yes }
+				NOT = { government = native }
+				total_development = 60
+			}
             NOT = { has_country_modifier = ai_policy_reset_cooldown }
             OR = {
                 AND = {
