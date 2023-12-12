@@ -11,3 +11,4 @@ dependencies={
 	"Anbennar: A Fantasy Total Conversion Mod"
 	"Anbennar-PublicFork"
 }
+remote_file_id="2738561219"
