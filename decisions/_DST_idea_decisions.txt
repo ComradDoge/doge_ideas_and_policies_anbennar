@@ -52,7 +52,10 @@ country_decisions = {
 
 		}
 		effect = {
-		    country_event = { id = flogi_ideas.12 days = 0 }
+		    country_event = { id = dse_idea_mechanics_hire_advisor.1}
+			hidden_effect = {
+				set_country_flag = dst_hire_advisor_event_present_flag
+			}
 		}
 		
 		ai_will_do = {

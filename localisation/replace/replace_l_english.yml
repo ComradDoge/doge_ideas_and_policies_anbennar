@@ -124,3 +124,10 @@
  REFORM_PROGRESS_DEV:5 "\n $POINTS|G$ from an average local autonomy of §Y$LOCALAUTONOMY$%§!\n\nThe formula for calculating this is:\n $BASE|+=0$ per year divided by (12 * (100+§Y$LOCALAUTONOMY$%§!)).\n"
  REFORM_PROGRESS_BUILDINGS:1 "\n $POINTS|G$ from Buildings"
  REFORM_PROGRESS_MODIFIER_DESC:3 "\nYou gain $POINTS|Y$ every month due to:$FROM_AUTONOMY$$FROM_BUILDINGS$$FROM_MONTHLY$\n"
+
+ # cradle
+ supply_depot_modifier: "20% Professionalism"
+ refill_garrison_modifier: "40% Professionalism"
+ return_manpower_modifier: "60% Professionalism"
+ general_cost_modifier: "80% Professionalism"
+ reserves_organisation_modifier: "100% Professionalism"

@@ -987,7 +987,8 @@ nationalismus0 = {
 		enemy_core_creation = 0.15
 	}
 	nationalismus2 = {
-		# Nationalist Etate
+		land_attrition = -0.1
+	 	max_hostile_attrition = 1
 	}
 	nationalismus6 = {
 		global_unrest = -2
