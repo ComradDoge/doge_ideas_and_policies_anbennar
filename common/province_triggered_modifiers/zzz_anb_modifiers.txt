@@ -1,0 +1,28 @@
+venerator_blessed = {
+	potential = {
+		owner = {
+			has_reform = mithradhum_ancestor_venerator_reform
+			religion = ancestor_worship
+		}
+	}
+	trigger = {
+		owner = {
+			has_reform = mithradhum_ancestor_venerator_reform
+			religion = ancestor_worship
+		}
+		owner = {
+			full_idea_group = theocracy0
+			full_idea_group = religious_ideas
+		}
+	}
+	picture = "free_mil_policy"
+	free_mil_policy = 1
+	possible_mil_policy = 1
+	local_development_cost = -0.05
+
+	on_activation = {
+	}
+
+	on_deactivation = {
+	}
+}
