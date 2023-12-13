@@ -411,6 +411,53 @@ exploration_ideas = {
 	}
 }
 
+
+########################################################
+####### Colonial Empire
+########################################################
+
+
+kolonialimperium0 = {
+	category = DIP
+
+	bonus = {
+		diplomatic_upkeep = 2
+	}
+
+	kolonialimperium2 = {
+		colonists = 1
+	}
+	kolonialimperium1 = {
+		trade_company_governing_cost = -0.15
+	}
+	kolonialimperium4 = {
+		global_tariffs = 0.25
+		# <<WIKI>> global_tariffs = 0.05/Colonial Nation
+		# <<WIKI>> Inflation reduction = -0.025/Colonial Nation
+	}
+	kolonialimperium3 = {
+		global_manpower_modifier = 0.1
+		global_sailors_modifier = 0.1
+		# <<WIKI>> global_manpower_modifier = 0.05/Colonial Nation
+		# <<WIKI>> global_sailors_modifier = 0.05/Colonial Nation
+	}
+	kolonialimperium6 = {
+		naval_forcelimit_modifier = 0.2
+		# <<WIKI>> naval_forcelimit_modifier = 0.05/Colonial Nation
+	}
+	kolonialimperium5 = {
+		build_cost = -0.05
+		# MECHANIC build_cost_in_colo_nation = -0.3
+	}
+	kolonialimperium7 = {
+		liberty_desire_from_subject_development = -0.33
+	}
+	
+	ai_will_do = {
+		factor = 0
+	}
+}
+
 # MARITIME IDEAS
 maritime_ideas = {
 	category = DIP
@@ -490,6 +537,61 @@ maritime_ideas = {
 ######### VANILLA IDEAS END #########
 #####################################
 #####################################
+
+
+
+########################################################
+####### Fleet Base
+########################################################
+
+
+flottenbasis0 = {
+	category = DIP
+
+	bonus = {
+		recover_navy_morale_speed = 0.2
+	}
+		
+	
+	flottenbasis2 = {
+		sailor_maintenance_modifer = -0.25
+		
+	}
+	flottenbasis3 = {
+		naval_forcelimit_modifier = 0.25
+	}
+	
+	flottenbasis1 = {
+		sailors_recovery_speed = 0.1
+		# <<WIKI>> add_cb = cb_coast
+	}
+
+	flottenbasis4 = {
+		global_sailors_modifier = 0.25
+	}
+
+	flottenbasis5 = {
+		naval_morale = 0.1
+		
+	}
+	flottenbasis6 = {
+		heavy_ship_power = 0.05
+		light_ship_power = 0.05
+		transport_power = 0.05
+	}
+	flottenbasis7 = {
+		global_ship_repair = 0.2
+	}
+	
+	ai_will_do = {
+		factor = 1.0
+		modifier = {
+			factor = 0
+			NOT = { num_of_ports = 5 }
+		}
+	}
+}
+
 
 ########################################################
 ####### Grosschiff / Heavy Ship Idea
@@ -728,51 +830,6 @@ handel0 = {
 	}
 }
 
-########################################################
-####### Colonial Empire / Kolonialimperium
-########################################################
-
-
-kolonialimperium0 = {
-	category = DIP
-
-	bonus = {
-		diplomatic_upkeep = 2
-	}
-
-	kolonialimperium2 = {
-		colonists = 1
-	}
-	kolonialimperium1 = {
-		trade_company_governing_cost = -0.15
-	}
-	kolonialimperium4 = {
-		global_tariffs = 0.25
-		# <<WIKI>> global_tariffs = 0.05/Colonial Nation
-		# <<WIKI>> Inflation reduction = -0.025/Colonial Nation
-	}
-	kolonialimperium3 = {
-		global_manpower_modifier = 0.1
-		global_sailors_modifier = 0.1
-		# <<WIKI>> global_manpower_modifier = 0.05/Colonial Nation
-		# <<WIKI>> global_sailors_modifier = 0.05/Colonial Nation
-	}
-	kolonialimperium6 = {
-		naval_forcelimit_modifier = 0.2
-		# <<WIKI>> naval_forcelimit_modifier = 0.05/Colonial Nation
-	}
-	kolonialimperium5 = {
-		build_cost = -0.05
-		# MECHANIC build_cost_in_colo_nation = -0.3
-	}
-	kolonialimperium7 = {
-		liberty_desire_from_subject_development = -0.33
-	}
-	
-	ai_will_do = {
-		factor = 0
-	}
-}
 
 ########################################################
 ####### Assimilation / Culture
@@ -909,57 +966,6 @@ propaganda0 = {
 	}
 }
 
-########################################################
-####### Fleet Base / Flottenbasis
-########################################################
-
-
-flottenbasis0 = {
-	category = DIP
-
-	bonus = {
-		recover_navy_morale_speed = 0.2
-	}
-		
-	
-	flottenbasis2 = {
-		sailor_maintenance_modifer = -0.25
-		
-	}
-	flottenbasis3 = {
-		naval_forcelimit_modifier = 0.25
-	}
-	
-	flottenbasis1 = {
-		sailors_recovery_speed = 0.1
-		# <<WIKI>> add_cb = cb_coast
-	}
-
-	flottenbasis4 = {
-		global_sailors_modifier = 0.25
-	}
-
-	flottenbasis5 = {
-		naval_morale = 0.1
-		
-	}
-	flottenbasis6 = {
-		heavy_ship_power = 0.05
-		light_ship_power = 0.05
-		transport_power = 0.05
-	}
-	flottenbasis7 = {
-		global_ship_repair = 0.2
-	}
-	
-	ai_will_do = {
-		factor = 1.0
-		modifier = {
-			factor = 0
-			NOT = { num_of_ports = 5 }
-		}
-	}
-}
 
 ########################################################
 ####### Nationalism / Nationalismus
