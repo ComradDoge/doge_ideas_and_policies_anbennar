@@ -8,8 +8,7 @@
  any_state_focus_idea: "§lAny State Focus§!"
  any_goverment_rank_idea: "§WState Power Idea§!"
 
- dse_policies_doctrine_cap: "\n §YDiscipline§! or §YLand Morale§! policies have not been selected."
-
+ dse_policies_doctrine_cap: "Have no more than §T2§! §YDiscipline§! and §YLand Morale§! policies active. Both share the same limit cap."
 
  ########################################
  ########################################
