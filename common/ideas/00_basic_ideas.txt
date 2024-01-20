@@ -9,3 +9,138 @@
 
 
 # Moved to corresponding areas for easier search
+
+naval_ideas = {
+	category = MIL
+
+	trigger = {
+		always = no
+	}
+
+	bonus = {
+		global_naval_barrage_cost = -1
+		disengagement_chance = 0.15
+	}
+
+	boarding_parties = {
+		leader_naval_shock = 1
+		landing_penalty = -1 #1.35
+	}
+	improved_rams = {
+		galley_power = 0.25
+	}
+	naval_cadets = {
+		leader_naval_fire = 1
+		sunk_ship_morale_hit_recieved = -0.33
+	}
+	naval_glory = {
+		navy_tradition = 1
+		siege_blockade_progress = 1
+	}
+	press_gangs = {
+		sailors_recovery_speed = 0.25
+		allowed_marine_fraction = 0.25
+	}
+	oak_forests_for_ships = {
+		heavy_ship_power = 0.20
+		ship_durability = 0.1
+	}
+	superior_seamanship = {
+		naval_morale = 0.1
+		global_naval_engagement_modifier = 0.1
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+court_ideas = { #1.35 #FAKE, so that log shut the fucks up
+	category = DIP
+
+	trigger = {
+		always = no
+	}
+
+	bonus = {
+		legitimacy = 0.5 
+		republican_tradition = 0.2
+		devotion = 0.5 
+		horde_unity = 0.5
+		meritocracy = 0.25 
+		imperial_mandate = 0.1
+		imperial_authority = 0.05
+	}
+	
+	long_echo = {
+		power_projection_from_insults = 1
+		diplomatic_reputation = 1
+	}
+	recognize_hierarchy = {
+		all_estate_loyalty_equilibrium = 0.1
+		loyalty_change_on_revoked = 0.05
+	}
+	welcoming_ceremonies = {
+		prestige = 1 
+		monthly_persian_influence = 0.1
+	}
+	tranquil_coordination = {
+		reform_progress_growth = 0.2
+	}
+	respected_authority = {
+		all_estate_possible_privileges = 1
+	}
+	palace_of_splendor = {
+		monthly_splendor = 2 
+		estate_interaction_cooldown_modifier = -0.20
+	}
+	court_embassies = {
+		possible_dip_policy = 1 
+		monarch_diplomatic_power = 1 
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+infrastructure_ideas = { #1.35
+	category = ADM
+	
+	trigger = {
+		always = no
+	}
+
+	bonus = {
+		development_cost = -0.1
+	}
+
+	state_efficiency = {
+		global_prosperity_growth = 0.25
+		state_maintenance_modifier = -0.33
+	}
+	organised_construction_fake = {
+		build_cost = -0.1 
+	}
+	efficient_construction_plans = {
+		expand_infrastructure_cost_modifier = -0.25
+	}
+	expanded_infrastructure_network = {
+		movement_speed = 0.1
+		center_of_trade_upgrade_cost = -0.2
+	}
+	administrative_efficiency_idea_fake = {
+		state_governing_cost = -0.1
+	}
+	fort_logistics = {
+		fort_maintenance_modifier = -0.25
+ 	}
+	regulation_bureau = {
+		expand_administration_cost = -1
+		build_time = -0.25
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+}

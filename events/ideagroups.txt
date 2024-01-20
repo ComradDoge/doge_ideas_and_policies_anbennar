@@ -9342,7 +9342,6 @@ country_event = {
 	
 	trigger = {
 		has_idea_group = entwicklung0 
-		has_idea = expanded_infrastructure_network
 		NOT = { has_country_modifier = inaccurate_road_maps }
 		OR = {
 			NOT = { has_country_flag = had_road_maps_moment }
