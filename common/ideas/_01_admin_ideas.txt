@@ -725,7 +725,10 @@ horde0 = {
 	}
 		
 	trigger = {
-		has_government_attribute = enables_horde_idea_group
+		OR = { 
+			has_government_attribute = enables_horde_idea_group
+			has_reform = pachyderm_masters
+		}
 	}
 	
 	horde1 = {
