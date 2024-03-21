@@ -1,0 +1,1017 @@
+# Army Doctrine
+# has_idea_group_any_army_doctrine_trigger = yes
+# full_idea_group_any_army_doctrine_trigger = yes
+
+# Army Focus
+# has_idea_group_any_army_focus_trigger = yes
+# full_idea_group_any_army_focus_trigger = yes
+
+# Fleet Focus
+# has_idea_group_any_fleet_focus_trigger = yes
+# full_idea_group_any_fleet_focus_trigger = yes
+
+# Government Type
+# has_idea_group_any_government_type_trigger = yes
+# full_idea_group_any_government_type_trigger = yes
+
+# State Focus
+# has_idea_group_any_state_focus_trigger = yes
+# full_idea_group_any_state_focus_trigger = yes
+
+# State Power
+# has_idea_group_any_state_power_trigger = yes
+# full_idea_group_any_state_power_trigger = yes
+
+# Religious
+# has_idea_group_any_religious_trigger = yes
+# full_idea_group_any_religious_trigger = yes
+
+
+
+# Army Doctrine
+has_idea_group_any_army_doctrine_trigger = {
+    OR = {
+        has_idea_group = any_army_doctrine_idea
+        has_idea_group = wehrpflicht0
+        has_idea_group = stehendesheer0
+    }
+}
+full_idea_group_any_army_doctrine_trigger = {
+    OR = {
+        full_idea_group = any_army_doctrine_idea
+        full_idea_group = wehrpflicht0
+        full_idea_group = stehendesheer0
+    }
+}
+
+
+# Army Focus
+has_idea_group_any_army_focus_trigger = {
+    OR = {
+        has_idea_group = any_army_focus_idea
+        has_idea_group = shock0
+        has_idea_group = fire0
+    }
+}
+full_idea_group_any_army_focus_trigger = {
+    OR = {
+        full_idea_group = any_army_focus_idea
+        full_idea_group = shock0
+        full_idea_group = fire0
+    }
+}
+
+
+# Fleet Focus
+has_idea_group_any_fleet_focus_trigger = {
+    OR = {
+        has_idea_group = any_fleet_focus_idea
+        has_idea_group = handel0
+        has_idea_group = galle0
+        has_idea_group = gross0
+    }
+}
+full_idea_group_any_fleet_focus_trigger = {
+    OR = {
+        full_idea_group = any_fleet_focus_idea
+        full_idea_group = handel0
+        full_idea_group = galle0
+        full_idea_group = gross0
+    }
+}
+
+
+# Government Type
+has_idea_group_any_government_type_trigger = {
+    OR = {
+        has_idea_group = any_government_type_idea
+        has_idea_group = indigenous_ideas
+        has_idea_group = monarchie0
+        has_idea_group = republik0
+        has_idea_group = theocracy0
+        has_idea_group = horde0
+    }
+}
+full_idea_group_any_government_type_trigger = {
+    OR = {
+        full_idea_group = any_government_type_idea
+        full_idea_group = indigenous_ideas
+        full_idea_group = monarchie0
+        full_idea_group = republik0
+        full_idea_group = theocracy0
+        full_idea_group = horde0
+    }
+}
+
+
+# State Focus
+has_idea_group_any_state_focus_trigger = {
+    OR = {
+        has_idea_group = any_state_focus_idea
+        has_idea_group = dezentra0
+        has_idea_group = zentra0
+    }
+}
+full_idea_group_any_state_focus_trigger = {
+    OR = {
+        full_idea_group = any_state_focus_idea
+        full_idea_group = dezentra0
+        full_idea_group = zentra0
+    }
+}
+
+
+# State Power
+has_idea_group_any_state_power_trigger = {
+    OR = {
+        has_idea_group = any_state_power_idea
+        has_idea_group = konigreich0
+        has_idea_group = imperialismus0
+    }
+}
+full_idea_group_any_state_power_trigger = {
+    OR = {
+        full_idea_group = any_state_power_idea
+        full_idea_group = konigreich0
+        full_idea_group = imperialismus0
+    }
+}
+
+
+
+
+# Religious
+has_idea_group_any_religious_trigger = {
+    OR = {
+        has_idea_group = religious_ideas
+        has_idea_group = katholisch0
+        has_idea_group = protestant0
+        has_idea_group = reformiert0
+        has_idea_group = orthodox0
+        has_idea_group = islam0
+        has_idea_group = cathar0
+        has_idea_group = shinto0
+        has_idea_group = norse0
+        has_idea_group = budda0
+        has_idea_group = confuci0
+        has_idea_group = hindu0
+        has_idea_group = tengri0
+        has_idea_group = coptic0
+        has_idea_group = helle0
+        has_idea_group = slav0
+        has_idea_group = jew0
+        has_idea_group = suomi0
+        has_idea_group = romuva0
+        has_idea_group = animist0
+        has_idea_group = feti0
+        has_idea_group = zoro0
+        has_idea_group = mane0
+        has_idea_group = ancli0
+        has_idea_group = mesoam0
+        has_idea_group = inti0
+        has_idea_group = tote0
+        has_idea_group = nahu0
+        has_idea_group = shia0
+        has_idea_group = ibadi0
+        has_idea_group = hussite0
+        has_idea_group = alche0
+        has_idea_group = waldensian_ideas_0
+        has_idea_group = lollard_ideas_0
+        has_idea_group = nestorian_ideas_0
+        has_idea_group = druze_ideas_0
+    }
+}
+full_idea_group_any_religious_trigger = {
+    OR = {
+        full_idea_group = religious_ideas
+        full_idea_group = katholisch0
+        full_idea_group = protestant0
+        full_idea_group = reformiert0
+        full_idea_group = orthodox0
+        full_idea_group = islam0
+        full_idea_group = cathar0
+        full_idea_group = shinto0
+        full_idea_group = norse0
+        full_idea_group = budda0
+        full_idea_group = confuci0
+        full_idea_group = hindu0
+        full_idea_group = tengri0
+        full_idea_group = coptic0
+        full_idea_group = helle0
+        full_idea_group = slav0
+        full_idea_group = jew0
+        full_idea_group = suomi0
+        full_idea_group = romuva0
+        full_idea_group = animist0
+        full_idea_group = feti0
+        full_idea_group = zoro0
+        full_idea_group = mane0
+        full_idea_group = ancli0
+        full_idea_group = mesoam0
+        full_idea_group = inti0
+        full_idea_group = tote0
+        full_idea_group = nahu0
+        full_idea_group = shia0
+        full_idea_group = ibadi0
+        full_idea_group = hussite0
+        full_idea_group = alche0
+        full_idea_group = waldensian_ideas_0
+        full_idea_group = lollard_ideas_0
+        full_idea_group = nestorian_ideas_0
+        full_idea_group = druze_ideas_0
+    }
+}
+
+
+
+
+
+###
+### Normal Limiters
+###
+
+# stability
+# aeimpact
+# unitattrition
+# navalbarrage
+# disengagement
+# reformprogress
+# absolutism
+# owncoastnavalbonus
+# innovativeness
+# maxhostileattrition
+# wartaxescost
+# movementspeed
+# buildcosts
+# estateloyaltybalance
+# mercenarymaintenance
+# moraledamage
+# moraledamagereceived
+# fortmaintenance
+# colonyboost
+# artilleryvsfort 1
+# caravanpower 1
+# navalmorale 2
+# heavypower 2
+# lightshippower 2
+# galleypower 2
+# cavalryratio 1
+# supplylimit 1
+# powerprojection 1
+# monarchlifespan 1
+# garrisonunique 1
+# landattrition 1
+# transportattrition 2
+# adminefficiency 1
+# warscorereligion 1
+# goodsproduced 1
+# merchanttradepower 1
+# expelminorities 1
+# religiousunity 1
+# moralehitwhensunk 1
+# flagships 1
+# blockadeimpact 1
+
+has_stability_limiter_trigger = {
+    custom_trigger_tooltip = {
+        tooltip = dse_policies_normal_limiter_2
+        NOT = {
+            calc_true_if = {
+                amount = 2
+                has_active_policy = dst_policy_1
+                has_active_policy = dst_policy_9
+                has_active_policy = dst_policy_130
+                has_active_policy = dst_policy_329
+            }
+        }
+    }
+}
+
+has_aeimpact_limiter_trigger = {
+    custom_trigger_tooltip = {
+        tooltip = dse_policies_normal_limiter_2
+        NOT = {
+            calc_true_if = {
+                amount = 2
+                has_active_policy = dst_policy_2
+                has_active_policy = dst_policy_37
+                has_active_policy = dst_policy_374
+                has_active_policy = dst_policy_496
+            }
+        }
+    }
+}
+
+
+has_unitattrition_limiter_trigger = {
+    custom_trigger_tooltip = {
+        tooltip = dse_policies_normal_limiter_2
+        NOT = {
+            calc_true_if = {
+                amount = 2
+                has_active_policy = dst_policy_4
+                has_active_policy = dst_policy_422
+                has_active_policy = dst_policy_475
+            }
+        }
+    }
+}
+
+has_navalbarrage_limiter_trigger = {
+    custom_trigger_tooltip = {
+        tooltip = dse_policies_normal_limiter_1
+        NOT = {
+            calc_true_if = {
+                amount = 1
+                has_active_policy = dst_policy_5
+                has_active_policy = dst_policy_396
+            }
+        }
+    }
+}
+
+has_disengagement_limiter_trigger = {
+    custom_trigger_tooltip = {
+        tooltip = dse_policies_normal_limiter_2
+        NOT = {
+            calc_true_if = {
+                amount = 2
+                has_active_policy = dst_policy_6
+                has_active_policy = dst_policy_189
+                has_active_policy = dst_policy_356
+            }
+        }
+    }
+}
+
+has_reformprogress_limiter_trigger = {
+    custom_trigger_tooltip = {
+        tooltip = dse_policies_normal_limiter_2
+        NOT = {
+            calc_true_if = {
+                amount = 2
+                has_active_policy = dst_policy_10
+                has_active_policy = dst_policy_64
+                has_active_policy = dst_policy_134
+                has_active_policy = dst_policy_270
+                has_active_policy = dst_policy_308
+                has_active_policy = dst_policy_313
+            }
+        }
+    }
+}
+
+has_absolutism_limiter_trigger = {
+    custom_trigger_tooltip = {
+        tooltip = dse_policies_normal_limiter_2
+        NOT = {
+            calc_true_if = {
+                amount = 2
+                has_active_policy = dst_policy_11
+                has_active_policy = dst_policy_91
+                has_active_policy = dst_policy_156
+                has_active_policy = dst_policy_193
+                has_active_policy = dst_policy_312
+            }
+        }
+    }
+}
+
+has_owncoastnavalbonus_limiter_trigger = {
+    custom_trigger_tooltip = {
+        tooltip = dse_policies_normal_limiter_1
+        NOT = {
+            calc_true_if = {
+                amount = 1
+                has_active_policy = dst_policy_12
+                has_active_policy = dst_policy_384
+            }
+        }
+    }
+}
+
+has_innovativeness_limiter_trigger = {
+    custom_trigger_tooltip = {
+        tooltip = dse_policies_normal_limiter_1
+        NOT = {
+            calc_true_if = {
+                amount = 1
+                has_active_policy = dst_policy_13
+            }
+        }
+    }
+}
+
+has_maxhostileattrition_limiter_trigger = {
+    custom_trigger_tooltip = {
+        tooltip = dse_policies_normal_limiter_1
+        NOT = {
+            calc_true_if = {
+                amount = 1
+                has_active_policy = dst_policy_22
+            }
+        }
+    }    
+}
+
+has_wartaxescost_limiter_trigger = {
+    custom_trigger_tooltip = {
+        tooltip = dse_policies_normal_limiter_1
+        NOT = {
+            calc_true_if = {
+                amount = 1
+                has_active_policy = dst_policy_23
+                has_active_policy = dst_policy_228
+            }
+        }
+    }    
+}
+
+has_movementspeed_limiter_trigger = {
+    custom_trigger_tooltip = {
+        tooltip = dse_policies_normal_limiter_2
+        NOT = {
+            calc_true_if = {
+                amount = 2
+                has_active_policy = dst_policy_24
+                has_active_policy = dst_policy_71
+                has_active_policy = dst_policy_76
+                has_active_policy = dst_policy_180
+                has_active_policy = dst_policy_198
+                has_active_policy = dst_policy_366
+                has_active_policy = dst_policy_437
+                has_active_policy = dst_policy_469
+                has_active_policy = dst_policy_478
+            }
+        }
+    }
+}
+
+has_buildcosts_limiter_trigger = {
+    custom_trigger_tooltip = {
+        tooltip = dse_policies_normal_limiter_2
+        NOT = {
+            calc_true_if = {
+                amount = 2
+                has_active_policy = dst_policy_35
+                has_active_policy = dst_policy_142
+                has_active_policy = dst_policy_167
+                has_active_policy = dst_policy_170
+                has_active_policy = dst_policy_276
+                has_active_policy = dst_policy_283
+            }
+        }
+    }    
+}
+
+has_estateloyaltybalance_limiter_trigger = {
+    custom_trigger_tooltip = {
+        tooltip = dse_policies_normal_limiter_2
+        NOT = {
+            calc_true_if = {
+                amount = 2
+                has_active_policy = dst_policy_38
+                has_active_policy = dst_policy_114
+                has_active_policy = dst_policy_146
+                has_active_policy = dst_policy_264
+                has_active_policy = dst_policy_300
+            }
+        }
+    }    
+}
+
+has_mercenarymaintenance_limiter_trigger = {
+    custom_trigger_tooltip = {
+        tooltip = dse_policies_normal_limiter_2
+        NOT = {
+            calc_true_if = {
+                amount = 2
+                has_active_policy = dst_policy_46
+                has_active_policy = dst_policy_254
+                has_active_policy = dst_policy_419
+                has_active_policy = dst_policy_421
+            }
+        }
+    }    
+}
+
+has_moraledamage_limiter_trigger = {
+    custom_trigger_tooltip = {
+        tooltip = dse_policies_normal_limiter_1
+        NOT = {
+            calc_true_if = {
+                amount = 1
+                has_active_policy = dst_policy_49
+                has_active_policy = dst_policy_503
+            }
+        }
+    }    
+}
+
+has_moraledamagereceived_limiter_trigger = {
+    custom_trigger_tooltip = {
+        tooltip = dse_policies_normal_limiter_1
+        NOT = {
+            calc_true_if = {
+                amount = 1
+                has_active_policy = dst_policy_121
+                has_active_policy = dst_policy_438
+            }
+        }
+    }    
+}
+
+has_fortmaintenance_limiter_trigger = {
+    custom_trigger_tooltip = {
+        tooltip = dse_policies_normal_limiter_1
+        NOT = {
+            calc_true_if = {
+                amount = 1
+                has_active_policy = dst_policy_50
+            }
+        }
+    }    
+}
+
+has_colonyboost_limiter_trigger = {
+    custom_trigger_tooltip = {
+        tooltip = dse_policies_normal_limiter_1
+        NOT = {
+            calc_true_if = {
+                amount = 1
+                has_active_policy = dst_policy_56
+                has_active_policy = dst_policy_164
+                has_active_policy = dst_policy_192
+                has_active_policy = dst_policy_258
+            }
+        }
+    }    
+}
+
+has_artilleryvsfort_limiter_trigger = {
+    custom_trigger_tooltip = {
+        tooltip = dse_policies_normal_limiter_1
+        NOT = {
+            calc_true_if = {
+                amount = 1
+                has_active_policy = dst_policy_68
+                has_active_policy = dst_policy_330
+                has_active_policy = dst_policy_453
+            }
+        }
+    }    
+}
+
+has_caravanpower_limiter_trigger = {
+    custom_trigger_tooltip = {
+        tooltip = dse_policies_normal_limiter_1
+        NOT = {
+            calc_true_if = {
+                amount = 1
+                has_active_policy = dst_policy_81
+                has_active_policy = dst_policy_245
+                has_active_policy = dst_policy_354
+            }
+        }
+    }    
+}
+
+has_navalmorale_limiter_trigger = {
+    custom_trigger_tooltip = {
+        tooltip = dse_policies_normal_limiter_2
+        NOT = {
+            calc_true_if = {
+                amount = 2
+                has_active_policy = dst_policy_83
+                has_active_policy = dst_policy_111
+                has_active_policy = dst_policy_135
+                has_active_policy = dst_policy_137
+                has_active_policy = dst_policy_161
+                has_active_policy = dst_policy_318
+                has_active_policy = dst_policy_343
+                has_active_policy = dst_policy_383
+                has_active_policy = dst_policy_409
+                has_active_policy = dst_policy_434
+                has_active_policy = dst_policy_486
+            }
+        }
+    }    
+}
+
+has_heavyshippower_limiter_trigger = {
+    custom_trigger_tooltip = {
+        tooltip = dse_policies_normal_limiter_2
+        NOT = {
+            calc_true_if = {
+                amount = 2
+                has_active_policy = dst_policy_85
+                has_active_policy = dst_policy_344
+                has_active_policy = dst_policy_408
+                has_active_policy = dst_policy_435
+                has_active_policy = dst_policy_462
+                has_active_policy = dst_policy_487
+                has_active_policy = dst_policy_499
+            }
+        }
+    }    
+}
+
+
+has_lightshippower_limiter_trigger = {
+    custom_trigger_tooltip = {
+        tooltip = dse_policies_normal_limiter_2
+        NOT = {
+            calc_true_if = {
+                amount = 2
+                has_active_policy = dst_policy_240
+                has_active_policy = dst_policy_241
+                has_active_policy = dst_policy_342
+                has_active_policy = dst_policy_357
+            }
+        }
+    }    
+}
+
+has_galleypower_limiter_trigger = {
+    custom_trigger_tooltip = {
+        tooltip = dse_policies_normal_limiter_2
+        NOT = {
+            calc_true_if = {
+                amount = 2
+                has_active_policy = dst_policy_84
+                has_active_policy = dst_policy_345
+                has_active_policy = dst_policy_461
+                has_active_policy = dst_policy_488
+            }
+        }
+    }    
+}
+
+has_cavalryratio_limiter_trigger = {
+    custom_trigger_tooltip = {
+        tooltip = dse_policies_normal_limiter_1
+        NOT = {
+            calc_true_if = {
+                amount = 1
+                has_active_policy = dst_policy_96
+            }
+        }
+    }    
+}
+
+has_supplylimit_limiter_trigger = {
+    custom_trigger_tooltip = {
+        tooltip = dse_policies_normal_limiter_1
+        NOT = {
+            calc_true_if = {
+                amount = 1
+                has_active_policy = dst_policy_102
+                has_active_policy = dst_policy_256
+            }
+        }
+    }    
+}
+
+has_powerprojection_limiter_trigger = {
+    custom_trigger_tooltip = {
+        tooltip = dse_policies_normal_limiter_1
+        NOT = {
+            calc_true_if = {
+                amount = 1
+                has_active_policy = dst_policy_132
+                has_active_policy = dst_policy_209
+                has_active_policy = dst_policy_375
+            }
+        }
+    }    
+}
+
+has_monarchlifespan_limiter_trigger = {
+    custom_trigger_tooltip = {
+        tooltip = dse_policies_normal_limiter_1
+        NOT = {
+            calc_true_if = {
+                amount = 1
+                has_active_policy = dst_policy_200
+                has_active_policy = dst_policy_218
+            }
+        }
+    }    
+}
+
+has_garrisonunique_limiter_trigger = {
+    custom_trigger_tooltip = {
+        tooltip = dse_policies_normal_limiter_1
+        NOT = {
+            calc_true_if = {
+                amount = 1
+                has_active_policy = dst_policy_204
+                has_active_policy = dst_policy_389
+            }
+        }
+    }    
+}
+
+has_landattrition_limiter_trigger = {
+    custom_trigger_tooltip = {
+        tooltip = dse_policies_normal_limiter_1
+        NOT = {
+            calc_true_if = {
+                amount = 1
+                has_active_policy = dst_policy_206
+                has_active_policy = dst_policy_472
+            }
+        }
+    }    
+}
+
+has_transportattrition_limiter_trigger = {
+    custom_trigger_tooltip = {
+        tooltip = dse_policies_normal_limiter_2
+        NOT = {
+            calc_true_if = {
+                amount = 2
+                has_active_policy = dst_policy_213
+            }
+        }
+    }    
+}
+
+has_adminefficiency_limiter_trigger = {
+    custom_trigger_tooltip = {
+        tooltip = dse_policies_normal_limiter_1
+        NOT = {
+            calc_true_if = {
+                amount = 1
+                has_active_policy = dst_policy_232
+            }
+        }
+    }    
+}
+
+has_warscorereligion_limiter_trigger = {
+    custom_trigger_tooltip = {
+        tooltip = dse_policies_normal_limiter_1
+        NOT = {
+            calc_true_if = {
+                amount = 1
+                has_active_policy = dst_policy_233
+                has_active_policy = dst_policy_314
+            }
+        }
+    }    
+}
+
+has_goodsproduced_limiter_trigger = {
+    custom_trigger_tooltip = {
+        tooltip = dse_policies_normal_limiter_1
+        NOT = {
+            calc_true_if = {
+                amount = 1
+                has_active_policy = dst_policy_237
+            }
+        }
+    }    
+}
+
+has_merchanttradepower_limiter_trigger = {
+    custom_trigger_tooltip = {
+        tooltip = dse_policies_normal_limiter_1
+        NOT = {
+            calc_true_if = {
+                amount = 1
+                has_active_policy = dst_policy_253
+                has_active_policy = dst_policy_260
+            }
+        }
+    }    
+}
+
+has_expelminorities_limiter_trigger = {
+    custom_trigger_tooltip = {
+        tooltip = dse_policies_normal_limiter_1
+        NOT = {
+            calc_true_if = {
+                amount = 1
+                has_active_policy = dst_policy_290
+            }
+        }
+    }    
+}
+
+has_religiousunity_limiter_trigger = {
+    custom_trigger_tooltip = {
+        tooltip = dse_policies_normal_limiter_1
+        NOT = {
+            calc_true_if = {
+                amount = 1
+                has_active_policy = dst_policy_328
+            }
+        }
+    }    
+}
+
+has_moralehitwhensunk_limiter_trigger = {
+    custom_trigger_tooltip = {
+        tooltip = dse_policies_normal_limiter_1
+        NOT = {
+            calc_true_if = {
+                amount = 1
+                has_active_policy = dst_policy_350
+            }
+        }
+    }    
+}
+
+has_flagships_limiter_trigger = {
+    custom_trigger_tooltip = {
+        tooltip = dse_policies_normal_limiter_1
+        NOT = {
+            calc_true_if = {
+                amount = 1
+                has_active_policy = dst_policy_358
+                has_active_policy = dst_policy_460
+            }
+        }
+    }    
+}
+
+has_blockadeimpact_limiter_trigger = {
+    custom_trigger_tooltip = {
+        tooltip = dse_policies_normal_limiter_1
+        NOT = {
+            calc_true_if = {
+                amount = 1
+                has_active_policy = dst_policy_367
+                has_active_policy = dst_policy_448
+            }
+        }
+    }    
+}
+###
+### Cap Limiter
+###
+
+# doctrine (discipline/morale)
+# army_focus (all shock/fire)
+# dev (all dev)
+# liberty (all liberty)
+# governingcapacity (% and flat)
+
+
+# Discipline/Morale Modifiers
+has_doctrine_cap_trigger = {
+    custom_trigger_tooltip = {
+        tooltip = dse_policies_doctrine_cap
+        NOT = {
+            calc_true_if = {
+                amount = 2
+                # Discipline
+                has_active_policy = dst_policy_21
+                has_active_policy = dst_policy_40
+                has_active_policy = dst_policy_229
+                has_active_policy = dst_policy_259
+                has_active_policy = dst_policy_302
+                has_active_policy = dst_policy_305
+                has_active_policy = dst_policy_348
+                has_active_policy = dst_policy_373
+                has_active_policy = dst_policy_403
+                has_active_policy = dst_policy_414
+                has_active_policy = dst_policy_441
+                has_active_policy = dst_policy_457
+                has_active_policy = dst_policy_493
+                # Morale
+                has_active_policy = dst_policy_149
+                has_active_policy = dst_policy_174
+                has_active_policy = dst_policy_205
+                has_active_policy = dst_policy_225
+                has_active_policy = dst_policy_226
+                has_active_policy = dst_policy_277
+                has_active_policy = dst_policy_337
+                has_active_policy = dst_policy_340
+                has_active_policy = dst_policy_359
+                has_active_policy = dst_policy_387
+                has_active_policy = dst_policy_402
+                has_active_policy = dst_policy_491
+            }
+        }
+    }
+}
+
+
+# Shock/Fire Modifiers
+has_army_focus_cap_trigger = {
+    custom_trigger_tooltip = {
+        tooltip = dse_policies_army_focus_cap
+        NOT = {
+            calc_true_if = {
+                amount = 2
+                has_active_policy = dst_policy_26
+                has_active_policy = dst_policy_52
+                has_active_policy = dst_policy_78
+                has_active_policy = dst_policy_104
+                has_active_policy = dst_policy_127
+                has_active_policy = dst_policy_178
+                has_active_policy = dst_policy_182
+                has_active_policy = dst_policy_222
+                has_active_policy = dst_policy_274
+                has_active_policy = dst_policy_281
+                has_active_policy = dst_policy_304
+                has_active_policy = dst_policy_351
+                has_active_policy = dst_policy_377
+                has_active_policy = dst_policy_382
+                has_active_policy = dst_policy_388
+                has_active_policy = dst_policy_392
+                has_active_policy = dst_policy_404
+                has_active_policy = dst_policy_413
+                has_active_policy = dst_policy_443
+                has_active_policy = dst_policy_452
+                has_active_policy = dst_policy_489
+                has_active_policy = dst_policy_495
+                has_active_policy = dst_policy_497
+                has_active_policy = dst_policy_502
+                has_active_policy = dst_policy_504
+            }
+        }
+    }
+}
+
+
+# Development Modifiers
+has_dev_cap_trigger = {
+    custom_trigger_tooltip = {
+        tooltip = dse_policies_dev_cap
+        NOT = {
+            calc_true_if = {
+                amount = 2
+                # Development Cost
+                has_active_policy = dst_policy_29
+                has_active_policy = dst_policy_39
+                has_active_policy = dst_policy_157
+                has_active_policy = dst_policy_162
+                has_active_policy = dst_policy_163
+                has_active_policy = dst_policy_171
+                has_active_policy = dst_policy_185
+                has_active_policy = dst_policy_252
+                has_active_policy = dst_policy_272
+                has_active_policy = dst_policy_307
+                has_active_policy = dst_policy_398
+                has_active_policy = dst_policy_407
+                has_active_policy = dst_policy_465
+                # Development Cost in Primary
+                has_active_policy = dst_policy_43
+                has_active_policy = dst_policy_165
+                has_active_policy = dst_policy_179
+                has_active_policy = dst_policy_269
+                has_active_policy = dst_policy_468
+                has_active_policy = dst_policy_492
+            }
+        }
+    }
+}
+
+
+# liberty Modifiers
+
+has_liberty_cap_trigger = {
+    custom_trigger_tooltip = {
+        tooltip = dse_policies_liberty_cap
+        NOT = {
+            calc_true_if = {
+                amount = 2
+                has_active_policy = dst_policy_8
+                has_active_policy = dst_policy_54
+                has_active_policy = dst_policy_60
+                has_active_policy = dst_policy_131
+                has_active_policy = dst_policy_186
+                has_active_policy = dst_policy_444
+                has_active_policy = dst_policy_446
+                has_active_policy = dst_policy_485
+            }
+        }
+    }    
+}
+
+
+# Governing Cap (% and Flat)
+
+has_governingcapacity_cap_trigger = {
+    custom_trigger_tooltip = {
+        tooltip = dse_policies_governingcapacity_cap
+        NOT = {
+            calc_true_if = {
+                amount = 2
+                # Governing Capacity %
+                has_active_policy = dst_policy_18
+                has_active_policy = dst_policy_145
+                has_active_policy = dst_policy_212
+                has_active_policy = dst_policy_275
+                has_active_policy = dst_policy_296
+
+                # Governing Capacity Flat
+                has_active_policy = dst_policy_98
+                has_active_policy = dst_policy_248
+            }
+        }
+    }    
+}

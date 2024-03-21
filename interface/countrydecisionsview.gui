@@ -70,6 +70,207 @@ guiTypes = {
 			format = centre
 		}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		# General Custom Gui
+		########################################
+		#guiButtonType = {
+		#	name ="dst_decisions_builder_gui"
+		#	scripted = yes
+		#	quadTextureSprite= "GFX_technologyView_show_buildings"
+		#	position = {x = 435 y = 398 }
+		#}
+		#
+		#guiButtonType = {
+		#	name ="dst_goods_info_gui_name"
+		#	scripted = yes
+		#	quadTextureSprite= "GFX_goods_info_icon"
+		#	position = {x = 60 y = 400 }
+		#}
+		#
+		#guiButtonType = {
+		#	name ="dst_goods_resources_gui_name"
+		#	scripted = yes
+		#	quadTextureSprite= "GFX_goods_resources_icon"
+		#	position = {x = 90 y = 400 }
+		#}
+		# Decisions Screen
+		########################################
+		guiButtonType = {
+			name ="dst_decisions_screen_menu_button"
+			scripted = yes
+			quadTextureSprite= "GFX_dst_decisions_screen_menu_button"
+			position = {x = 470 y = 392 }
+			scale = 0.9
+		}
+		iconType = {
+			name ="dst_decisions_screen_menu_bg"
+			scripted = yes
+			quadTextureSprite= "GFX_dst_decisions_screen_menu_bg"
+			
+			position = {x = 43 y = 431 }
+		}
+		guiButtonType = {
+			name ="dst_cot_upgrade_1_to_2_button"
+			scripted = yes
+			quadTextureSprite= "GFX_dst_cot_upgrade_1_to_2_button"
+			position = {x = 514 y = 440 }
+		}
+		guiButtonType = {
+			name ="dst_cot_upgrade_2_to_3_button"
+			scripted = yes
+			quadTextureSprite= "GFX_dst_cot_upgrade_2_to_3_button"
+			position = {x = 514 y = 470 }
+		}
+		guiButtonType = {
+			name ="dst_natural_development_button"
+			scripted = yes
+			quadTextureSprite= "GFX_dst_natural_development_button"
+			position = {x = 506 y = 490 }
+		}
+		guiButtonType = {
+			name ="dst_hire_advisor_button"
+			scripted = yes
+			quadTextureSprite= "GFX_dst_hire_advisor_button"
+			position = {x = 506 y = 520 }
+		}
+		#guiButtonType = {
+		#	name ="dst_building_limiter_button"
+		#	scripted = yes
+		#	quadTextureSprite= "GFX_dst_building_limiter_button"
+		#	position = {x = 514 y = 550 }
+		#}
+		# Policy Viewer
+		########################################
+		guiButtonType = {
+			name ="dst_show_policy_viewer_options_button"
+			scripted = yes
+			quadTextureSprite= "GFX_dst_show_policy_viewer_options_button"
+			
+			#position = {x = 480 y = 103 } # V1
+			position = {x = 490 y = 100 } # V2
+		}		
+		iconType = {
+			name ="dst_show_policy_viewer_options_bg"
+			scripted = yes
+			quadTextureSprite= "GFX_dst_show_policy_viewer_options_bg"
+			
+			position = {x = 550 y = 65 }
+		}	
+
+
+
+
+		guiButtonType = {
+			name ="dst_policy_viewer_adm_mil_button"
+			scripted = yes
+			quadTextureSprite= "GFX_dst_policy_viewer_adm_mil_button"
+			
+			position = {x = 560 y = 85 }
+		}
+		iconType = {
+			name ="dst_policy_viewer_adm_mil_screen"
+			scripted = yes
+			spriteType = "GFX_dst_policy_viewer_adm_mil_screen"
+			position = { x= 538 y = 156 }
+		}
+		guiButtonType = {
+			name ="dst_policy_viewer_dip_adm_button"
+			scripted = yes
+			quadTextureSprite= "GFX_dst_policy_viewer_dip_adm_button"
+			
+			position = {x = 560 y = 110 }
+		}
+		iconType = {
+			name ="dst_policy_viewer_dip_adm_screen"
+			scripted = yes
+			spriteType = "GFX_dst_policy_viewer_dip_adm_screen"
+			position = { x= 538 y = 156 }
+		}
+		guiButtonType = {
+			name ="dst_policy_viewer_mil_dip_button"
+			scripted = yes
+			quadTextureSprite= "GFX_dst_policy_viewer_mil_dip_button"
+			
+			position = {x = 560 y = 135 }
+		}
+		iconType = {
+			name ="dst_policy_viewer_mil_dip_screen"
+			scripted = yes
+			spriteType = "GFX_dst_policy_viewer_mil_dip_screen"
+			position = { x= 538 y = 156 }
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 		windowType = {
 			name = "policies_window"
 			backGround=""
@@ -716,7 +917,7 @@ guiTypes = {
 		name = "countrydecisionsview_activepolicy"
 		backGround =""
 		position = { x=0 y=0 }	
-		size = { x=100  y=32 }
+		size = { x=50  y=32 }
 		moveable = 0
 		dontRender = ""
 		horizontalBorder = ""
@@ -754,7 +955,7 @@ guiTypes = {
 		name = "countrydecisionsview_possiblepolicy"
 		backGround =""
 		position = { x=0 y=0 }	
-		size = { x=100  y=32 }
+		size = { x=50  y=32 }
 		moveable = 0
 		dontRender = ""
 		horizontalBorder = ""

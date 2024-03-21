@@ -1,18 +1,18 @@
-
+# I do not remember why I have this here. Just in case, I will leave it alone. 18/03/2024
 mandatory_service = {
 	monarch_power = DIP
 
 	potential = {
-        always = no
+		always = no
 	}
-	
+
 	allow = {
 	}
-		
+
 	ae_impact = -0.01
-	
+
 	ai_will_do = {
 		factor = 0
 	}
-	
+
 }

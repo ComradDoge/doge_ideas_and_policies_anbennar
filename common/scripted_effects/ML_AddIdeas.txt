@@ -361,39 +361,6 @@ Addtheocracy0 = {
 		}
 	}
 }
-Adddiktatur0 = {
-	if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
-		add_idea_group = diktatur0
-		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
-			add_idea = diktatur1
-			subtract_variable = { which = numOfFreeIdeas value = 1 }
-		}
-		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
-			add_idea = diktatur2
-			subtract_variable = { which = numOfFreeIdeas value = 1 }
-		}
-		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
-			add_idea = diktatur3
-			subtract_variable = { which = numOfFreeIdeas value = 1 }
-		}
-		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
-			add_idea = diktatur4
-			subtract_variable = { which = numOfFreeIdeas value = 1 }
-		}
-		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
-			add_idea = diktatur5
-			subtract_variable = { which = numOfFreeIdeas value = 1 }
-		}
-		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
-			add_idea = diktatur6
-			subtract_variable = { which = numOfFreeIdeas value = 1 }
-		}
-		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
-			add_idea = diktatur7
-			subtract_variable = { which = numOfFreeIdeas value = 1 }
-		}
-	}
-}
 Addhorde0 = {
 	if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
 		add_idea_group = horde0
@@ -427,35 +394,35 @@ Addhorde0 = {
 		}
 	}
 }
-Addstaatsverwaltung0 = {
+Addtrademanagement0 = {
 	if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
-		add_idea_group = staatsverwaltung0
+		add_idea_group = trademanagement0
 		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
-			add_idea = staatsverwaltung1
+			add_idea = trademanagement1
 			subtract_variable = { which = numOfFreeIdeas value = 1 }
 		}
 		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
-			add_idea = staatsverwaltung2
+			add_idea = trademanagement2
 			subtract_variable = { which = numOfFreeIdeas value = 1 }
 		}
 		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
-			add_idea = staatsverwaltung3
+			add_idea = trademanagement3
 			subtract_variable = { which = numOfFreeIdeas value = 1 }
 		}
 		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
-			add_idea = staatsverwaltung4
+			add_idea = trademanagement4
 			subtract_variable = { which = numOfFreeIdeas value = 1 }
 		}
 		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
-			add_idea = staatsverwaltung5
+			add_idea = trademanagement5
 			subtract_variable = { which = numOfFreeIdeas value = 1 }
 		}
 		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
-			add_idea = staatsverwaltung6
+			add_idea = trademanagement6
 			subtract_variable = { which = numOfFreeIdeas value = 1 }
 		}
 		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
-			add_idea = staatsverwaltung7
+			add_idea = trademanagement7
 			subtract_variable = { which = numOfFreeIdeas value = 1 }
 		}
 	}
@@ -526,9 +493,9 @@ Adddezentra0 = {
 		}
 	}
 }
-Addstateaffairs0 = {
+Addstate_affairs_idea_groups_expanded = {
 	if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
-		add_idea_group = stateaffairs0
+		add_idea_group = state_affairs_idea_groups_expanded
 		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
 			add_idea = meritocratic_offices
 			subtract_variable = { which = numOfFreeIdeas value = 1 }
@@ -555,6 +522,24 @@ Addstateaffairs0 = {
 		}
 		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
 			add_idea = production_quotas
+			subtract_variable = { which = numOfFreeIdeas value = 1 }
+		}
+	}
+}
+Addany_government_type_idea = {
+	if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
+		add_idea_group = any_government_type_idea
+		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
+			add_idea = any_government_type_idea_1
+			subtract_variable = { which = numOfFreeIdeas value = 1 }
+		}
+	}
+}
+Addany_state_focus_idea = {
+	if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
+		add_idea_group = any_state_focus_idea
+		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
+			add_idea = any_state_focus_idea_1
 			subtract_variable = { which = numOfFreeIdeas value = 1 }
 		}
 	}
@@ -699,6 +684,10 @@ Addislam0 = {
 			subtract_variable = { which = numOfFreeIdeas value = 1 }
 		}
 		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
+			add_idea = islam2
+			subtract_variable = { which = numOfFreeIdeas value = 1 }
+		}
+		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
 			add_idea = islam3
 			subtract_variable = { which = numOfFreeIdeas value = 1 }
 		}
@@ -712,10 +701,6 @@ Addislam0 = {
 		}
 		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
 			add_idea = islam6
-			subtract_variable = { which = numOfFreeIdeas value = 1 }
-		}
-		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
-			add_idea = islam2
 			subtract_variable = { which = numOfFreeIdeas value = 1 }
 		}
 		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
@@ -1549,6 +1534,39 @@ Addhussite0 = {
 		}
 	}
 }
+Addalche0 = {
+	if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
+		add_idea_group = alche0
+		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
+			add_idea = alche1
+			subtract_variable = { which = numOfFreeIdeas value = 1 }
+		}
+		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
+			add_idea = alche2
+			subtract_variable = { which = numOfFreeIdeas value = 1 }
+		}
+		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
+			add_idea = alche3
+			subtract_variable = { which = numOfFreeIdeas value = 1 }
+		}
+		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
+			add_idea = alche4
+			subtract_variable = { which = numOfFreeIdeas value = 1 }
+		}
+		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
+			add_idea = alche5
+			subtract_variable = { which = numOfFreeIdeas value = 1 }
+		}
+		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
+			add_idea = alche6
+			subtract_variable = { which = numOfFreeIdeas value = 1 }
+		}
+		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
+			add_idea = alche7
+			subtract_variable = { which = numOfFreeIdeas value = 1 }
+		}
+	}
+}
 Addreligious_ideas = {
 	if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
 		add_idea_group = religious_ideas
@@ -1685,11 +1703,11 @@ Addexploration_ideas = {
 	if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
 		add_idea_group = exploration_ideas
 		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
-			add_idea = quest_for_the_new_world
+			add_idea = colonial_ventures
 			subtract_variable = { which = numOfFreeIdeas value = 1 }
 		}
 		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
-			add_idea = colonial_ventures
+			add_idea = quest_for_the_new_world
 			subtract_variable = { which = numOfFreeIdeas value = 1 }
 		}
 		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
@@ -1701,7 +1719,7 @@ Addexploration_ideas = {
 			subtract_variable = { which = numOfFreeIdeas value = 1 }
 		}
 		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
-			add_idea = factories
+			add_idea = vice_roys
 			subtract_variable = { which = numOfFreeIdeas value = 1 }
 		}
 		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
@@ -2110,6 +2128,24 @@ Addimperialismus0 = {
 		}
 	}
 }
+Addany_fleet_focus_idea = {
+	if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
+		add_idea_group = any_fleet_focus_idea
+		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
+			add_idea = any_fleet_focus_idea_1
+			subtract_variable = { which = numOfFreeIdeas value = 1 }
+		}
+	}
+}
+Addany_state_power_idea = {
+	if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
+		add_idea_group = any_state_power_idea
+		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
+			add_idea = any_state_power_idea_1
+			subtract_variable = { which = numOfFreeIdeas value = 1 }
+		}
+	}
+}
 Addquality_ideas = {
 	if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
 		add_idea_group = quality_ideas
@@ -2238,6 +2274,39 @@ Adddefensive_ideas = {
 		}
 		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
 			add_idea = improved_foraging
+			subtract_variable = { which = numOfFreeIdeas value = 1 }
+		}
+	}
+}
+Addindigenous_ideas = {
+	if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
+		add_idea_group = indigenous_ideas
+		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
+			add_idea = indigenous_bountiful_land
+			subtract_variable = { which = numOfFreeIdeas value = 1 }
+		}
+		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
+			add_idea = indigenous_irregular_warfare
+			subtract_variable = { which = numOfFreeIdeas value = 1 }
+		}
+		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
+			add_idea = indigenous_constitution
+			subtract_variable = { which = numOfFreeIdeas value = 1 }
+		}
+		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
+			add_idea = indigenous_braves
+			subtract_variable = { which = numOfFreeIdeas value = 1 }
+		}
+		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
+			add_idea = indigenous_controlled_burns
+			subtract_variable = { which = numOfFreeIdeas value = 1 }
+		}
+		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
+			add_idea = indigenous_trade_with_foreigners
+			subtract_variable = { which = numOfFreeIdeas value = 1 }
+		}
+		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
+			add_idea = indigenous_treaties
 			subtract_variable = { which = numOfFreeIdeas value = 1 }
 		}
 	}
@@ -2473,35 +2542,35 @@ Addkriegsproduktion0 = {
 		}
 	}
 }
-Addformation0 = {
+Addlogistics0 = {
 	if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
-		add_idea_group = formation0
+		add_idea_group = logistics0
 		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
-			add_idea = formation1
+			add_idea = logistics1
 			subtract_variable = { which = numOfFreeIdeas value = 1 }
 		}
 		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
-			add_idea = formation2
+			add_idea = logistics2
 			subtract_variable = { which = numOfFreeIdeas value = 1 }
 		}
 		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
-			add_idea = formation3
+			add_idea = logistics3
 			subtract_variable = { which = numOfFreeIdeas value = 1 }
 		}
 		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
-			add_idea = formation4
+			add_idea = logistics4
 			subtract_variable = { which = numOfFreeIdeas value = 1 }
 		}
 		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
-			add_idea = formation5
+			add_idea = logistics5
 			subtract_variable = { which = numOfFreeIdeas value = 1 }
 		}
 		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
-			add_idea = formation6
+			add_idea = logistics6
 			subtract_variable = { which = numOfFreeIdeas value = 1 }
 		}
 		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
-			add_idea = formation7
+			add_idea = logistics7
 			subtract_variable = { which = numOfFreeIdeas value = 1 }
 		}
 	}
@@ -2601,6 +2670,15 @@ Addfire0 = {
 		}
 		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
 			add_idea = fire7
+			subtract_variable = { which = numOfFreeIdeas value = 1 }
+		}
+	}
+}
+Addany_army_doctrine_idea = {
+	if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
+		add_idea_group = any_army_doctrine_idea
+		if = { limit = { check_variable = { which = numOfFreeIdeas value = 1 } }
+			add_idea = any_army_doctrine_idea_1
 			subtract_variable = { which = numOfFreeIdeas value = 1 }
 		}
 	}

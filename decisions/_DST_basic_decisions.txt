@@ -2,9 +2,11 @@
 country_decisions = {
 	
     # Basic form of some decisions that in Shatttered have their own UI but in submods are still normal decisions.
+	# Currently not in use
 	# Anbennar/Vanilla
 	dst_hire_advisor = {
 		potential = {
+			always = no
             OR = { 
 			    has_idea_group = humanist_ideas
                 has_idea_group = imperialismus0
@@ -36,6 +38,7 @@ country_decisions = {
 	idp_hide_prosperous = {
 		#major = yes
 		potential = {
+			always = no
 			ai = no
 			NOT = { has_country_flag = idp_prosperous_hidden }
 			has_idea = entwicklung1
@@ -54,6 +57,7 @@ country_decisions = {
 	idp_show_prosperous = {
 		#major = yes
 		potential = {
+			always = no
 			ai = no
 			has_country_flag = idp_prosperous_hidden
 			has_idea = entwicklung1
@@ -72,6 +76,7 @@ country_decisions = {
     dev_sum_dev_ideas_decision = {
 		#major = yes
 		potential = {
+			always = no
 			has_idea = entwicklung1
 		}
 		ai_will_do = {

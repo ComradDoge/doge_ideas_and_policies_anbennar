@@ -124,7 +124,7 @@ defensive_ideas = {
 	}
 	military_drill = {
 		land_morale = 0.075
-		recover_army_morale_speed = 0.05	
+		recover_army_morale_speed = 0.05
 	}
 	superior_firepower = {
 		leader_land_fire = 1
@@ -167,7 +167,7 @@ generalstab0 = {
 		drill_gain_modifier = 0.25
 		artillery_barrage_cost = -0.5
 	}
-		
+
 	generalstab7 = {
 		army_tradition_decay = -0.005
 		army_tradition = 0.5
@@ -197,7 +197,7 @@ generalstab0 = {
 		yearly_army_professionalism = 0.002
 	}
 
-	
+
 	ai_will_do = {
 		factor = 10
 	}
@@ -216,17 +216,17 @@ stehendesheer0 = {
 		reinforce_cost_modifier = 0.3
 		reinforce_speed = -0.3
 	}
-		
+
 	trigger = {
 		NOT = {
 			has_idea_group = wehrpflicht0
 		}
 	}
-	
+
 	stehendesheer1 = {
 		drill_gain_modifier = 0.25
 		army_tradition = 0.5
-		
+
 	}
 	stehendesheer2 = {
 		infantry_power = 0.1
@@ -242,17 +242,17 @@ stehendesheer0 = {
 	stehendesheer6 = {
 		land_attrition = -0.15
 		prestige_from_land = 1
-		
+
 	}
 	stehendesheer7 = {
 		siege_ability = 0.075
-		
+
 	}
-	
+
 	stehendesheer4 = {
 		discipline = 0.05
 	}
-	
+
 	ai_will_do = {
 		factor = 10
 	}
@@ -270,13 +270,13 @@ wehrpflicht0 = {
 		manpower_recovery_speed = 0.2
 		discipline = -0.05
 	}
-		
+
 	trigger = {
 		NOT = {
 			has_idea_group = stehendesheer0
 		}
 	}
-	
+
 	wehrpflicht3 = {
 		reinforce_speed = 0.3
 	}
@@ -300,7 +300,7 @@ wehrpflicht0 = {
 	wehrpflicht6 = {
 		land_morale = 0.15
 	}
-	
+
 	ai_will_do = {
 		factor = 10
 	}
@@ -317,15 +317,15 @@ mercenary0 = {
 
 	bonus = {
 		mercenary_cost = -0.1
-		
+
 	}
-	
+
 	mercenary1 = {
 		loot_amount = 0.5
 	}
 	mercenary2 = {
 		possible_condottieri = 0.33
-		
+
 	}
 	mercenary3 = {
 		war_exhaustion = -0.05
@@ -345,7 +345,7 @@ mercenary0 = {
 		mercenary_manpower = 0.15
 		merc_independent_from_trade_range = yes
 	}
-	
+
 	ai_will_do = {
 		factor = 0
 	}
@@ -362,7 +362,7 @@ waffenqualitat0 = {
 	bonus = {
 		discipline = 0.025
 	}
-	
+
 	waffenqualitat1 = {
 		production_efficiency = 0.1
 	}
@@ -386,7 +386,7 @@ waffenqualitat0 = {
 	waffenqualitat7 = {
 		artillery_power = 0.05
 	}
-	
+
 	ai_will_do = {
 		factor = 10
 	}
@@ -402,27 +402,27 @@ festung0 = {
 
 	bonus = {
 		reinforce_speed = 0.25
-		
+
 	}
-		
-		
+
+
 	festung7 = {
 		reinforce_cost_modifier = -0.15
-		
+
 	}
 	festung1 = {
 		defensiveness = 0.25
-		
+
 	}
-	
+
 	festung4 = {
 		fort_maintenance_modifier = -0.3
 	}
-	
+
 	festung6 = {
 		fire_damage_received = -0.05
 	}
-	
+
 	festung2 = {
 		garrison_size = 0.50
 		global_garrison_growth = 0.25
@@ -431,13 +431,13 @@ festung0 = {
 	festung5 = {
 		hostile_attrition = 2
 	}
-	
+
 	festung3 = {
 		artillery_power = 0.05
 		artillery_cost = -0.1
 	}
-	
-	
+
+
 	ai_will_do = {
 		factor = 1
 		modifier = {
@@ -458,8 +458,8 @@ kriegsproduktion0 = {
 	bonus = {
 		land_morale = 0.075
 	}
-		
-	
+
+
 	kriegsproduktion1 = {
 		infantry_cost = -0.10
 	}
@@ -483,7 +483,7 @@ kriegsproduktion0 = {
 		naval_forcelimit_modifier = 0.1
 		land_forcelimit_modifier = 0.1
 	}
-	
+
 	ai_will_do = {
 		factor = 10
 	}
@@ -492,44 +492,44 @@ kriegsproduktion0 = {
 
 
 ########################################################
-####### Taktik Ideen / Logistics Ideas
+####### Logistics Ideas
 ########################################################
 
 
-formation0 = {
+logistics0 = {
 	category = MIL
 
 	bonus = {
 		siege_blockade_progress = 1
 	}
-		
-	
-	formation1 = {
+
+
+	logistics1 = {
 		artillery_levels_available_vs_fort = 1
 	}
-	formation2 = {
-		land_attrition = -0.25
+	logistics2 = {
+		land_attrition = -0.15
 	}
-	formation3 = {
+	logistics3 = {
 		movement_speed = 0.25
 	}
 
-	formation4 = {
+	logistics4 = {
 		reinforce_speed = 0.1
 		envoy_travel_time = -0.33
 	}
 
-	formation5 = {
-		global_supply_limit_modifier = 0.5
+	logistics5 = {
+		global_supply_limit_modifier = 0.25
 	}
-	formation6 = {
+	logistics6 = {
 		siege_ability = 0.15
 	}
-	formation7 = {
+	logistics7 = {
 		leader_land_manuever = 1
 		leader_naval_manuever = 1
 	}
-	
+
 	ai_will_do = {
 		factor = 1
 
@@ -547,8 +547,8 @@ militarismus0 = {
 	bonus = {
 		war_exhaustion = -0.03
 	}
-		
-	
+
+
 	militarismus1 = {
 		land_forcelimit_modifier = 0.1
 	}
@@ -560,11 +560,11 @@ militarismus0 = {
 	}
 	militarismus4 = {
 		global_manpower_modifier = 0.1
-		
+
 	}
 	militarismus5 = {
 		global_garrison_growth = 0.25
-		garrison_size = 0.25	
+		garrison_size = 0.25
 	}
 	militarismus6 = {
 
@@ -573,7 +573,7 @@ militarismus0 = {
 	militarismus7 = {
 		shock_damage_received = -0.05
 	}
-	
+
 	ai_will_do = {
 		factor = 5
 	}
@@ -586,17 +586,17 @@ militarismus0 = {
 
 shock0 = {
 	category = MIL
-	
+
 	trigger = {
 		NOT = {
 			has_idea_group = fire0
 		}
 	}
-	
+
 	bonus = {
 		fire_damage_received = -0.05
 	}
-		
+
 	shock1 = {
 		fire_damage_received = -0.05
 	}
@@ -618,7 +618,7 @@ shock0 = {
 	shock7 = {
 		leader_land_shock = 1
 	}
-	
+
 	ai_will_do = {
 		factor = 1
 		modifier = {
@@ -636,17 +636,17 @@ shock0 = {
 
 fire0 = {
 	category = MIL
-	
+
 	trigger = {
 		NOT = {
 			has_idea_group = shock0
-		}	
+		}
 	}
-	
+
 	bonus = {
 		shock_damage_received = -0.05
 	}
-		
+
 	fire1 = {
 		shock_damage_received = -0.05
 	}
@@ -668,58 +668,8 @@ fire0 = {
 	fire7 = {
 		leader_land_fire = 1
 	}
-	
+
 	ai_will_do = {
 		factor = 10
 	}
 }
-
-
-
-
-# Fake idea to show in policy view
-
-army_exclusive_combo = {
-	category = MIL
-
-	bonus = {
-
-	}
-		
-	trigger = {
-		always = no
-	}
-	
-	
-	fleet_exclusive_combo_1 = {
-
-
-	}
-
-	fleet_exclusive_combo_1 = {
-
-	}
-
-	fleet_exclusive_combo_1 = {
-
-
-	}
-	fleet_exclusive_combo_1 = {
-
-	}
-	fleet_exclusive_combo_1 = {
-
-	}
-	fleet_exclusive_combo_1 = {
-
-
-	}
-	fleet_exclusive_combo_1 = {
-
-	}
-	
-	ai_will_do = {
-		factor = 0
-	}
-}
-

@@ -72,3 +72,81 @@ doppelsoldner_reform = {
 		factor = 1
 	}
 }
+
+grant_nobles_electorate_reform = {
+	icon = "ballot_box"
+	allow_normal_conversion = yes
+	potential = {
+		is_revolutionary = no
+		#Anbennar
+		NOT = {
+			has_reform = hobgoblin_stratocracy_reform
+			culture_group = dwarven
+		}
+	}
+	trigger = {
+		has_idea_group = monarchie0
+		NOT = { is_emperor_of_china = yes }
+	}
+	modifiers = {
+		nobles_loyalty_modifier = 0.1
+		#maratha_loyalty_modifier = 0.1
+		#rajput_loyalty_modifier = 0.1
+		no_stability_loss_on_monarch_death = yes
+
+		# Anbennar
+		uppercastes_loyalty_modifier = 0.1
+		uppercastes_influence_modifier = 0.1
+	}
+	effect = {
+		hidden_effect = {
+			if = {
+				limit = {
+					OR = {
+						has_estate_led_regency = {
+							estate = estate_nobles
+						}
+						has_estate_led_regency = {
+							estate = estate_maratha
+						}
+						has_estate_led_regency = {
+							estate = estate_rajput
+						}
+						has_estate_led_regency = {
+							estate = estate_uppercastes
+						}
+					}
+				}
+				add_ruler_modifier = {
+					name = empowered_regency_modifier
+					duration = -1
+				}
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			remove_country_modifier = empowered_regency_modifier
+		}
+	}
+	custom_attributes = {
+		improved_nobles_regency = yes
+	}
+	conditional = {
+		allow = { has_dlc = "Domination" }
+		custom_attributes = {
+			has_improved_ruler_election = yes
+		}
+	}
+	ai = {
+		factor = 1
+		modifier = {
+			factor = 100
+			has_government_attribute = has_ruler_election
+		}
+		modifier = {
+			factor = 0
+			NOT = { has_government_attribute = has_ruler_election }
+		}
+	}
+}
