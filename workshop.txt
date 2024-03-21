@@ -1,31 +1,6 @@
-[code]                                  [img] https://i.imgur.com/p7Fv1Z6.gif [/img] [/code]
-[quote] 
-- This is a standalone version of Ideas and Policies from my Shattered mod. The base of ideas is "Idea Variation by flogi" but has had massive changes and barely resembles it.
-
-- The mod contains around 50 idea groups, with some being exclusives and religion specific. In addition, a completely reworked policy system from the ground up that can be checked in a spreadsheet.
-
-- Anyone is free to use this mod as they see fit, just add the credits.
-[/quote]
-[quote]
-[h1] Main Mod [/h1]
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2152606065] Doge Shattered Europa [/url]
-
-[h1] Anbennar Version [/h1]
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2738561219] Doge Anbennar - Ideas and Policies [/url]
-
-[h1] Policy Spreadsheet [/h1]
-The policy list is in a [url=https://eu4.paradoxwikis.com/Doge_Shattered_Europa/Policies] spreadsheet [/url] on the wiki.
-[/quote]
-
-
-
-
-
-
 [quote] [h1] Info [/h1] 
-- The mod contains around 40 idea groups. With policy count going from vanilla 203 to mine 491, albeit not all unique policies.
+- The mod contains around 40 idea groups. With policy count going from vanilla 203 to mine 491, albeit not all unique policies due to scope. Completely reworked policy system from the ground up that can be checked in a spreadsheet in a browser or using both old and new UI in-game.
 - This is a standalone version of Ideas and Policies from my main mod which is basically EU4+ at this point. 
-- Completely reworked policy system from the ground up that can be checked in a spreadsheet. I recommend checking the spreadsheet at least once as for compatability with other mods I did not add UI that would serve a familliar purpose.
 [/quote]
 [quote] [h1] Main Mod [/h1] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2152606065] Doge Shattered Europa [/url]
 
