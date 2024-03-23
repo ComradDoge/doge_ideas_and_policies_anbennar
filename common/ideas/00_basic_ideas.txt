@@ -53,7 +53,7 @@ infrastructure_ideas = {
  	}
 	regulation_bureau = {
 		expand_administration_cost = -1
-		build_time = -0.25
+		build_time = -0.1
 	}
 
 	ai_will_do = {
