@@ -1,0 +1,18 @@
+country_decisions = {
+	# To overwrite the Anbennar one, just completely going to disable it instead of trying to fix it. It's time for the AI dwarves to suffer.
+	ai_dig_cheat = {
+		potential = {
+            always = no
+		}
+		
+		allow = {
+			always = no
+		}
+		
+		effect = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
