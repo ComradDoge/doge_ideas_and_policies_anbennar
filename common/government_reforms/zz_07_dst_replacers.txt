@@ -150,3 +150,36 @@ grant_nobles_electorate_reform = {
 		}
 	}
 }
+
+lockean_proviso_reform = {
+	icon = "paper_money_map"
+	allow_normal_conversion = yes
+	potential = {
+		NOT = { has_government_attribute = is_pirate_republic_reform }
+		NOT = { has_adventurer_reform = yes } # Anbennar
+		NOT = { has_reform = hobgoblin_stratocracy_reform }
+	}
+	trigger = {
+		OR = { 
+			full_idea_group = economic_ideas
+			full_idea_group = stateaffairs0
+		}
+		if = {
+			limit = {
+				is_revolutionary = yes
+				has_dlc = "Emperor"
+				has_government_attribute = enables_estate_burghers
+			}
+			can_swap_out_of_estate_granting_reform = {
+				estate = estate_burghers
+			}
+		}
+	}
+	modifiers = {
+		development_cost = -0.05
+		global_trade_goods_size_modifier = 0.05
+	}
+	ai = {
+		factor = 1
+	}
+}

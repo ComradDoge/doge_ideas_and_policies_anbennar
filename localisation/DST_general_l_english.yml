@@ -3,7 +3,12 @@
  dse_ai_capital_fort_desc: "You are not supposed to see this, this is so AI builds a fort in their capital."
  dse_ai_policy_reset_title: "AI - Policy Reset"
  dse_ai_policy_reset_desc: "You are not supposed to see this, this is so AI resets their policies from time to time."
-
+ # Merc Ideas
+ merc_idea_group_infantry_1: "Guards of the Lord"
+ merc_idea_group_infantry_2: "Defenders of the Realm"
+ merc_idea_group_cavalry_1: "Wave of Annihilation"
+ merc_idea_group_cavalry_2: "Spearhead of the Realm"
+ merc_idea_group_artillery_1: "The Lords Message"
 
  # Difficulty + AI (LoStack) development stuff
  dev_info.1:0 "[Root.GetName] dev [This.GetName]	adm	[This.baseCost.GetValue]"

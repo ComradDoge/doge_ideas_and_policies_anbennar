@@ -1,0 +1,145 @@
+###################
+###### Infantry
+##################
+
+# Elites
+merc_idea_group_infantry_1 = {
+    regiments_per_development = 0.05
+    cost_modifier = 0.75
+
+    cavalry_cap = 0
+
+    cavalry_weight = 0
+    artillery_weight = 0
+
+	sprites = { westerngfx_sprite_pack easterngfx_sprite_pack muslimgfx_sprite_pack indiangfx_sprite_pack africangfx_sprite_pack }
+    trigger = {
+        OR = { 
+            has_idea = mercenary7
+            has_government_attribute = enables_access_to_elite_merc_companies
+        }
+	}
+	modifier = { 
+        # Good
+        discipline = 0.05
+		infantry_power = 0.15
+
+        # Bad
+        reinforce_speed = -0.5
+        mercenary_manpower = -0.5
+
+	}
+}
+
+# General Use
+merc_idea_group_infantry_2 = {
+    regiments_per_development = 0.05
+    cost_modifier = 0.75
+    
+    cavalry_cap = 0
+
+    cavalry_weight = 0
+    artillery_weight = 0
+
+	sprites = { westerngfx_sprite_pack easterngfx_sprite_pack muslimgfx_sprite_pack indiangfx_sprite_pack africangfx_sprite_pack }
+    trigger = {
+        OR = { 
+            has_idea = mercenary7
+            has_government_attribute = enables_access_to_elite_merc_companies
+        }
+	}
+	modifier = { 
+        # Good
+		infantry_power = 0.1
+        reinforce_speed = 0.25
+
+        # Bad
+	}
+}
+
+###################
+###### Cavalry
+##################
+
+merc_idea_group_cavalry_1 = {
+    regiments_per_development = 0.05
+    cost_modifier = 0.75
+
+    cavalry_cap = 40
+
+	cavalry_weight = 1
+    artillery_weight = 0
+
+	sprites = { westerngfx_sprite_pack easterngfx_sprite_pack muslimgfx_sprite_pack indiangfx_sprite_pack africangfx_sprite_pack }
+    trigger = {
+        OR = { 
+            has_idea = mercenary7
+            has_government_attribute = enables_access_to_elite_merc_companies
+        }
+	}
+	modifier = {
+        # Good
+		cavalry_power = 0.15
+        movement_speed = 0.15
+
+        # Bad
+	}
+}
+merc_idea_group_cavalry_2 = {
+    regiments_per_development = 0.05
+    cost_modifier = 0.75
+
+	cavalry_cap = 40
+
+    cavalry_weight = 1
+    artillery_weight = 0
+
+	sprites = { westerngfx_sprite_pack easterngfx_sprite_pack muslimgfx_sprite_pack indiangfx_sprite_pack africangfx_sprite_pack }
+    trigger = {
+        OR = { 
+            has_idea = mercenary7
+            has_government_attribute = enables_access_to_elite_merc_companies
+        }
+	}
+	modifier = {
+        # Good                 
+		cavalry_power = 0.1
+        shock_damage = 0.1
+        movement_speed = 0.3
+
+        # Bad
+        reinforce_speed = -0.5
+        reinforce_cost_modifier = 0.5
+	}
+}
+
+###################
+###### Artillery
+##################
+
+merc_idea_group_artillery_1 = {
+    regiments_per_development = 0.05
+    cost_modifier = 0.75
+
+	cavalry_cap = 0
+
+    cavalry_weight = 0
+    artillery_weight = 1
+
+	sprites = { westerngfx_sprite_pack easterngfx_sprite_pack muslimgfx_sprite_pack indiangfx_sprite_pack africangfx_sprite_pack }
+    trigger = {
+        OR = { 
+            has_idea = mercenary7
+            has_government_attribute = enables_access_to_elite_merc_companies
+        }
+	}
+	modifier = {
+        # Good
+		artillery_levels_available_vs_fort = 2
+        siege_ability = 0.25
+        
+        # Bad
+        reinforce_speed = -0.33
+        reinforce_cost_modifier = 0.33
+	}
+}
