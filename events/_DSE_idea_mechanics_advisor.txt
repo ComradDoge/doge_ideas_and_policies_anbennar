@@ -263,6 +263,23 @@ country_event = {
 	#		}
 	#	}
 	#}
+	option = {
+		name = "dse_idea_mechanics_hire_advisor.2.o13"
+		hire_advisor_scaled_income_cost = yes
+		define_advisor = {
+			type = court_mage
+			discount = yes
+			skill = 2
+		}
+		
+		hidden_effect = {
+			clr_country_flag = dst_hire_advisor_event_present_flag
+			add_country_modifier = {
+				name = "recently_hired_advisor_mechanic"
+				duration = 1825
+			}
+		}
+	}
 
 	option = {
 		name = dse_idea_mechanics_hire_advisor.1.return
@@ -487,6 +504,23 @@ country_event = {
 	#		}
 	#	}
 	#}
+	option = {
+		name = "dse_idea_mechanics_hire_advisor.2.o13"
+		hire_advisor_scaled_income_cost = yes
+		define_advisor = {
+			type = court_mage
+			discount = yes
+			skill = 3
+		}
+		
+		hidden_effect = {
+			clr_country_flag = dst_hire_advisor_event_present_flag
+			add_country_modifier = {
+				name = "recently_hired_advisor_mechanic"
+				duration = 1825
+			}
+		}
+	}
 
 	option = {
 		name = dse_idea_mechanics_hire_advisor.1.return
