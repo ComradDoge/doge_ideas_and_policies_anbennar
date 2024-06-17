@@ -131,7 +131,7 @@ custom_button = {
 	trigger = {
         FROM = {
 			any_owned_province = {
-				development = 15
+				development = 10
 				province_has_center_of_trade_of_level = 1
 				NOT = { province_has_center_of_trade_of_level = 2 }
 				OR = {
@@ -155,7 +155,7 @@ custom_button = {
 
                 every_owned_province = {
                     limit = {
-                        development = 15
+                        development = 10
                         province_has_center_of_trade_of_level = 1
                         NOT = { province_has_center_of_trade_of_level = 2 }
                         OR = {
@@ -229,7 +229,7 @@ custom_button = {
 	}
 	trigger = {
         any_owned_province = {
-            development = 30
+            development = 25
             province_has_center_of_trade_of_level = 2
             all_province_in_state = {
                 NOT = {
@@ -300,7 +300,7 @@ custom_button = {
 
                 every_owned_province = {
                     limit = {
-                        development = 30
+                        development = 25
                         province_has_center_of_trade_of_level = 2
                         all_province_in_state = {
                             NOT = {
