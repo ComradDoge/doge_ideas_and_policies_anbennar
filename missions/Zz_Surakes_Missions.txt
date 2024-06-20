@@ -1,4 +1,4 @@
-# Disabled request for the_education_act since I don't use it.
+# Got rid of "has_active_policy" triggers as they are calling things I dont have (4)
 surakes_slot_2 = {
 	slot = 2
 	generic = no
@@ -46,7 +46,6 @@ surakes_slot_2 = {
 		position = 15
 	
 		provinces_to_highlight = {
-			#ROOT = { NOT = { has_active_policy = the_education_act } }
 			OR = {
 				AND = {
 					region = bahar_region
@@ -128,7 +127,6 @@ surakes_slot_2 = {
 		
 		trigger = { 
 			OR = {
-				#has_active_policy = the_education_act
 				AND = { 
 					num_of_owned_provinces_with = {
 						value = 5
@@ -616,7 +614,6 @@ surakes_slot_3 = {
 					num_accepted_cultures = 3
 					religious_unity = 1
 				}
-				religious_unity = 1
 			}
 		}
 		
@@ -898,12 +895,40 @@ surakes_slot_4 = {
 				AND = {
 					ROOT = { religion = bulwari_sun_cult }
 					OR = {
+						AND = {
+						superregion = bulwar_superregion
 						owned_by = F34
+						}
+						AND = {
+						superregion = bulwar_superregion
 						owned_by = F21
+						}
+						AND = {
+						superregion = bulwar_superregion
 						owned_by = F37
+						}
+						AND = {
+						superregion = bulwar_superregion
 						owned_by = F42
+						}
+						AND = {
+						superregion = bulwar_superregion
 						owned_by = F25
+						}
+						AND = {
+						superregion = bulwar_superregion
 						owned_by = U05
+						}
+                        province_id = 625
+			            province_id = 608
+			            province_id = 496
+				        province_id = 561
+				        province_id = 549
+				        province_id = 538					
+					}
+					OR = {
+					    NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
 					}
 				}
 				AND = {
@@ -923,8 +948,19 @@ surakes_slot_4 = {
 				AND = {
 					ROOT = { religion = the_jadd }
 					OR = {
+						AND = {
+						superregion = bulwar_superregion
 						owned_by = F46
+						}
+						AND = {
+						superregion = bulwar_superregion
 						owned_by = F51
+						}
+						province_id  = 2909
+					}
+					OR = {
+					    NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
 					}
 				}
 			}
@@ -933,12 +969,23 @@ surakes_slot_4 = {
 		trigger = {
 			if = { 
 				limit = { religion = bulwari_sun_cult }
-				NOT = { exists = F34 }
-				NOT = { exists = F21 }
-				NOT = { exists = F37 }
-				NOT = { exists = F42 }
-				NOT = { exists = F25 }
-				NOT = { exists = U05 }
+				owns = 625
+			    owns = 608
+			    owns = 496
+				owns = 561
+				owns = 549
+				owns = 538
+				bulwar_superregion = {
+				        type = all
+						NOT = { 
+						owned_by = F34
+						owned_by = F21
+						owned_by = F37
+						owned_by = F42
+						owned_by = F25
+						owned_by = U05
+						}
+					}	
 			}
 			else_if = { limit = { religion = old_bulwari_sun_cult }
 				601 = {
@@ -964,8 +1011,14 @@ surakes_slot_4 = {
 			}
 			else_if = { 
 				limit = { religion = the_jadd }
-				NOT = { exists = F46 }
-				NOT = { exists = F51 }
+				owns = 2909
+				bulwar_superregion = {
+				        type = all
+						NOT = { 
+						owned_by = F51
+						owned_by = F46
+						}
+					}
 			}
 			estate_loyalty = {
 				estate = estate_church

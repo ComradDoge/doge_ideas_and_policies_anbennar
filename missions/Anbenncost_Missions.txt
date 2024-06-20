@@ -1,4 +1,4 @@
-# Plutocarcy > Republik
+# plutocracy > republik0
 anbenncost_1 = {
 	slot = 1
 	generic = no

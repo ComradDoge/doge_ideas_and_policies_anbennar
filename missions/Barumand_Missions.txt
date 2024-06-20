@@ -1,3 +1,7 @@
+# aristocracy > monarchie0
+# plutocracy > republik0
+# naval > flottenbasis0
+# diplomatic > influence
 
 ################################################
 ##          Creator: Hertog van Damme         ##
@@ -250,14 +254,6 @@ barumand_1 = {
 				}
 			}
 			833 = {
-				add_trade_modifier = {
-					who = ROOT
-					duration = -1
-					power = 100
-					key = barumand_bonus_trade
-				}
-			}
-			785 = {
 				add_trade_modifier = {
 					who = ROOT
 					duration = -1
