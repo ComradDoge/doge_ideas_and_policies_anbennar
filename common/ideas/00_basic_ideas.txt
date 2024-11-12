@@ -19,6 +19,7 @@
 # Naval
 # Mercenary
 # Vanila Government Ones
+# Espionage
 
 infrastructure_ideas = {
 	category = ADM
@@ -408,6 +409,58 @@ theocracy_gov_ideas = {
 		manpower_in_true_faith_provinces = 0.15
 		prestige_from_land = 0.5
 	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+spy_ideas_fake = { # convoluted mod development, dont question it
+	category = DIP
+
+    trigger = {
+        always = no
+    }
+
+	bonus = {
+		rebel_support_efficiency = 1
+		spy_action_cost_modifier = -0.2
+	}
+	
+	claim_fabrication = {
+		can_claim_states = yes
+		can_transfer_vassal_wargoal = yes
+	}
+
+	state_propaganda_influence = {
+		ae_impact = -0.2
+	}
+
+	efficient_spies_fake = {
+		spy_offence = 0.5
+		siege_ability = 0.1
+	}	
+	
+	agent_training_fake = {
+		diplomats = 1
+		advisor_cost = -0.15
+	}
+
+	vetting_fake = {
+		global_spy_defence = 0.33
+		yearly_corruption = -0.2
+	}
+	
+	privateers_fake = {
+		capture_ship_chance = 0.25
+		privateer_efficiency = 0.33
+	}
+	
+	blackmailing = {
+		monthly_favor_modifier = 0.33
+		accept_vassalization_reasons = 15
+		num_of_pronoiars = 1
+	}
+
 	ai_will_do = {
 		factor = 0
 	}
