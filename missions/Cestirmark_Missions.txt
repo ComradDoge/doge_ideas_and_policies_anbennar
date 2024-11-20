@@ -1,6 +1,5 @@
-# diplomatic > influence
-
 ###  Designed and coded by Labstein  ###
+#diplo into influence
 cestirmark_1 = {
 	slot = 1
 	generic = no
@@ -2933,11 +2932,7 @@ united_concord_3 = {
 						} 
 					}
 					OR = {
-					num_of_owned_provinces_with = {
-					num_of_owned_provinces_with = {
-						OR = {
 						num_of_owned_provinces_with = {
-						OR = {
 							culture = valorman
 							#culture = valorborn
 						    has_seat_in_parliament = yes
@@ -3863,13 +3858,7 @@ united_concord_4 = {
 				OR = {
 					owner = { alliance_with = ROOT }
 					AND = {
-					country_or_non_sovereign_subject_holds = ROOT
-					country_or_non_sovereign_subject_holds = ROOT
-					owner = { alliance_with = ROOT }
-				}
 						country_or_non_sovereign_subject_holds = ROOT
-					owner = { alliance_with = ROOT }
-				}
 						if = {
 							limit = { 
 								has_dlc = "Mandate of Heaven"
@@ -3891,13 +3880,7 @@ united_concord_4 = {
 				OR = {
 					owner = { alliance_with = ROOT }
 					AND = {
-					country_or_non_sovereign_subject_holds = ROOT
-					country_or_non_sovereign_subject_holds = ROOT
-					owner = { alliance_with = ROOT }
-				}
 						country_or_non_sovereign_subject_holds = ROOT
-					owner = { alliance_with = ROOT }
-				}
 						if = {
 							limit = { 
 								has_dlc = "Mandate of Heaven"
@@ -3919,13 +3902,7 @@ united_concord_4 = {
 				OR = {
 					owner = { alliance_with = ROOT }
 					AND = {
-					country_or_non_sovereign_subject_holds = ROOT
-					country_or_non_sovereign_subject_holds = ROOT
-					owner = { alliance_with = ROOT }
-				}
 						country_or_non_sovereign_subject_holds = ROOT
-					owner = { alliance_with = ROOT }
-				}
 						if = {
 							limit = { 
 								has_dlc = "Mandate of Heaven"
