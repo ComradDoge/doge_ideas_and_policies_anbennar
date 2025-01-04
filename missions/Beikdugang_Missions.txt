@@ -1,3 +1,5 @@
+# naval > flottenbasis0 (10)
+
 #Designed and coded by: Ditto
 
 Y15_1 = {
@@ -441,50 +443,41 @@ Y15_1 = {
 		}
 		
 		trigger = {
-			if = {
-				limit = { has_global_flag = lake_federation_disbanded }
-				custom_trigger_tooltip = {
-					tooltip = Y15_LAKE_disbanded
-					always = yes
+			custom_trigger_tooltip = {
+				tooltip = Y15_LAKE_factions
+				OR = {
+					has_global_flag = lake_the_place_of_everyone
+					exists = J33
 				}
 			}
-			else = {
-				custom_trigger_tooltip = {
-					tooltip = Y15_LAKE_factions
-					OR = {
-						has_global_flag = lake_the_place_of_everyone
-						exists = J33
-					}
-				}
-				if = {
-					limit = { NOT = { exists = J33 } }
-					calc_true_if = {
-						all_country = {
-							custom_trigger_tooltip = {
-								tooltip = Y15_gifted
-								has_country_modifier = lake_federation_member
-								has_opinion_modifier = {
-									modifier = sent_gift
-									who = ROOT
-									value = 20
-								}
-							}
-						}
-						amount = 3
-					}
-				}
-				else = {
-					J33 = {
+			if = {
+				limit = { NOT = { exists = J33 } }
+				calc_true_if = {
+					all_country = {
 						custom_trigger_tooltip = {
-							tooltip = Y15_gifted_fed
+							tooltip = Y15_gifted
+							has_country_modifier = lake_federation_member
 							has_opinion_modifier = {
 								modifier = sent_gift
 								who = ROOT
-								value = 4
+								value = 20
 							}
 						}
 					}
+					amount = 3
+				}
 			}
+			else = {
+				J33 = {
+					custom_trigger_tooltip = {
+						tooltip = Y15_gifted_fed
+						has_opinion_modifier = {
+							modifier = sent_gift
+							who = ROOT
+							value = 4
+						}
+					}
+				}
 			}
 		}
 		
@@ -528,27 +521,17 @@ Y15_1 = {
 				value = 100
 			}
 			mil = 4
-
-			if = {
-				limit = { has_global_flag = lake_federation_disbanded }
-				custom_trigger_tooltip = {
-					tooltip = Y15_LAKE_disbanded
-					always = yes
-				}
-			}
-			else = {
-				custom_trigger_tooltip = {
-					tooltip = Y15_fed_centaur
-					hidden_trigger = {
+			custom_trigger_tooltip = {
+				tooltip = Y15_fed_centaur
+				hidden_trigger = {
+					any_country = {
+						technology_group = tech_centaur
 						any_country = {
-							technology_group = tech_centaur
-							any_country = {
-								OR = {
-									has_country_modifier = lake_federation_member
-									tag = J33
-								}
-								war_with = PREV
+							OR = {
+								has_country_modifier = lake_federation_member
+								tag = J33
 							}
+							war_with = PREV
 						}
 					}
 				}
@@ -594,7 +577,7 @@ Y15_1 = {
 					NOT = { has_opinion = { who = ROOT value = 90 } }
 					OR = {
 						has_idea_group = maritime_ideas
-						has_idea_group = naval_ideas
+						has_idea_group = flottenbasis0
 						tag = J33
 					}
 				}
@@ -613,7 +596,7 @@ Y15_1 = {
 					any_known_country = {
 						OR = {
 							has_idea_group = maritime_ideas
-							has_idea_group = naval_ideas
+							has_idea_group = flottenbasis0
 						}
 						culture_group = triunic
 					}
@@ -621,7 +604,7 @@ Y15_1 = {
 				any_known_country = {
 					OR = {
 						has_idea_group = maritime_ideas
-						has_idea_group = naval_ideas
+						has_idea_group = flottenbasis0
 					}
 					culture_group = triunic
 					has_opinion = { who = ROOT value = 90 }
@@ -676,7 +659,7 @@ Y15_1 = {
 					any_known_country = {
 						OR = {
 							has_idea_group = maritime_ideas
-							has_idea_group = naval_ideas
+							has_idea_group = flottenbasis0
 						}
 						culture_group = triunic
 					}
@@ -685,7 +668,7 @@ Y15_1 = {
 					limit = {
 						OR = {
 							has_idea_group = maritime_ideas
-							has_idea_group = naval_ideas
+							has_idea_group = flottenbasis0
 						}
 						culture_group = triunic
 						has_opinion = { who = ROOT value = 90 }
@@ -795,22 +778,11 @@ Y15_1 = {
 		}
 		
 		trigger = {
-
-			if = {
-				limit = { has_global_flag = lake_federation_disbanded }
-				any_ally = {
-					culture_group = triunic
-					development = 600
-					government = republic
-				}
+			custom_trigger_tooltip = {
+				tooltip = Y15_federation_unified
+				exists = J33
 			}
-			else = {
-				custom_trigger_tooltip = {
-					tooltip = Y15_federation_unified
-					exists = J33
-				}
-				alliance_with = J33
-			}
+			alliance_with = J33
 			republican_tradition = 95
 			adm = 5
 			government_reform_progress = 100
@@ -844,19 +816,7 @@ Y15_1 = {
 				employed_advisor = { culture = metsamic }
 				employed_advisor = { culture = kukatodic }
 			}
-
-			if = {
-				limit = { has_global_flag = lake_federation_disbanded }
-				any_ally = {
-					culture_group = triunic
-					development = 600
-					government = republic
-					has_opinion = { who = ROOT value = 170 }
-				}
-			}
-			else = {
-				reverse_has_opinion = { who = J33 value = 170 }
-			}
+			reverse_has_opinion = { who = J33 value = 170 }
 			NOT = {
 				any_owned_province = {
 					has_province_modifier = Y15_northern_post
@@ -897,7 +857,7 @@ Y15_1 = {
 				every_owned_province = {
 					limit = {
 						OR = {
-							culture = jiangyang
+							culture = northern_yan
 							has_province_modifier = Y15_northern_post
 						}
 						NOT = { region = north_yanshen_region }
@@ -911,7 +871,7 @@ Y15_1 = {
 					}
 					change_primary_culture = kuldaakin
 					every_owned_province = {
-						limit = { culture = jiangyang }
+						limit = { culture = northern_yan }
 						random = {
 							chance = 50
 							change_culture = kuldaakin
@@ -2583,21 +2543,9 @@ Y15_3 = {
 			has_any_disaster = no
 			stability = 2
 			republican_tradition = 90
-			if = {
-				limit = { has_global_flag = lake_federation_disbanded }
-				any_ally = {
-					culture_group = triunic
-					development = 600
-					government = republic
-					has_any_disaster = no
-					trust = { who = ROOT value = 80 }
-				}
-			}
-			else = {
-				J33 = {
-					has_any_disaster = no
-					trust = { who = ROOT value = 80 }
-				}
+			J33 = {
+				has_any_disaster = no
+				trust = { who = ROOT value = 80 }
 			}
 			adm = 5
 			adm_power = 100
@@ -2605,34 +2553,17 @@ Y15_3 = {
 		
 		effect = {
 			add_adm_power = -100
-			if = {
-				limit = { has_global_flag = lake_federation_disbanded }
-				random_ally = {
-					limit = {
-						culture_group = triunic
-						development = 600
-						government = republic
-					}
-					add_stability = 2
-					add_country_modifier = {
-						name = Y15_republican
-						duration = 9125
-					}
-				}
-			}
-			else = {
-				J33 = {
-					add_stability = 2
-					add_country_modifier = {
-						name = Y15_republican
-						duration = 9125
-					}
-				}
-			}
+			J33 = { add_stability = 2 }
 			add_stability = 1 #Deliberate no adm power
 			add_country_modifier = {
 				name = Y15_republican
 				duration = 9125
+			}
+			J33 = {
+				add_country_modifier = {
+					name = Y15_republican
+					duration = 9125
+				}
 			}
 	    }
 	}
@@ -2753,17 +2684,7 @@ Y15_3 = {
 		}
 		
 		trigger = {
-			if = {
-				limit = { has_global_flag = lake_federation_disbanded }
-				any_ally = {
-					culture_group = triunic
-					development = 600
-					government = republic
-				}
-			}
-			else = {
-				alliance_with = J33
-			}
+			alliance_with = J33
 			OR = {
 				employed_advisor = {
 					culture = metsamic
@@ -2819,29 +2740,12 @@ Y15_3 = {
 		}
 		
 		trigger = {
-			if = {
-				limit = { has_global_flag = lake_federation_disbanded }
-				any_country = {
-					culture_group = triunic
-					development = 600
-					government = republic
-					OR = {
-						has_institution = enlightenment
-						calc_true_if = {
-							all_owned_province = { enlightenment = 100 }
-							amount = 20
-						}
-					}
-				}
-			}
-			else = {
-				J33 = {
-					OR = {
-						has_institution = enlightenment
-						calc_true_if = {
-							all_owned_province = { enlightenment = 100 }
-							amount = 20
-						}
+			J33 = {
+				OR = {
+					has_institution = enlightenment
+					calc_true_if = {
+						all_owned_province = { enlightenment = 100 }
+						amount = 20
 					}
 				}
 			}
@@ -2887,28 +2791,12 @@ Y15_3 = {
 		}
 		
 		trigger = {
-			if = {
-				limit = { has_global_flag = lake_federation_disbanded }
-				any_ally = {
-					culture_group = triunic
-					development = 600
-					government = republic
-					trust = { who = ROOT value = 100 }
-					has_opinion = { who = ROOT value = 200 }
-					OR = {
-						has_disaster = revolution
-						has_any_disaster = no
-					}
-				}
-			}
-			else = {
-				J33 = {
-					trust = { who = ROOT value = 100 }
-					has_opinion = { who = ROOT value = 200 }
-					OR = {
-						has_disaster = revolution
-						has_any_disaster = no
-					}
+			J33 = {
+				trust = { who = ROOT value = 100 }
+				has_opinion = { who = ROOT value = 200 }
+				OR = {
+					has_disaster = revolution
+					has_any_disaster = no
 				}
 			}
 			prestige = 50
@@ -2924,21 +2812,11 @@ Y15_3 = {
 		effect = {
 			add_revolutionary_zeal = 10
 			if = {
-				limit = { has_global_flag = lake_federation_disbanded }
+				limit = { NOT = { exists = J33 } }
 				custom_tooltip = Y15_federation_revolution
-				J33 = {
-					change_government = republic
-					add_government_reform = junior_revolutionary_republic_reform
-					add_revolutionary_zeal = 10
-				}
 			}
 			else = {
-				random_ally = {
-					limit = {
-						culture_group = triunic
-						development = 600
-						government = republic
-					}
+				J33 = {
 					change_government = republic
 					add_government_reform = junior_revolutionary_republic_reform
 					add_revolutionary_zeal = 10
@@ -3932,7 +3810,7 @@ Y15_4 = {
 	}
 	
 	Y15_take_torch = {
-		icon = mission_burning_man
+		icon = mission_torch_fire
 		required_missions = { Y15_joined_blood Y15_light_spark Y15_artificers_world }
 		position = 22
 		
@@ -4192,8 +4070,8 @@ Y15_5 = {
 			owner = { NOT = { tag = ROOT } }
 			OR = {
 				superregion = yanshen_superregion
-				superregion = vimdatrong_superregion
-				superregion = gozengun_superregion
+				superregion = south_haless_superregion
+				superregion = north_haless_superregion
 			}
 			has_discovered = ROOT
 		}
@@ -4209,8 +4087,8 @@ Y15_5 = {
 					capital_scope = {
 						OR = {
 							superregion = yanshen_superregion
-							superregion = vimdatrong_superregion
-							superregion = gozengun_superregion
+							superregion = south_haless_superregion
+							superregion = north_haless_superregion
 						}
 					}
 					has_institution = feudalism
@@ -4247,8 +4125,8 @@ Y15_5 = {
 					capital_scope = {
 						OR = {
 							superregion = yanshen_superregion
-							superregion = vimdatrong_superregion
-							superregion = gozengun_superregion
+							superregion = south_haless_superregion
+							superregion = north_haless_superregion
 						}
 					}
 					has_institution = feudalism
@@ -4803,7 +4681,7 @@ Y15_5 = {
 				owner = {
 					OR = {
 						has_idea_group = maritime_ideas
-						has_idea_group = naval_ideas
+						has_idea_group = flottenbasis0
 						has_idea_group = exploration_ideas
 					}
 					capital_scope = { continent = europe }
@@ -4823,7 +4701,7 @@ Y15_5 = {
 					any_known_country = {
 						OR = {
 							has_idea_group = maritime_ideas
-							has_idea_group = naval_ideas
+							has_idea_group = flottenbasis0
 							has_idea_group = exploration_ideas
 						}
 						capital_scope = { continent = europe }
@@ -4832,7 +4710,7 @@ Y15_5 = {
 				any_known_country = {
 					OR = {
 						has_idea_group = maritime_ideas
-						has_idea_group = naval_ideas
+						has_idea_group = flottenbasis0
 						has_idea_group = exploration_ideas
 					}
 					capital_scope = { continent = europe }
@@ -5166,18 +5044,7 @@ Y15_5 = {
 		
 		trigger = {
 			has_institution = enlightenment
-
-			if = {
-				limit = { has_global_flag = lake_federation_disbanded }
-				any_ally = {
-					culture_group = triunic
-					development = 600
-					government = republic
-				}
-			}
-			else = {
-				alliance_with = J33
-			}
+			alliance_with = J33
 			any_ally = { capital_scope = { continent = europe } }
 			any_ally = {
 				capital_scope = { continent = asia }
@@ -5197,40 +5064,16 @@ Y15_5 = {
 		effect = {
 			custom_tooltip = Y15_enlight
 			hidden_effect = {
-				if = {
-					limit = { has_global_flag = lake_federation_disbanded }
-					random_ally = {
-						limit = {
-							culture_group = triunic
-							development = 600
-							government = republic
-						}
-						capital_scope = {
-							area = {
-								add_institution_embracement = {
-									which = enlightenment
-									value = 80
-								}
-								add_province_modifier = {
-									name = Y15_enlightment
-									duration = 720
-								}
+				J33 = {
+					capital_scope = {
+						area = {
+							add_institution_embracement = {
+								which = enlightenment
+								value = 80
 							}
-						}
-					}
-				}
-				else = {
-					J33 = {
-						capital_scope = {
-							area = {
-								add_institution_embracement = {
-									which = enlightenment
-									value = 80
-								}
-								add_province_modifier = {
-									name = Y15_enlightment
-									duration = 720
-								}
+							add_province_modifier = {
+								name = Y15_enlightment
+								duration = 720
 							}
 						}
 					}
