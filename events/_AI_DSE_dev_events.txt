@@ -1,0 +1,276 @@
+namespace = dse_dev_events
+# This is used for At-Cap Auto-Development
+country_event = {
+	# adm_click
+	id = dse_dev_events.3
+	title = dse_dev_events.3.t
+	desc = dse_dev_events.3.d
+	picture = INVENTION_eventPicture
+	hidden = yes
+	
+	trigger = {
+		OR = {
+			ai = yes
+			AND = {
+				NOT = { ai = yes }
+				has_country_flag = dse_dev_click
+			}
+		}
+		
+		OR = {
+			had_country_flag = { flag = admClick	days = 28 }
+			NOT = { has_country_flag = admClick }
+		}
+		
+		power_tech = {
+			power = adm
+			value = 950
+		}
+	}
+	
+	immediate = {
+		log = "========= dse_dev_events.3 Immediate Effects"
+		hidden_effect = {
+			clr_country_flag = admClick
+			set_country_flag = admClick
+			
+			set_base_target = {
+				which = base_target
+				base = adm
+			}
+			if = {
+				limit = {
+					OR = {
+						is_migratory_tribe = yes
+						check_variable = {
+							which = baseCost
+							value = 999
+						}
+					}
+				}
+				if = {
+					limit = {
+						NOT = { stability = 3 }
+					}
+					stab_cost = yes
+					add_stability = 1
+					log = "[This.GetName] raises stability**"
+				}
+				else = {
+					adm_power_cost = 75
+					add_inflation = -2
+					log = "[This.GetName] reduces inflation**"
+				}
+			}
+			else = {
+				event_target:base_target = {
+					add_power0 = {
+						power = adm
+					}
+					add_next_institution_embracement_scaled = 5
+					add_base_tax = 1
+					add_devastation_reduction = yes
+					log = dev_info.1
+				}
+				change_estate_land_share = {
+					estate = all
+					share = -0.1
+				}
+				change_variable = {
+					which = admClicks
+					value = 1
+				}
+			}
+		}
+	}
+	
+	option = {
+		#hidden
+	}
+}
+
+country_event = {
+	# dip_click
+	id = dse_dev_events.4
+	title = dse_dev_events.4.t
+	desc = dse_dev_events.4.d
+	picture = INVENTION_eventPicture
+	hidden = yes
+	
+	trigger = {
+		OR = {
+			AND = {
+				ai = yes
+				#has_global_flag = ai_dse_dev_click
+			}
+			AND = {
+				NOT = { ai = yes }
+				has_country_flag = dse_dev_click
+			}
+		}
+		
+		OR = {
+			had_country_flag = { flag = dipClick	days = 31 }
+			NOT = { has_country_flag = dipClick }
+		}
+		
+		power_tech = {
+			power = dip
+			value = 950
+		}
+	}
+	
+	immediate = {
+		log = "========= dse_dev_events.4 Immediate Effects"
+		hidden_effect = {
+			clr_country_flag = dipClick
+			set_country_flag = dipClick
+			
+			set_base_target = {
+				which = base_target
+				base = dip
+			}
+			if = {
+				limit = {
+					OR = {
+						is_migratory_tribe = yes
+						check_variable = {
+							which = baseCost
+							value = 999
+						}
+					}
+				}
+				dip_power_cost = 100
+				add_mercantilism = 1
+				log = "[This.GetName] promotes mercantilism**"
+			}
+			else = {
+				event_target:base_target = {
+					add_power0 = {
+						power = dip
+					}
+					add_next_institution_embracement_scaled = 5
+					add_base_production = 1
+					add_devastation_reduction = yes
+					log = dev_info.2
+				}
+				change_estate_land_share = {
+					estate = all
+					share = -0.1
+				}
+				change_variable = {
+					which = dipClicks
+					value = 1
+				}
+			}
+		}
+	}
+	
+	option = {
+		#hidden
+	}
+}
+
+country_event = {
+	# mil_click
+	id = dse_dev_events.5
+	title = dse_dev_events.5.t
+	desc = dse_dev_events.5.d
+	picture = INVENTION_eventPicture
+	hidden = yes
+	
+	trigger = {
+		OR = {
+			AND = {
+				ai = yes
+				#has_global_flag = ai_dse_dev_click
+			}
+			AND = {
+				NOT = { ai = yes }
+				has_country_flag = dse_dev_click
+			}
+		}
+		
+		OR = {
+			had_country_flag = { flag = milClick	days = 31 }
+			NOT = { has_country_flag = milClick }
+		}
+		
+		power_tech = {
+			power = mil
+			value = 950
+		}
+	}
+	
+	immediate = {
+		log = "========= dse_dev_events.5 Immediate Effects"
+		hidden_effect = {
+			clr_country_flag = milClick
+			set_country_flag = milClick
+			
+			set_base_target = {
+				which = base_target
+				base = mil
+			}
+			if = {
+				limit = {
+					OR = {
+						is_migratory_tribe = yes
+						check_variable = {
+							which = baseCost
+							value = 999
+						}
+					}
+				}
+				if = {
+					limit = {
+						NOT = { legitimacy_equivalent = 95 }
+					}
+					mil_power_cost = 100
+					
+					add_legitimacy = 10
+					add_horde_unity = 10
+					add_meritocracy = 10
+					add_devotion = 10
+					add_republican_tradition = 3
+					
+					add_absolutism = 2
+					
+					log = "[This.GetName] strengthens government**"
+				}
+				else = {
+					general_cost = yes
+					
+					create_general_var = yes
+					
+					add_army_professionalism = 0.01
+					
+					log = "[This.GetName] recruits army leader**"
+				}
+			}
+			else = {
+				event_target:base_target = {
+					add_power0 = {
+						power = mil
+					}
+					add_next_institution_embracement_scaled = 5
+					add_base_manpower = 1
+					add_devastation_reduction = yes
+					log = dev_info.3
+				}
+				change_estate_land_share = {
+					estate = all
+					share = -0.1
+				}
+				change_variable = {
+					which = milClicks
+					value = 1
+				}
+			}
+		}
+	}
+	
+	option = {
+		#hidden
+	}
+}
