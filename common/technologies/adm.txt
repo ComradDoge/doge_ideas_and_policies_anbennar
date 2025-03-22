@@ -175,6 +175,7 @@ technology = { #Modern Theocracy
 		new_world_i = 0.3
 	}
 	
+	governing_capacity = 100
 	theocratic_government = yes
 }
 
