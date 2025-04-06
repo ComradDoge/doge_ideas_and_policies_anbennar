@@ -18,14 +18,14 @@
  dst_cb_greatpower_desc: "We can subjugate small countries by our will as a Great Power."
 
  # Idea Enablees
- mechanic_enables_monarchie_idea_group_yes: "Allows §YMonarchy§! Idea Group."
- mechanic_enables_monarchie_idea_group_no: "Disallows §YMonarchy§! Idea Group"
- mechanic_enables_republik_idea_group_yes: "Allows §YRepublic§! Idea Group"
- mechanic_enables_republik_idea_group_no: "Disallows §YRepublic§! Idea Group"
- mechanic_enables_theokratie_idea_group_yes: "Allows §YTheocracy§! Idea Group"
- mechanic_enables_theokratie_idea_group_no: "Disallows §YTheocracy§! Idea Group"
- mechanic_enables_horde_idea_group_yes: "Allows §YHorde§! Idea Group"
- mechanic_enables_horde_idea_group_no: "Disallows §YHorde§! Idea Group"
+ #mechanic_enables_monarchie_idea_group_yes: "Allows §YMonarchy§! Idea Group."
+ #mechanic_enables_monarchie_idea_group_no: "Disallows §YMonarchy§! Idea Group"
+ #mechanic_enables_republik_idea_group_yes: "Allows §YRepublic§! Idea Group"
+ #mechanic_enables_republik_idea_group_no: "Disallows §YRepublic§! Idea Group"
+ #mechanic_enables_theokratie_idea_group_yes: "Allows §YTheocracy§! Idea Group"
+ #mechanic_enables_theokratie_idea_group_no: "Disallows §YTheocracy§! Idea Group"
+ #mechanic_enables_horde_idea_group_yes: "Allows §YHorde§! Idea Group"
+ #mechanic_enables_horde_idea_group_no: "Disallows §YHorde§! Idea Group"
 
  # Triggered Modifiers
  homeland_support_bonus: "Homeland Support"

@@ -595,6 +595,13 @@
  production_quotas: "Production Quotas"
  production_quotas_desc: "All work and no play, make the working class dull boys; or so the saying would go if our production schedules weren't so smooth and adequate, minimizing working hours while increasing productivity."
 
+ organised_mercenary_payment: "Communication Lines"
+ organised_construction_desc: "The need to upgrade the infrastructure of our government is a time consuming business, if we structure the process correctly we can do this faster."
+ organised_mercenary_payment_desc: "Having an effective communication support unit gives us a profound advantage. If only we could communicate instantly through some wire, but this shall  do."
+ benefits_for_mercenaries: "Effective Relief Administration"
+ benefits_for_mercenaries_desc: "War is part of life, therefore to ensure the support of our people the best we can do is ensure effective help for them after disasters, raiders and  wars."
+ organised_mercenary_recruitment: "Territory Administration"
+ organised_mercenary_recruitment_desc: "While we focus on the central territories we must not forget the lands that move this state forward. By having influence over construction we shall  be able to influence both the populace the aristocrats. What better way to entice than provide cheaper construction?  \nConstruction Cost in Subjects (except tributaries): §G-15%§W"
 
 
 
