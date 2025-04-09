@@ -1,0 +1,84 @@
+escann_adventurer_no_no_cb_wars_trigger = {
+	has_reform = adventurer_reform
+	NOT = { has_reform = found_our_nation }
+	NOT = {	# Ordered from most likely CB to least.
+		OR = {
+			is_in_war = {
+				defender_leader = FROM
+				casus_belli = cb_adventurer_take_escann
+			}
+			is_in_war = {
+				defender_leader = FROM
+				casus_belli = cb_humiliate_rotw
+			}
+			is_in_war = {
+				defender_leader = FROM
+				casus_belli = cb_force_migration
+			}
+			is_in_war = {
+				defender_leader = FROM
+				casus_belli = cb_super_badboy
+			}
+			is_in_war = {
+				defender_leader = FROM
+				casus_belli = cb_insult
+			}
+			is_in_war = {
+				defender_leader = FROM
+				casus_belli = cb_dishonored_call
+			}
+			is_in_war = {
+				defender_leader = FROM
+				casus_belli = cb_evil_ruler
+			}
+			is_in_war = {
+				defender_leader = FROM
+				casus_belli = cb_trade_war
+			}
+			is_in_war = {
+				defender_leader = FROM
+				casus_belli = cb_trade_conflict
+			}
+			is_in_war = {
+				defender_leader = FROM
+				casus_belli = cb_independence_war
+			}
+			is_in_war = {
+				defender_leader = FROM
+				casus_belli = cb_disloyal_vassal
+			}
+			is_in_war = {
+				defender_leader = FROM
+				casus_belli = cb_loan_cancelled
+			}
+			is_in_war = {
+				defender_leader = FROM
+				casus_belli = cb_support_rebels
+			}
+			is_in_war = {
+				defender_leader = FROM
+				casus_belli = cb_defection
+			}
+			is_in_war = {
+				defender_leader = FROM
+				casus_belli = cb_forced_break_alliance
+			}
+			is_in_war = {
+				defender_leader = FROM
+				casus_belli = cb_hegemon
+			}
+
+
+            
+            # Doge
+			is_in_war = {
+				defender_leader = FROM
+				casus_belli = dst_cb_minorpower
+			}
+			is_in_war = {
+				defender_leader = FROM
+				casus_belli = dst_cb_greatpower
+			}
+		}
+	}
+}
