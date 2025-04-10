@@ -57,6 +57,7 @@ influence_ideas = {
 
 	bonus = {
 		unjustified_demands = -0.25
+		diplomats = 1
 		monthly_harpylen_queendom_power = 0.15
 	}
 
@@ -75,6 +76,7 @@ influence_ideas = {
 	}
 	diplomatic_influence = {
 		diplomatic_reputation = 2
+		diplomats = 1
 	}
 	postal_service = {
 		diplomatic_upkeep = 2

@@ -315,6 +315,7 @@ humanist_ideas = {
 
 	benevolence = {
 		improve_relation_modifier = 0.15
+		diplomats = 1
 	}
 	local_traditions = {
 		global_unrest = -2
@@ -565,7 +566,7 @@ monarchie0 = {
 	}
 	monarchie6 = {
 		diplomatic_reputation = 2
-		diplomats = 1
+		diplomats = 2
 	}
 	monarchie7 = {
 		great_project_upgrade_cost = -0.15
