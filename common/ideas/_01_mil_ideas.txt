@@ -37,7 +37,60 @@ quality_ideas = {
 	}
 
 	ai_will_do = {
-		factor = 10
+		factor = 4
+
+		modifier = { 
+			factor = 1.1
+			monthly_mil = 8
+		}
+		modifier = { 
+			factor = 1.05
+			is_great_power = yes 
+		}
+		modifier = { 
+			factor = 1.05
+			national_focus = MIL 
+		}
+		modifier = { 
+			factor = 1.1
+			personality = ai_militarist  
+		}
+		modifier = {
+			factor = 1.05
+			OR = {
+				has_idea_group = economic_ideas
+			}
+		}
+		modifier = { 
+			factor = 1.25
+			OR = { 
+				has_global_modifier_value = { 
+					which = infantry_power 
+					value = 0.2
+				}
+				has_global_modifier_value = { 
+					which = cavalry_power 
+					value = 0.25
+				}
+				has_global_modifier_value = { 
+					which = artillery_power 
+					value = 0.1
+				}
+				has_global_modifier_value = { 
+					which = heavy_ship_power 
+					value = 0.1
+				}
+				has_global_modifier_value = { 
+					which = galley_power 
+					value = 0.15
+				}
+				has_global_modifier_value = { 
+					which = army_tradition
+					value = 0.01
+				}
+			}
+			
+		}
 	}
 }
 
@@ -71,7 +124,42 @@ quantity_ideas = {
 	}
 
 	ai_will_do = {
-		factor = 10
+		factor = 4
+		modifier = { 
+			factor = 0.75
+			NOT = { monthly_mil = 8 }
+		}
+		modifier = { 
+			factor = 1.05
+			is_great_power = yes 
+		}
+		modifier = { 
+			factor = 1.05
+			national_focus = MIL 
+		}
+		modifier = { 
+			factor = 1.1
+			personality = ai_militarist  
+		}
+		modifier = { 
+			factor = 1.25
+			OR = { 
+				has_global_modifier_value = { 
+					which = global_manpower_modifier 
+					value = 0.2
+				}
+				has_global_modifier_value = { 
+					which = land_forcelimit_modifier 
+					value = 0.15
+				}
+			}
+		}
+		#modifier = {
+		#	factor = 1.1
+		#	OR = {
+		#		has_idea_group = 
+		#	}
+		#}
 	}
 }
 
@@ -107,7 +195,49 @@ offensive_ideas = {
 	}
 
 	ai_will_do = {
-		factor = 10
+		factor = 4
+		modifier = {
+			factor = 1.1
+			has_global_modifier_value = {
+				which = discipline 
+				value = 0.1
+			}
+		}
+		modifier = {
+			factor = 1.25
+			monthly_mil = 7 
+		}
+		modifier = {
+			factor = 1.25
+			has_country_modifier = monstrous_nation
+		}
+		modifier = {
+			factor = 1.05
+			is_great_power = yes 
+		}
+		modifier = {
+			factor = 1.25 
+			personality = ai_militarist
+		}
+		modifier = {
+			factor = 1.1 
+			national_focus = MIL 
+		}
+		modifier = {
+			factor = 1.15
+			OR = {
+				has_idea_group = economic_ideas 
+				has_idea_group = innovativeness_ideas 
+			}
+		}
+		modifier = {
+			factor = 1.25
+			is_march = yes
+		}
+		modifier = {
+			factor = 3
+			technology_group = tech_orcish
+		}
 	}
 }
 
@@ -144,7 +274,41 @@ defensive_ideas = {
 	}
 
 	ai_will_do = {
-		factor = 10
+		factor = 2.5
+		modifier = {
+			factor = 1.1
+			has_global_modifier_value = {
+				which = land_morale  
+				value = 0.2
+			}
+		}
+		modifier = {
+			factor = 1.1
+			has_global_modifier_value = {
+				which = defensiveness  
+				value = 0.2
+			}
+		}
+		modifier = {
+			factor = 1.25
+			monthly_mil = 7 
+		}
+		modifier = {
+			factor = 1.1 
+			personality = ai_militarist
+		}
+		modifier = {
+			factor = 1.25
+			current_age = age_of_discovery
+			num_of_owned_provinces_with = {
+				has_terrain = mountain
+				value = 5
+			}
+		}
+		modifier = {
+			factor = 1.25
+			is_march = yes
+		}
 	}
 }
 
@@ -199,7 +363,7 @@ generalstab0 = {
 
 
 	ai_will_do = {
-		factor = 10
+		factor = 4
 	}
 }
 
@@ -254,7 +418,7 @@ stehendesheer0 = {
 	}
 
 	ai_will_do = {
-		factor = 10
+		factor = 4
 	}
 }
 
@@ -302,7 +466,7 @@ wehrpflicht0 = {
 	}
 
 	ai_will_do = {
-		factor = 10
+		factor = 3
 	}
 }
 
@@ -388,7 +552,7 @@ waffenqualitat0 = {
 	}
 
 	ai_will_do = {
-		factor = 10
+		factor = 4
 	}
 }
 
@@ -441,8 +605,28 @@ festung0 = {
 	ai_will_do = {
 		factor = 1
 		modifier = {
-			factor = 3.0
+			factor = 1.5
 			is_march = yes
+		}
+		modifier = {
+			factor = 1.5
+			num_of_owned_provinces_with = {
+				has_terrain = mountain
+				value = 5
+			}
+		}
+		modifier = {
+			factor = 1.25
+			has_global_modifier_value = {
+				which = defensiveness  
+				value = 0.4
+			}
+		}
+		modifier = {
+			factor = 1.25
+			OR = {
+				has_idea_group = defensive_ideas
+			}
 		}
 	}
 }
@@ -485,7 +669,7 @@ kriegsproduktion0 = {
 	}
 
 	ai_will_do = {
-		factor = 10
+		factor = 4
 	}
 }
 
@@ -531,7 +715,7 @@ logistics0 = {
 	}
 
 	ai_will_do = {
-		factor = 1
+		factor = 4
 
 	}
 }
@@ -575,7 +759,7 @@ militarismus0 = {
 	}
 
 	ai_will_do = {
-		factor = 5
+		factor = 3
 	}
 }
 
@@ -623,7 +807,17 @@ shock0 = {
 		factor = 1
 		modifier = {
 			factor = 15
-			has_reform = steppe_horde
+			OR = { 
+				has_reform = steppe_horde
+				has_reform = centaur_horde
+			}
+		}
+		modifier = {
+			factor = 2.5
+			has_global_modifier_value = { 
+				which = cavalry_power 
+				value = 0.5
+			}
 		}
 	}
 }
@@ -670,6 +864,24 @@ fire0 = {
 	}
 
 	ai_will_do = {
-		factor = 10
+		factor = 4
+		modifier = {
+			factor = 0
+			NOT = { is_year = 1550 }
+		}
+		modifier = {
+			factor = 2.5
+			has_global_modifier_value = { 
+				which = fire_damage 
+				value = 0.2
+			}
+		}
+		modifier = {
+			factor = 2.5
+			has_global_modifier_value = { 
+				which = artillery_power 
+				value = 0.3
+			}
+		}
 	}
 }

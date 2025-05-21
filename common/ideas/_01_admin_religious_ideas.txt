@@ -2262,6 +2262,34 @@ religious_ideas = {
 	}
 
 	ai_will_do = {
-		factor = 1.0
+		factor = 1
+		modifier = {
+			factor = 0
+			has_idea_group = humanist_ideas
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { religious_unity = 0.5 }
+		}
+		modifier = {
+			factor = 0.5
+			personality = ai_diplomat
+		}
+		modifier = {
+			factor = 0.1
+			religious_unity = 0.95 
+		}
+		modifier = {
+			factor = 0.25
+			NOT = {
+				any_neighbor_country = {
+					religion = ROOT 
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { monthly_adm = 7 }
+		}
 	}
 }

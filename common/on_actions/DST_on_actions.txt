@@ -1,4 +1,40 @@
 on_startup = {
+	# This part exists to rid of the historical idea groups that AI uses at start and instead to rely on the ai logic
+	if = {
+		limit = {
+			NOT = { is_year = 1445 }
+		}
+		every_country = {
+			limit = {
+				#ai = yes
+			}
+			#### Administrative
+			remove_idea_group = innovativeness_ideas
+			remove_idea_group = economic_ideas
+			remove_idea_group = expansion_ideas
+			remove_idea_group = administrative_ideas
+			remove_idea_group = humanist_ideas
+			remove_idea_group = indigenous_ideas
+
+			#### Religious
+			remove_idea_group = religious_ideas
+
+			#### Diplomatic
+			remove_idea_group = spy_ideas
+			remove_idea_group = influence_ideas
+			remove_idea_group = trade_ideas
+			remove_idea_group = exploration_ideas
+			remove_idea_group = maritime_ideas
+
+			#### Military
+			remove_idea_group = quality_ideas
+			remove_idea_group = quantity_ideas
+			remove_idea_group = offensive_ideas
+			remove_idea_group = defensive_ideas
+
+		}
+	}
+
 	every_province = {
 		add_province_triggered_modifier = homeland_support_bonus
 	}
