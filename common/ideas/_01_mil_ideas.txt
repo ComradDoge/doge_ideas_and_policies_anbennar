@@ -38,7 +38,10 @@ quality_ideas = {
 
 	ai_will_do = {
 		factor = 4
-
+		modifier = {
+			factor = 0
+			NOT = { mil_tech = 4 } # To make AI prioritise the tech
+		}
 		modifier = { 
 			factor = 1.1
 			monthly_mil = 8
@@ -125,6 +128,10 @@ quantity_ideas = {
 
 	ai_will_do = {
 		factor = 4
+		modifier = {
+			factor = 0
+			NOT = { mil_tech = 4 } # To make AI prioritise the tech
+		}
 		modifier = { 
 			factor = 0.75
 			NOT = { monthly_mil = 8 }
@@ -196,6 +203,10 @@ offensive_ideas = {
 
 	ai_will_do = {
 		factor = 4
+		modifier = {
+			factor = 0
+			NOT = { mil_tech = 4 } # To make AI prioritise the tech
+		}
 		modifier = {
 			factor = 1.1
 			has_global_modifier_value = {
@@ -275,6 +286,10 @@ defensive_ideas = {
 
 	ai_will_do = {
 		factor = 2.5
+		modifier = {
+			factor = 0
+			NOT = { mil_tech = 4 } # To make AI prioritise the tech
+		}
 		modifier = {
 			factor = 1.1
 			has_global_modifier_value = {
@@ -364,6 +379,10 @@ generalstab0 = {
 
 	ai_will_do = {
 		factor = 4
+		modifier = {
+			factor = 0
+			NOT = { mil_tech = 4 } # To make AI prioritise the tech
+		}
 	}
 }
 
@@ -419,6 +438,10 @@ stehendesheer0 = {
 
 	ai_will_do = {
 		factor = 4
+		modifier = {
+			factor = 0
+			NOT = { mil_tech = 4 } # To make AI prioritise the tech
+		}
 	}
 }
 
@@ -467,6 +490,10 @@ wehrpflicht0 = {
 
 	ai_will_do = {
 		factor = 3
+		modifier = {
+			factor = 0
+			NOT = { mil_tech = 4 } # To make AI prioritise the tech
+		}
 	}
 }
 
@@ -553,6 +580,10 @@ waffenqualitat0 = {
 
 	ai_will_do = {
 		factor = 4
+		modifier = {
+			factor = 0
+			NOT = { mil_tech = 4 } # To make AI prioritise the tech
+		}
 	}
 }
 
@@ -604,6 +635,10 @@ festung0 = {
 
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { mil_tech = 4 } # To make AI prioritise the tech
+		}
 		modifier = {
 			factor = 1.5
 			is_march = yes
@@ -670,6 +705,10 @@ kriegsproduktion0 = {
 
 	ai_will_do = {
 		factor = 4
+		modifier = {
+			factor = 0
+			NOT = { mil_tech = 4 } # To make AI prioritise the tech
+		}
 	}
 }
 
@@ -716,7 +755,10 @@ logistics0 = {
 
 	ai_will_do = {
 		factor = 4
-
+		modifier = {
+			factor = 0
+			NOT = { mil_tech = 4 } # To make AI prioritise the tech
+		}
 	}
 }
 
@@ -760,6 +802,10 @@ militarismus0 = {
 
 	ai_will_do = {
 		factor = 3
+		modifier = {
+			factor = 0
+			NOT = { mil_tech = 4 } # To make AI prioritise the tech
+		}
 	}
 }
 
@@ -805,6 +851,10 @@ shock0 = {
 
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { mil_tech = 4 } # To make AI prioritise the tech
+		}
 		modifier = {
 			factor = 15
 			OR = { 
