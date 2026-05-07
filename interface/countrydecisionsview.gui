@@ -2953,7 +2953,7 @@ guiTypes = {
 					name = "insyaa_invention_mechanim_tier4_bio"
 
 					position = { x = 413 y = 400 }
-					quadTextureSprite ="GFX_artificery_innovation_economic"
+					quadTextureSprite ="GFX_artificery_innovation_t4_kraken_galleons"
 					Orientation = "UPPER_LEFT"
 					scripted = yes
 					clicksound = back_click
@@ -3056,7 +3056,7 @@ guiTypes = {
 					name = "insyaa_invention_gene_tier4_bio"
 
 					position = { x = 413 y = 502 }
-					quadTextureSprite ="GFX_artificery_innovation_society"
+					quadTextureSprite ="GFX_artificery_innovation_t4_bio_data_processor"
 					Orientation = "UPPER_LEFT"
 					scripted = yes
 					clicksound = back_click
@@ -3140,7 +3140,7 @@ guiTypes = {
 					name = "insyaa_invention_precursor_tier4_bio"
 
 					position = { x = 413 y = 603 }
-					quadTextureSprite ="GFX_artificery_innovation_military"
+					quadTextureSprite ="GFX_artificery_innovation_t4_spirit_munitions"
 					Orientation = "UPPER_LEFT"
 					scripted = yes
 					clicksound = back_click
@@ -3265,7 +3265,7 @@ guiTypes = {
 					name = "insyaa_invention_mechanim_tier4_bio"
 
 					position = { x = 426 y = 321 }
-					quadTextureSprite = "GFX_artificery_innovation_economic_small"
+					quadTextureSprite = "GFX_artificery_innovation_t4_kraken_galleons_small"
 					Orientation = "UPPER_LEFT"
 					scripted = yes
 					clicksound = back_click
@@ -3368,7 +3368,7 @@ guiTypes = {
 					name = "insyaa_invention_gene_tier4_bio"
 
 					position = { x = 426 y = 423 }
-					quadTextureSprite = "GFX_artificery_innovation_society_small"
+					quadTextureSprite = "GFX_artificery_innovation_t4_bio_data_processor_small"
 					Orientation = "UPPER_LEFT"
 					scripted = yes
 					clicksound = back_click
@@ -3452,7 +3452,7 @@ guiTypes = {
 					name = "insyaa_invention_precursor_tier4_bio"
 
 					position = { x = 426 y = 524 }
-					quadTextureSprite = "GFX_artificery_innovation_military_small"
+					quadTextureSprite = "GFX_artificery_innovation_t4_spirit_munitions_small"
 					Orientation = "UPPER_LEFT"
 					scripted = yes
 					clicksound = back_click
@@ -3573,7 +3573,7 @@ guiTypes = {
 						name = "insyaa_invention_mechanim_tier4_mech"
 
 						position = { x = 77 y = 712 }
-						quadTextureSprite ="GFX_artificery_innovation_economic"
+						quadTextureSprite ="GFX_artificery_innovation_t4_kraken_galleons"
 						Orientation = "UPPER_LEFT"
 						scripted = yes
 						clicksound = back_click
@@ -3582,7 +3582,7 @@ guiTypes = {
 						name = "insyaa_invention_gene_tier4_mech"
 
 						position = { x = 237 y = 712 }
-						quadTextureSprite ="GFX_artificery_innovation_society"
+						quadTextureSprite ="GFX_artificery_innovation_t4_bio_data_processor"
 						Orientation = "UPPER_LEFT"
 						scripted = yes
 						clicksound = back_click
@@ -3591,7 +3591,7 @@ guiTypes = {
 						name = "insyaa_invention_precursor_tier4_mech"
 
 						position = { x = 397 y = 712 }
-						quadTextureSprite ="GFX_artificery_innovation_military"
+						quadTextureSprite ="GFX_artificery_innovation_t4_spirit_munitions"
 						Orientation = "UPPER_LEFT"
 						scripted = yes
 						clicksound = back_click
@@ -3960,7 +3960,7 @@ guiTypes = {
 						name = "insyaa_invention_mechanim_tier4_mech"
 
 						position = { x = 172 y = 567 }
-						quadTextureSprite = "GFX_artificery_innovation_economic_small"
+						quadTextureSprite = "GFX_artificery_innovation_t4_kraken_galleons_small"
 						Orientation = "UPPER_LEFT"
 						scripted = yes
 						clicksound = back_click
@@ -3969,7 +3969,7 @@ guiTypes = {
 						name = "insyaa_invention_gene_tier4_mech"
 
 						position = { x = 252 y = 567 }
-						quadTextureSprite = "GFX_artificery_innovation_society_small"
+						quadTextureSprite = "GFX_artificery_innovation_t4_bio_data_processor"
 						Orientation = "UPPER_LEFT"
 						scripted = yes
 						clicksound = back_click
@@ -3978,7 +3978,7 @@ guiTypes = {
 						name = "insyaa_invention_precursor_tier4_mech"
 
 						position = { x = 332 y = 567 }
-						quadTextureSprite = "GFX_artificery_innovation_military_small"
+						quadTextureSprite = "GFX_artificery_innovation_t4_spirit_munitions_small"
 						Orientation = "UPPER_LEFT"
 						scripted = yes
 						clicksound = back_click
