@@ -154,3 +154,30 @@ has_any_full_ship_doctrine_idea_groups = {
         }
     }
 }
+
+# Scripted triggers for DSE idea swapper
+# Centralises unlock conditions so future additions only need changing here
+# Surely I'll remember
+horde_idea_swapper_positive_trigger = {
+	OR = {
+		has_government_attribute = enables_horde_idea_group
+		has_reform = steppe_horde
+		has_reform = centaur_horde
+		has_reform = I55_centaur_horde
+		has_reform = centaur_settled
+		has_reform = great_centaur_horde
+		has_reform = pachyderm_masters
+		has_country_flag = rakkaz_unlocked_horde_gov_ideas
+	}
+}
+
+horde_idea_swapper_negative_trigger = {
+	NOT = { has_government_attribute = enables_horde_idea_group }
+	NOT = { has_reform = steppe_horde }
+	NOT = { has_reform = centaur_horde }
+	NOT = { has_reform = I55_centaur_horde }
+	NOT = { has_reform = centaur_settled }
+	NOT = { has_reform = great_centaur_horde }
+	NOT = { has_reform = pachyderm_masters }
+	NOT = { has_country_flag = rakkaz_unlocked_horde_gov_ideas }
+}

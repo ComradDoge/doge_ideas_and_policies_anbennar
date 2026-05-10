@@ -24,31 +24,45 @@ katholisch0 = {
 	katholisch1 = {
 		missionaries = 1
 		# <<WIKI>> free_cardinal = 1
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	katholisch2 = {
 		global_missionary_strength = 0.02
 		missionary_maintenance_cost = -0.25
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 
 	katholisch4 = {
 		papal_influence = 2
 		devotion = 1
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 
 	katholisch5 = {
 		tolerance_own = 1
 		prestige = 1
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	katholisch6 = {
 		enforce_religion_cost = -0.25
 		imperial_authority_value = 0.05
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	katholisch3 = {
 		cb_on_religious_enemies = yes
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	katholisch7 = {
 		land_morale = 0.075
 		
+		effect = { on_idea_taken_effect = yes on_idea_group_finished_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes on_idea_group_unfinished_effect = yes }
 	}
 	
 	ai_will_do = {
@@ -117,29 +131,43 @@ protestant0 = {
 	protestant2 = {
 		missionaries = 1
 		church_power_modifier = 0.5
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	protestant3 = {
 		idea_cost = -0.05
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 
 	protestant4 = {
 		global_missionary_strength = 0.02
 		global_heretic_missionary_strength = 0.03
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 
 	protestant5 = {
 		defensiveness = 0.2
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	protestant6 = {
 		technology_cost = -0.05
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	protestant1 = {
 		cb_on_religious_enemies = yes
 		free_leader_pool = 1
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 
 	protestant7 = {
 		advisor_cost = -0.1
+		effect = { on_idea_taken_effect = yes on_idea_group_finished_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes on_idea_group_unfinished_effect = yes }
 	}
 	
 	ai_will_do = {
@@ -208,27 +236,41 @@ reformiert0 = {
 		global_missionary_strength = 0.02
 		missionary_maintenance_cost = -0.25
 		
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	reformiert2 = {
 		tolerance_heretic = 2
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	reformiert3 = {
 		siege_ability = 0.075
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 
 	reformiert4 = {
 		trade_range_modifier = 0.25
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 
 	reformiert5 = {
 		stability_cost_modifier = -0.15
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	reformiert6 = {
 		discipline = 0.025
 		
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	reformiert7 = {
 		monthly_fervor_increase = 5
+		effect = { on_idea_taken_effect = yes on_idea_group_finished_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes on_idea_group_unfinished_effect = yes }
 	}
 	
 	ai_will_do = {
@@ -295,24 +337,36 @@ orthodox0 = {
 	
 	orthodox1 = {
 		missionaries = 1
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	orthodox2 = {
 		stability_cost_modifier = -0.25
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	orthodox3 = {
 		global_missionary_strength = 0.02
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 
 	orthodox4 = {
 		culture_conversion_cost = -0.15
 		missionary_maintenance_cost = -0.25
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 
 	orthodox5 = {
 		adm_tech_cost_modifier = -0.1
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	orthodox6 = {
 		religious_unity = 0.15
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	orthodox7 = {
 		diplomatic_reputation = 1
@@ -321,6 +375,8 @@ orthodox0 = {
 		horde_unity = 1
 		devotion = 1
 		meritocracy = 1
+		effect = { on_idea_taken_effect = yes on_idea_group_finished_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes on_idea_group_unfinished_effect = yes }
 	}
 	
 	ai_will_do = {
@@ -384,27 +440,41 @@ islam0 = {
 	
 	islam1 = {
 		global_tax_modifier = 0.15
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	islam2 = {
 		global_trade_power = 0.1
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	islam3 = {
 		missionaries = 1
 		missionary_maintenance_cost = -0.5
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 
 	islam4 = {
 		core_creation = -0.1
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 
 	islam5 = {
 		artillery_power = 0.05
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	islam6 = {
 		cb_on_religious_enemies = yes
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	islam7 = {
 		allowed_marine_fraction = 0.2
+		effect = { on_idea_taken_effect = yes on_idea_group_finished_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes on_idea_group_unfinished_effect = yes }
 	}
 	
 	ai_will_do = {
@@ -470,28 +540,42 @@ tengri0 = {
 	tengri1 = {
 		horde_unity = 1
 		legitimacy = 1
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	tengri2 = {
 		tolerance_heathen = 2
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	tengri3 = {
 		cavalry_power = 0.1
 		cav_to_inf_ratio = 0.15
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 
 	tengri4 = {
 		leader_land_manuever = 1
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 
 	tengri5 = {
 		hostile_attrition = 2
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	tengri6 = {
 		global_missionary_strength = 0.02
 	
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	tengri7 = {
 		religious_unity = 0.25
+		effect = { on_idea_taken_effect = yes on_idea_group_finished_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes on_idea_group_unfinished_effect = yes }
 	}
 	
 	ai_will_do = {
@@ -559,30 +643,44 @@ hindu0 = {
 	
 	hindu1 = {
 		technology_cost = -0.05
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	hindu2 = {
 		global_missionary_strength = 0.02
 		missionaries = 1
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	hindu3 = {
 		num_accepted_cultures = 1
 		missionary_maintenance_cost = -0.25
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 
 	hindu4 = {
 		diplomatic_reputation = 1
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 
 	hindu5 = {
 		heir_chance = 0.25
 		advisor_cost = -0.1	
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	hindu6 = {
 		global_unrest = -2
 		dip_tech_cost_modifier = -0.05
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	hindu7 = {
 		prestige = 1
+		effect = { on_idea_taken_effect = yes on_idea_group_finished_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes on_idea_group_unfinished_effect = yes }
 	}
 	
 	ai_will_do = {
@@ -655,28 +753,42 @@ confuci0 = {
 	confuci1 = {
 		legitimacy = 1
 		yearly_harmony = 0.5
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	confuci2 = {
 		global_autonomy = -0.05
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	confuci3 = {
 		num_accepted_cultures = 1
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 
 	confuci4 = {
 		advisor_cost = -0.1
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 
 	confuci5 = {
 		imperial_mandate = 0.1
 		governing_capacity_modifier = 0.15
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	confuci6 = {
 		global_missionary_strength = 0.02
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	confuci7 = {
 		idea_cost = -0.05
 		siege_ability = 0.075
+		effect = { on_idea_taken_effect = yes on_idea_group_finished_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes on_idea_group_unfinished_effect = yes }
 	}
 	
 	ai_will_do = {
@@ -710,28 +822,42 @@ budda0 = {
 	
 	budda1 = {
 		idea_cost = -0.05
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	budda2 = {
 		prestige = 1
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	budda3 = {
 		diplomatic_reputation = 1
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 
 	budda4 = {
 		global_unrest = -2
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 
 	budda5 = {
 		tolerance_heathen = 1
 		tolerance_heretic = 1
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	budda6 = {
 		production_efficiency = 0.15
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	budda7 = {
 		merchants = 1
 		missionaries = 1
+		effect = { on_idea_taken_effect = yes on_idea_group_finished_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes on_idea_group_unfinished_effect = yes }
 	}
 	
 	ai_will_do = {
@@ -761,29 +887,43 @@ norse0 = {
 	norse1 = {
 		may_perform_slave_raid = yes
 		
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	norse2 = {
 		land_morale = 0.075
 		naval_morale = 0.075
 		
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	norse3 = {
         # <<WIKI>> add_cb = cb_coast
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 
 	norse4 = {
 		global_ship_cost = -0.15
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 
 	norse5 = {
 		loot_amount = 1
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	norse6 = {
 		global_missionary_strength = 0.02
 		missionaries = 1	
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	norse7 = {
 		production_efficiency = 0.1
+		effect = { on_idea_taken_effect = yes on_idea_group_finished_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes on_idea_group_unfinished_effect = yes }
 	}
 	
 	ai_will_do = {
@@ -850,24 +990,36 @@ shinto0 = {
 	
 	shinto1 = {
 		infantry_power = 0.05
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	shinto2 = {
 		production_efficiency = 0.1
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	
 	shinto3 = {
 		technology_cost = -0.05
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 
 	shinto4 = {
 		global_manpower_modifier = 0.1
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 
 	shinto5 = {
 		global_sailors_modifier = 0.15
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	shinto6 = {
 		heir_chance = 0.5
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	shinto7 = {
 		legitimacy = 1
@@ -875,6 +1027,8 @@ shinto0 = {
 		republican_tradition = 0.3
 		meritocracy = 1
 		horde_unity = 1
+		effect = { on_idea_taken_effect = yes on_idea_group_finished_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes on_idea_group_unfinished_effect = yes }
 	}
 	
 	ai_will_do = {
@@ -903,29 +1057,43 @@ cathar0 = {
 	cathar1 = {
 		#female_advisor_chance = 0.5
 		advisor_pool = 2
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	cathar2 = {
 		state_maintenance_modifier = -0.15
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	cathar3 = {
 		defensiveness = 0.1
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 
 	cathar4 = {
 		religious_unity = 0.25
 		missionaries = 1
 		missionary_maintenance_cost = -0.25
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 
 	cathar6 = {
 		num_accepted_cultures = 1
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	cathar5 = {
 		#extra_manpower_at_religious_war = yes
 		cb_on_religious_enemies = yes
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	cathar7 = {
 		idea_cost = -0.05
+		effect = { on_idea_taken_effect = yes on_idea_group_finished_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes on_idea_group_unfinished_effect = yes }
 	}
 	
 	ai_will_do = {
@@ -954,29 +1122,43 @@ coptic0 = {
 	
 	coptic1 = {
 		defensiveness = 0.2
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	coptic2 = {
 		tolerance_heathen = 1
 		tolerance_heretic = 1
 		
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	coptic3 = {
 		global_missionary_strength = 0.02
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 
 	coptic4 = {
 		technology_cost = -0.05
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 
 	coptic5 = {
 		land_morale = 0.075
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	coptic6 = {
 		idea_cost = -0.05
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	coptic7 = {
 		missionaries = 1
 		missionary_maintenance_cost = -0.1
+		effect = { on_idea_taken_effect = yes on_idea_group_finished_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes on_idea_group_unfinished_effect = yes }
 	}
 	
 	ai_will_do = {
@@ -1009,30 +1191,44 @@ romuva0 = {
 	
 	romuva1 = {
 		build_cost = -0.1 #lauko sargei
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	romuva2 = {
 		global_missionary_strength = 0.02 # geschichten
 
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	romuva3 = {
 		land_morale = 0.075 # Menschenopfer
 		siege_ability = 0.075
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 
 	romuva4 = {
-		missionaries = 1    # geschichten erz�hler
+		missionaries = 1    # geschichten erz hler
 		missionary_maintenance_cost = -0.1
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 
 	romuva5 = {
 		num_accepted_cultures = 1 # moralfragen	
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	romuva6 = {
 		global_unrest = -2 # Feier zur Sonnenwende
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	romuva7 = {
 		naval_forcelimit_modifier = 0.1		# Sonne und Mond
 		land_forcelimit_modifier = 0.1
+		effect = { on_idea_taken_effect = yes on_idea_group_finished_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes on_idea_group_unfinished_effect = yes }
 	}
 
 	ai_will_do = {
@@ -1065,27 +1261,41 @@ suomi0 = {
 	
 	suomi1 = {
 		shock_damage = 0.05 # Ukko
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	suomi2 = {
 		heir_chance = 0.3 # Akka
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	suomi3 = {
-		missionaries = 1    # geschichten erz�hler
+		missionaries = 1    # geschichten erz hler
 		missionary_maintenance_cost = -0.1
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 
 	suomi4 = {
 		global_tax_modifier = 0.15 # Hela
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 
 	suomi5 = {
 		global_missionary_strength = 0.02 # geschichten
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	suomi6 = {
 		production_efficiency = 0.15 # Juhannus
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	suomi7 = {
 		hostile_attrition = 1
+		effect = { on_idea_taken_effect = yes on_idea_group_finished_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes on_idea_group_unfinished_effect = yes }
 	}
 
 	ai_will_do = {
@@ -1095,7 +1305,7 @@ suomi0 = {
  
  
 ########################################################
-####### J�dische Ideen / Jewish Ideas
+####### J dische Ideen / Jewish Ideas
 ########################################################
 
 
@@ -1118,28 +1328,42 @@ jew0 = {
 	jew1 = {
 		global_trade_power = 0.1
 		institution_spread_from_true_faith = 0.25
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	jew2 = {
 		tolerance_own = 2
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	jew3 = {
 		merchants = 1
 		siege_ability = 0.075
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 
 	jew4 = {
 		reduced_liberty_desire = 5
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 
 	jew5 = {
 		inflation_reduction = 0.05
 		
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	jew6 = {
 		interest = -0.5
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	jew7 = {
 		discipline = 0.025
+		effect = { on_idea_taken_effect = yes on_idea_group_finished_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes on_idea_group_unfinished_effect = yes }
 	}
 
 	ai_will_do = {
@@ -1171,29 +1395,43 @@ slav0 = {
 	
 	slav1 = {
 		global_missionary_strength = 0.02 # geschichten
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	slav2 = {
 		land_morale = 0.075 # Hausgeister
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	slav3 = {
-		missionaries = 1    # geschichten erz�hler
+		missionaries = 1    # geschichten erz hler
 		missionary_maintenance_cost = -0.1
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 
 	slav4 = {
 		naval_morale = 0.1
 		leader_naval_manuever = 1 # wassergeister
 		
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 
 	slav5 = {
 		global_trade_goods_size_modifier = 0.075 # Elemente Lehre
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	slav6 = {
 		improve_relation_modifier = 0.1 # Parallelen zu andern Kulturen
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	slav7 = {
 		war_exhaustion_cost = -0.2
+		effect = { on_idea_taken_effect = yes on_idea_group_finished_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes on_idea_group_unfinished_effect = yes }
 	}
 
 	ai_will_do = {
@@ -1229,28 +1467,42 @@ helle0 = {
 	helle1 = {
 		heavy_ship_power = 0.1 # poseidon
 		galley_power = 0.1
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	helle2 = {
 		infantry_power = 0.05
 
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	helle3 = {
 		adm_tech_cost_modifier = -0.05
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 
 	helle4 = {
 		global_institution_spread = 0.15 # Studientradition
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 
 	helle5 = {
 		diplomatic_upkeep = 2	
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	helle6 = {
 		embracement_cost = -0.15
 		institution_spread_from_true_faith = 0.25
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	helle7 = {
 		global_missionary_strength = 0.02
+		effect = { on_idea_taken_effect = yes on_idea_group_finished_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes on_idea_group_unfinished_effect = yes }
 	}
 
 	ai_will_do = {
@@ -1283,26 +1535,38 @@ mane0 = {
 	mane1 = {
 		tolerance_heathen = 1
 		tolerance_heretic = 1
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	mane2 = {
 		missionaries = 1
 		global_missionary_strength = 0.02
 		missionary_maintenance_cost = -0.1
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	mane3 = {
 		global_autonomy = -0.05
 		liberty_desire_from_subject_development = -0.1
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 
 	mane4 = {
 		land_morale = 0.075
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 
 	mane5 = {
 		global_unrest = -2
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	mane6 = {
 		production_efficiency = 0.1
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	mane7 = {
 		legitimacy = 1
@@ -1310,6 +1574,8 @@ mane0 = {
 		republican_tradition = 0.3
 		meritocracy = 1
 		horde_unity = 1
+		effect = { on_idea_taken_effect = yes on_idea_group_finished_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes on_idea_group_unfinished_effect = yes }
 	}
 
 	
@@ -1343,26 +1609,40 @@ animist0 = {
 	
 	animist1 = {
 		global_missionary_strength = 0.02
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	animist2 = {
 		missionaries = 1
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	animist3 = {
 		shock_damage = 0.05
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 
 	animist4 = {
 		enemy_core_creation = 0.15
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 
 	animist5 = {
 		cb_on_religious_enemies = yes
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	animist6 = {
 		interest = -0.5
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	animist7 = {
 		global_tax_modifier = 0.15
+		effect = { on_idea_taken_effect = yes on_idea_group_finished_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes on_idea_group_unfinished_effect = yes }
 	}
 
 	
@@ -1398,26 +1678,40 @@ feti0 = {
 	
 	feti1 = {
 		missionaries = 1
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	feti2 = {
 		fire_damage_received = -0.075
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	feti3 = {
 		war_taxes_cost_modifier = -0.25
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 
 	feti4 = {
 		cb_on_religious_enemies = yes
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 
 	feti5 = {
 		global_manpower_modifier = 0.1
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	feti6 = {
 		reduced_liberty_desire = 5
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	feti7 = {
 		global_missionary_strength = 0.02
+		effect = { on_idea_taken_effect = yes on_idea_group_finished_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes on_idea_group_unfinished_effect = yes }
 	}
 
 	
@@ -1451,27 +1745,41 @@ zoro0 = {
 	zoro1 = {
 		cb_on_religious_enemies = yes
 		siege_ability = 0.075
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	zoro2 = {
 		missionaries = 1
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	zoro3 = {
 		governing_capacity_modifier = 0.15
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 
 	zoro4 = {
 		prestige = 1
 		yearly_absolutism = 1.0
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 
 	zoro5 = {
 		infantry_power = 0.05
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	zoro6 = {
 		global_missionary_strength = 0.02
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	zoro7 = {
 		global_spy_defence = 0.1
+		effect = { on_idea_taken_effect = yes on_idea_group_finished_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes on_idea_group_unfinished_effect = yes }
 	}
 
 	
@@ -1505,29 +1813,43 @@ ancli0 = {
 	
 	ancli1 = {
 		missionaries = 1
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	ancli2 = {
 		global_tax_modifier = 0.15
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	ancli3 = {
 		global_heretic_missionary_strength = 0.03
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 
 	ancli4 = {
 		harsh_treatment_cost = -0.25
 		global_unrest = -2	
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 
 	ancli5 = {
 		global_colonial_growth = 15
 		range = 0.2	
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	ancli6 = {
 		monthly_splendor = 1
 		embracement_cost = -0.15
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	ancli7 = {
 		artillery_power = 0.075
+		effect = { on_idea_taken_effect = yes on_idea_group_finished_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes on_idea_group_unfinished_effect = yes }
 	}
 
 	
@@ -1559,27 +1881,41 @@ nahu0 = {
 	
 	nahu1 = {
 		diplomatic_upkeep = 2
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	nahu2 = {
 		discipline = 0.025
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	nahu3 = {
 		cb_on_religious_enemies = yes
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 
 	nahu4 = {
 		yearly_army_professionalism = 0.003
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 
 	nahu5 = {
 		global_missionary_strength = 0.02
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	nahu6 = {
 		trade_efficiency = 0.15
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	nahu7 = {
 		monarch_diplomatic_power = 1
-	}	
+		effect = { on_idea_taken_effect = yes on_idea_group_finished_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes on_idea_group_unfinished_effect = yes }
+	}
 	
 
 	ai_will_do = {
@@ -1610,28 +1946,42 @@ mesoam0 = {
 	
 	mesoam1 = {
 		global_tax_modifier = 0.15
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	mesoam2 = {
 		monthly_splendor = 3
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	mesoam3 = {
 		monarch_military_power = 1
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 
 	mesoam4 = {
 		ae_impact = -0.15
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 
 	mesoam5 = {
 		cb_on_religious_enemies = yes
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	mesoam6 = {
 		missionaries = 1
 		advisor_pool = 1
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	mesoam7 = {
 		idea_cost = -0.05
-	}	
+		effect = { on_idea_taken_effect = yes on_idea_group_finished_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes on_idea_group_unfinished_effect = yes }
+	}
 	
 
 	ai_will_do = {
@@ -1661,28 +2011,42 @@ inti0 = {
 	
 	inti1 = {
 		production_efficiency = 0.15
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	inti2 = {
 		monarch_admin_power = 1
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	inti3 = {
 		global_colonial_growth = 15
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 
 	inti4 = {
 		missionaries = 1
 		global_missionary_strength = 0.02
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 
 	inti5 = {
 		same_culture_advisor_cost = -0.15
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	inti6 = {
 		female_advisor_chance = 0.5	
+			effect = { on_idea_taken_effect = yes }
+			removed_effect = { on_idea_removed_effect = yes }
 		}
 	inti7 = {
 		production_efficiency = 0.15
-	}	
+		effect = { on_idea_taken_effect = yes on_idea_group_finished_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes on_idea_group_unfinished_effect = yes }
+	}
 	
 
 	ai_will_do = {
@@ -1712,27 +2076,41 @@ tote0 = {
 	
 	tote1 = {
 		global_manpower_modifier = 0.1
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	tote2 = {
 		land_attrition = -0.1
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	tote3 = {
 		global_missionary_strength = 0.02
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 
 	tote4 = {
 		cb_on_religious_enemies = yes
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 
 	tote5 = {
 		missionaries = 1	
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	tote6 = {
 		global_unrest = -2
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	tote7 = {
 		land_morale = 0.075
-	}	
+		effect = { on_idea_taken_effect = yes on_idea_group_finished_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes on_idea_group_unfinished_effect = yes }
+	}
 	
 
 	ai_will_do = {
@@ -1761,28 +2139,42 @@ shia0 = {
 	
 	shia1 = {
 		missionaries = 1 
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	shia2 = {
 		army_tradition = 0.5
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	shia3 = {
 		tolerance_own = 2
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 
 	shia4 = {
 		reform_progress_growth = 0.15
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 
 	shia5 = {
 		technology_cost = -0.05	
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	shia6 = {
 		cb_on_religious_enemies = yes
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	shia7 = {
 		global_missionary_strength = 0.02
 		missionary_maintenance_cost = -0.5
-	}	
+		effect = { on_idea_taken_effect = yes on_idea_group_finished_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes on_idea_group_unfinished_effect = yes }
+	}
 	
 
 	ai_will_do = {
@@ -1809,28 +2201,42 @@ ibadi0 = {
 	
 	ibadi1 = {
 		same_culture_advisor_cost = -0.15
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	ibadi2 = {
 		galley_power = 0.1
 		light_ship_power = 0.1
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	ibadi3 = {
 		idea_cost = -0.05
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 
 	ibadi4 = {
 		prestige = 1
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 
 	ibadi5 = {
 		defensiveness = 0.1
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	ibadi6 = {
 		manpower_in_true_faith_provinces = 0.25
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	ibadi7 = {
 		global_spy_defence = 0.5
-	}	
+		effect = { on_idea_taken_effect = yes on_idea_group_finished_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes on_idea_group_unfinished_effect = yes }
+	}
 	
 
 	ai_will_do = {
@@ -1857,27 +2263,41 @@ hussite0 = {
 	
 	hussite1 = {
 		global_religious_conversion_resistance = 0.25
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	hussite2 = {
 		innovativeness_gain = 0.5
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	hussite3 = {
 		governing_capacity_modifier = 0.15
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 
 	hussite4 = {
 		global_missionary_strength = 0.02
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 
 	hussite5 = {
 		shock_damage = 0.05
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	hussite6 = {
 		cb_on_religious_enemies = yes
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	hussite7 = {
 		global_institution_spread = 0.25
-	}	
+		effect = { on_idea_taken_effect = yes on_idea_group_finished_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes on_idea_group_unfinished_effect = yes }
+	}
 	
 
 	ai_will_do = {
@@ -1906,27 +2326,41 @@ alche0 = {
 	
 	alche1 = {
 		innovativeness_gain = 0.5
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	alche2 = {
 		reform_progress_growth = 0.25
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	alche3 = {
 		global_unrest = -2
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 
 	alche4 = {
 		discipline = 0.025
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 
 	alche5 = {
 		ae_impact = -0.15
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	alche6 = {
 		global_tax_modifier = 0.15
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	alche7 = {
 		global_missionary_strength = 0.02
-	}	
+		effect = { on_idea_taken_effect = yes on_idea_group_finished_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes on_idea_group_unfinished_effect = yes }
+	}
 	
 
 	ai_will_do = {
@@ -1951,25 +2385,39 @@ waldensian_ideas_0 = {
 	
 	waldensian_ideas_1 = {
 		manpower_recovery_speed = 0.1
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	waldensian_ideas_2 = {
 		garrison_size = 0.25
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	waldensian_ideas_3 = {
 		ae_impact = -0.15
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	waldensian_ideas_4 = {
 		development_cost = -0.05
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	waldensian_ideas_5 = {
 		land_morale = 0.075
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	waldensian_ideas_6 = {
 		cb_on_religious_enemies = yes
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	waldensian_ideas_7 = {
 		diplomatic_upkeep = 1
-	}	
+		effect = { on_idea_taken_effect = yes on_idea_group_finished_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes on_idea_group_unfinished_effect = yes }
+	}
 	
 
 	ai_will_do = {
@@ -1994,25 +2442,39 @@ lollard_ideas_0 = {
 	
 	lollard_ideas_1 = {
 		reform_progress_growth = 0.15
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	lollard_ideas_2 = {
 		global_missionary_strength = 0.02
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	lollard_ideas_3 = {
 		global_unrest = -2
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	lollard_ideas_4 = {
 		fire_damage = 0.05
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	lollard_ideas_5 = {
 		build_cost = -0.075
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	lollard_ideas_6 = {
 		missionary_maintenance_cost = -0.25
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	lollard_ideas_7 = {
 		cb_on_religious_enemies = yes
-	}	
+		effect = { on_idea_taken_effect = yes on_idea_group_finished_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes on_idea_group_unfinished_effect = yes }
+	}
 	
 
 	ai_will_do = {
@@ -2037,27 +2499,41 @@ nestorian_ideas_0 = {
 	
 	nestorian_ideas_1 = {
 		hostile_attrition = 2
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	nestorian_ideas_2 = {
 		missionaries = 1
 		global_missionary_strength = 0.02
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	nestorian_ideas_3 = {
 		prestige = 1
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	nestorian_ideas_4 = {
 		advisor_cost = -0.1
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	nestorian_ideas_5 = {
 		core_creation = -0.1
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	nestorian_ideas_6 = {
 		num_accepted_cultures = 2
 		promote_culture_cost = -0.25
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	nestorian_ideas_7 = {
 		discipline = 0.025
-	}	
+		effect = { on_idea_taken_effect = yes on_idea_group_finished_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes on_idea_group_unfinished_effect = yes }
+	}
 	
 
 	ai_will_do = {
@@ -2083,30 +2559,44 @@ druze_ideas_0 = {
 	druze_ideas_1 = {
 		global_spy_defence = 0.15
 		spy_offence = 0.25
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	druze_ideas_2 = {
 		tolerance_heathen = -2
 		tolerance_heretic = -2
 		tolerance_own = 2
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	druze_ideas_3 = {
 		innovativeness_gain = 0.5
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	druze_ideas_4 = {
 		reform_progress_growth = 0.5
 		stability_cost_to_declare_war = 1
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	druze_ideas_5 = {
 		diplomatic_reputation = 1
 		improve_relation_modifier = 0.25
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	druze_ideas_6 = {
 		fort_maintenance_modifier = -0.15
 		garrison_size = 0.1
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	druze_ideas_7 = {
 		warscore_cost_vs_other_religion = -0.15
-	}	
+		effect = { on_idea_taken_effect = yes on_idea_group_finished_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes on_idea_group_unfinished_effect = yes }
+	}
 	
 
 	ai_will_do = {
@@ -2129,6 +2619,7 @@ religious_ideas = {
 		culture_conversion_cost = -0.15
 		monthly_anb_effelai_attuned_resource = 0.15
 		monthly_jaddari_zealotry = 0.15
+		uppercastes_loyalty_modifier = 0.05	#Anbennar
 	}
 
 	trigger = {
@@ -2232,12 +2723,18 @@ religious_ideas = {
 
 	missionary_schools = {
 		missionaries = 1
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	church_attendance_duty = {
 		stability_cost_modifier = -0.25
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	divine_supremacy = {
 		global_missionary_strength = 0.02
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	devoutness = {
 		tolerance_own = 2
@@ -2250,15 +2747,36 @@ religious_ideas = {
 		yearly_doom_reduction = 1
 		yearly_authority = 0.15
 		yearly_patriarch_authority = 0.005
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	religious_tradition = {
 		prestige = 1
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	deus_vult = {
 		cb_on_religious_enemies = yes
+		#Anbennar
+		effect = {
+			on_idea_taken_effect = yes
+			if = {
+				limit = {
+					has_country_modifier = S61_holy_war
+				}
+				remove_country_modifier = S61_holy_war
+				add_country_modifier = {
+					name = S61_holy_war_alt
+					duration = -1
+				}
+			}
+		}
+		removed_effect = { on_idea_removed_effect = yes }
 	}
 	inquisition = {
 		missionary_maintenance_cost = -0.5
+		effect = { on_idea_taken_effect = yes on_idea_group_finished_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes on_idea_group_unfinished_effect = yes }
 	}
 
 	ai_will_do = {
