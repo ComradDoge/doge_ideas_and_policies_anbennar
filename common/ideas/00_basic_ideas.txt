@@ -21,6 +21,8 @@
 # Vanila Government Ones
 # Espionage
 
+# and some fake humanist section, should be done properly to clean up but to late now.
+
 infrastructure_ideas = {
 	category = ADM
 	
@@ -463,5 +465,95 @@ spy_ideas_fake = { # convoluted mod development, dont question it
 
 	ai_will_do = {
 		factor = 0
+	}
+}
+
+
+humanist_ideas_fake = {
+	category = ADM
+
+	bonus = {
+		idea_cost = -0.05
+		yearly_harmony = 0.25
+		lowercastes_loyalty_modifier = 0.1	#Anbennar
+	}
+
+	trigger = {
+		always = no
+	}
+
+	benevolence_2 = {
+		improve_relation_modifier = 0.15
+		diplomats = 1
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
+	}
+	local_traditions_2 = {
+		global_unrest = -2
+		harmonization_speed = 0.25
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
+	}
+	ecumenism_2 = {
+		tolerance_heretic = 2
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
+	}
+	humanist_tolerance_2 = {
+		tolerance_heathen = 2
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
+	}
+	cultural_ties = {
+		num_accepted_cultures = 2
+		# <<WIKI>> morale_bonus_5_cultures = yes
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
+	}
+	indirect_rule_2 = {
+		years_of_nationalism = -5
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
+	}
+	tolerance_idea = {
+		religious_unity = 0.15
+		# <<WIKI>> decision = dst_hire_advisor
+		effect = { on_idea_taken_effect = yes on_idea_group_finished_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes on_idea_group_unfinished_effect = yes }
+	}
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			has_idea_group = religious_ideas
+		}
+		modifier = {
+			factor = 0
+			has_country_modifier = monstrous_nation
+		}
+		modifier = {
+			factor = 0.5
+			any_rival_country = {
+				NOT = { religion = ROOT } 
+			}
+		}
+		modifier = {
+			factor = 1.25
+			personality = ai_militarist
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { monthly_adm = 8 }
+		}
+		modifier = {
+			factor = 3
+			religion_group = faithless
+			NOT = { religion = godlost }
+		}
+		modifier = {
+			factor = 1.1 
+			national_focus = ADM 
+		}
 	}
 }
