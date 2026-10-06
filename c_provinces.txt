@@ -1,0 +1,13 @@
+set_country_flag = magic_debug
+#every_owned_province = {
+#    limit = {
+#        OR = {
+#            NOT = { development = 25 }
+#            NOT = { is_city = yes }
+#        }
+#    }
+#    add_province_modifier = {
+#        name = elbe_estuary_modifier
+#        duration = 30
+#    }
+#}

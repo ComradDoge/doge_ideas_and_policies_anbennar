@@ -98,6 +98,11 @@ set_base_value0 = {
 		}
 	}
 	
+	MAX_value = { #floor at 10% base cost, dwarven holds (dig_N) can push the sum negative which made the click free
+		which = $which$
+		value = 0.1
+	}
+
 	if = { #dev efficiency from adm tech affects base cost by -10%
 		limit = {
 			owner = { adm_tech = 27 } 
