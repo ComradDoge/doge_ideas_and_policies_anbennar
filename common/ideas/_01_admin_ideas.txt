@@ -321,7 +321,6 @@ expansion_ideas = {
 				technology_group = tech_triunic
 				technology_group = tech_kheionai
 				technology_group = tech_insyaa_kobolds
-				technology_group = tech_islanders
 			}
 		}
 		modifier = { 
